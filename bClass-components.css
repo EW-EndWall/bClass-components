@@ -1,0 +1,125 @@
+/* languagesselect */
+.languages-select {
+  background-color: transparent;
+  color: #90949c;
+  margin: 1rem auto;
+  width: auto;
+  min-width: 10rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  outline: none;
+  letter-spacing: 0.1rem;
+  border: none;
+  line-height: 2rem;
+  padding: 0.2rem;
+}
+/* --------------------- */
+footer hr {
+  border-color: #303030;
+}
+footer > .footer-model-1 {
+  background-color: #252525;
+  color: #90949c;
+  /*  */
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer > .footer-model-1 > div > ul {
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0.2rem auto;
+  padding: 0;
+  font-size: 0.5rem;
+}
+footer > .footer-model-1 > div > ul > li {
+  background-color: #252525;
+  color: #90949c;
+  /*  */
+  padding: 0 0.5em;
+  border-right: 0.1em solid;
+}
+@media screen and (max-width: 480px) {
+  footer > .footer-model-1 > div > ul {
+    flex-direction: column;
+  }
+  footer > .footer-model-1 > div > ul > li {
+    padding: 0.5em;
+    border: 0;
+  }
+}
+footer > .footer-model-1 > div > ul > li:last-child {
+  border-right: 0;
+}
+footer > .footer-model-1 > h5,
+footer > .footer-model-1 > h6 {
+  margin: 0.3rem;
+}
+/* --------------------- */
+footer > .footer-model-2 {
+  background-color: #252525;
+  color: #90949c;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+footer > .footer-model-2 > div > h3 {
+  margin: 1em 0 0 0;
+  text-transform: uppercase;
+}
+footer > .footer-model-2 > div > hr {
+  margin: 1rem 0;
+}
+footer > .footer-model-2 > div > .social,
+footer > .footer-model-2 > div > .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+footer > .footer-model-2 > div > .social > a {
+  margin: 0.5rem;
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* mobil < 480px */
+@media screen and (max-width: 480px) {
+}
+/* tablet < 768px */
+@media screen and (max-width: 768px) {
+  footer > .footer-model-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > .footer-model-2 > div {
+    width: 70%;
+  }
+}
+/* tablet-pc < 992 */
+@media screen and (max-width: 992px) {
+}
+/* pc < 1200 */
+@media screen and (max-width: 1200px) {
+}
+/* tv > 1200 */
+@media screen and (min-width: 1200px) {
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
