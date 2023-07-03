@@ -1,4 +1,11 @@
-/* languagesselect */
+/** hr tag models */
+.hr-line-model-1 {
+  border: 0;
+  height: 1px;
+  background-color: transparent;
+  background-image: linear-gradient(to right, transparent, #000, transparent);
+}
+/** languagesselect */
 .languages-select {
   background-color: transparent;
   color: #90949c;
@@ -95,10 +102,10 @@ footer > .footer-model-2 > div > .social > a {
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
-/* mobil < 480px */
+/** mobil < 480px */
 @media screen and (max-width: 480px) {
 }
-/* tablet < 768px */
+/** tablet < 768px */
 @media screen and (max-width: 768px) {
   footer > .footer-model-2 {
     flex-direction: column;
@@ -109,13 +116,13 @@ footer > .footer-model-2 > div > .social > a {
     width: 70%;
   }
 }
-/* tablet-pc < 992 */
+/** tablet-pc < 992 */
 @media screen and (max-width: 992px) {
 }
-/* pc < 1200 */
+/** pc < 1200 */
 @media screen and (max-width: 1200px) {
 }
-/* tv > 1200 */
+/** tv > 1200 */
 @media screen and (min-width: 1200px) {
 }
 /* ! ---------------------------------------------------------------------------------  */
