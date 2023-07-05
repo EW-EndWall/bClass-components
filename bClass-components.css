@@ -1,3 +1,628 @@
+/* ----------------------- */
+body.solid .model-line {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: green;
+  position: relative;
+}
+
+body.solid .model-line > .model-outline {
+  background-color: yellow;
+  padding: 1rem;
+}
+body.solid .model-line > .model-outline > .model-inline {
+  background-color: green;
+  padding: 1rem;
+}
+
+/* ----------------------- */
+
+body.edge .model-line {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: green;
+  position: relative;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+body.edge .model-line > .model-outline {
+  background-color: yellow;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+body.edge .model-line > .model-outline > .model-inline {
+  background-color: green;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+/* ----------------------- */
+
+body.edged .model-line {
+  margin: 2rem 1rem;
+  padding: 0 1rem;
+  background-color: green;
+  position: relative;
+}
+
+body.edged .model-line > .model-outline::before,
+body.edged .model-line > .model-outline::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1rem;
+  background-color: green;
+  z-index: -1;
+}
+
+body.edged .model-line > .model-outline::before {
+  margin: 0;
+  left: 0;
+  top: -1rem;
+  transform-origin: bottom left;
+  transform: skewX(-50deg);
+  -webkit-transform: skewX(-50deg);
+  -moz-transform: skewX(-50deg);
+  -ms-transform: skewX(-50deg);
+  -o-transform: skewX(-50deg);
+}
+
+body.edged .model-line > .model-outline::after {
+  margin: 0;
+  right: 0;
+  top: -1rem;
+  transform-origin: bottom right;
+  transform: skewX(50deg);
+  -webkit-transform: skewX(50deg);
+  -moz-transform: skewX(50deg);
+  -ms-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+}
+body.edged .model-line > .model-outline > .model-inline::before,
+body.edged .model-line > .model-outline > .model-inline::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1rem;
+  background-color: green;
+  z-index: -1;
+}
+
+body.edged .model-line > .model-outline > .model-inline::before {
+  margin: 0;
+  right: 0rem;
+  bottom: -1rem;
+  transform-origin: top left;
+  transform: skewX(-50deg);
+  -webkit-transform: skewX(-50deg);
+  -moz-transform: skewX(-50deg);
+  -ms-transform: skewX(-50deg);
+  -o-transform: skewX(-50deg);
+}
+
+body.edged .model-line > .model-outline > .model-inline::after {
+  margin: 0;
+  left: 0;
+  bottom: -1rem;
+  transform-origin: top right;
+  transform: skewX(50deg);
+  -webkit-transform: skewX(50deg);
+  -moz-transform: skewX(50deg);
+  -ms-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+}
+
+/* ----------------------- */
+
+body.triangle-experimental-model-1 .model-line {
+  margin: 2rem;
+  padding: 0 2rem;
+  background-color: green;
+  position: relative;
+}
+
+body.triangle-experimental-model-1 .model-line > .model-outline::before,
+body.triangle-experimental-model-1 .model-line > .model-outline::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1rem;
+  background-color: green;
+  z-index: -1;
+}
+
+body.triangle-experimental-model-1 .model-line > .model-outline::before {
+  margin: 0;
+  right: 0rem;
+  top: -1rem;
+  transform-origin: top left;
+  transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+  -moz-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  -o-transform: skewX(-45deg);
+}
+
+body.triangle-experimental-model-1 .model-line > .model-outline::after {
+  margin: 0;
+  left: 0;
+  top: -1rem;
+  transform-origin: top right;
+  transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  -o-transform: skewX(45deg);
+}
+body.triangle-experimental-model-1
+  .model-line
+  > .model-outline
+  > .model-inline::before,
+body.triangle-experimental-model-1
+  .model-line
+  > .model-outline
+  > .model-inline::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1rem;
+  background-color: green;
+  z-index: -1;
+}
+
+body.triangle-experimental-model-1
+  .model-line
+  > .model-outline
+  > .model-inline::before {
+  margin: 0;
+  left: 0;
+  bottom: -1rem;
+  transform-origin: bottom left;
+  transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+  -moz-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  -o-transform: skewX(-45deg);
+}
+
+body.triangle-experimental-model-1
+  .model-line
+  > .model-outline
+  > .model-inline::after {
+  margin: 0;
+  right: 0;
+  bottom: -1rem;
+  transform-origin: bottom right;
+  transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  -o-transform: skewX(45deg);
+}
+
+/* ----------------------- */
+
+body.triangle-experimental-model-2 .model-line {
+  margin: 2rem;
+  padding: 0 2rem;
+  background-color: green;
+  position: relative;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+body.triangle-experimental-model-2 .model-line > .model-outline::before,
+body.triangle-experimental-model-2 .model-line > .model-outline::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1rem;
+  background-color: green;
+  z-index: -1;
+}
+
+body.triangle-experimental-model-2 .model-line > .model-outline::before {
+  margin: 0;
+  right: 0rem;
+  top: -1rem;
+  transform-origin: top left;
+  transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+  -moz-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  -o-transform: skewX(-45deg);
+}
+
+body.triangle-experimental-model-2 .model-line > .model-outline::after {
+  margin: 0;
+  left: 0;
+  top: -1rem;
+  transform-origin: top right;
+  transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  -o-transform: skewX(45deg);
+}
+body.triangle-experimental-model-2
+  .model-line
+  > .model-outline
+  > .model-inline::before,
+body.triangle-experimental-model-2
+  .model-line
+  > .model-outline
+  > .model-inline::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1rem;
+  background-color: green;
+  z-index: -1;
+}
+
+body.triangle-experimental-model-2
+  .model-line
+  > .model-outline
+  > .model-inline::before {
+  margin: 0;
+  left: 0;
+  bottom: -1rem;
+  transform-origin: bottom left;
+  transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+  -moz-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  -o-transform: skewX(-45deg);
+}
+
+body.triangle-experimental-model-2
+  .model-line
+  > .model-outline
+  > .model-inline::after {
+  margin: 0;
+  right: 0;
+  bottom: -1rem;
+  transform-origin: bottom right;
+  transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  -o-transform: skewX(45deg);
+}
+
+/* ----------------------- */
+
+body.triangle-experimental-model-3 .model-line {
+  margin: 2rem;
+  padding: 0 1rem;
+  background-color: green;
+  position: relative;
+}
+
+body.triangle-experimental-model-3 .model-line > .model-outline::before,
+body.triangle-experimental-model-3 .model-line > .model-outline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  background-color: green;
+  z-index: -1;
+}
+
+body.triangle-experimental-model-3 .model-line > .model-outline::before {
+  margin: 0;
+  right: 0rem;
+  top: -1rem;
+  transform-origin: top left;
+  transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+  -moz-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  -o-transform: skewX(-45deg);
+}
+
+body.triangle-experimental-model-3 .model-line > .model-outline::after {
+  margin: 0;
+  left: 0;
+  top: -1rem;
+  transform-origin: top right;
+  transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  -o-transform: skewX(45deg);
+}
+body.triangle-experimental-model-3
+  .model-line
+  > .model-outline
+  > .model-inline::before,
+body.triangle-experimental-model-3
+  .model-line
+  > .model-outline
+  > .model-inline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  background-color: green;
+  z-index: -1;
+}
+
+body.triangle-experimental-model-3
+  .model-line
+  > .model-outline
+  > .model-inline::before {
+  margin: 0;
+  left: 0;
+  bottom: -1rem;
+  transform-origin: bottom left;
+  transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+  -moz-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  -o-transform: skewX(-45deg);
+}
+
+body.triangle-experimental-model-3
+  .model-line
+  > .model-outline
+  > .model-inline::after {
+  margin: 0;
+  right: 0;
+  bottom: -1rem;
+  transform-origin: bottom right;
+  transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  -o-transform: skewX(45deg);
+}
+/* ----------------------- */
+body.solid .bclass,
+body.triangle-experimental-model-1 .bclass,
+body.triangle-experimental-model-3 .bclass {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+/*  */
+body.edge .bclass,
+body.edged .bclass,
+body.triangle-experimental-model-2 .bclass {
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+[data-title],
+[data-title-bottom] {
+  position: relative;
+}
+[data-title]:hover:after {
+  content: attr(data-title);
+}
+[data-title-bottom]:hover:after {
+  content: attr(data-title-bottom);
+}
+[data-title]:hover:after,
+[data-title-bottom]:hover:after {
+  position: absolute;
+  left: 50%;
+  bottom: -2.3rem;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #eee;
+  font-size: 15px;
+  white-space: nowrap;
+  z-index: 1;
+  visibility: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+[data-title]:hover:before,
+[data-title-bottom]:hover:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+}
+
+[data-title]:hover:after,
+[data-title-bottom]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.3s;
+  visibility: visible;
+}
+/* ---------- */
+[data-title-top] {
+  position: relative;
+}
+
+[data-title-top]:hover:after {
+  content: attr(data-title-top);
+  position: absolute;
+  left: 50%;
+  top: -2.3rem;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #eee;
+  font-size: 15px;
+  white-space: nowrap;
+  z-index: 1;
+  visibility: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+[data-title-top]:hover:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -0.3rem;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000 transparent transparent transparent;
+}
+
+[data-title-top]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.3s;
+  visibility: visible;
+}
+/* ---------- */
+[data-title-left] {
+  position: relative;
+}
+
+[data-title-left]:hover:after {
+  content: attr(data-title-left);
+  position: absolute;
+  left: 101.5%;
+  top: 50%;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #eee;
+  font-size: 15px;
+  white-space: nowrap;
+  z-index: 1;
+  visibility: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+[data-title-left]:hover:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #000000 transparent transparent;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+[data-title-left]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.3s;
+  visibility: visible;
+}
+/* ---------- */
+[data-title-right] {
+  position: relative;
+}
+
+[data-title-right]:hover:after {
+  content: attr(data-title-right);
+  position: absolute;
+  right: 101.5%;
+  top: 50%;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #eee;
+  font-size: 15px;
+  white-space: nowrap;
+  z-index: 1;
+  visibility: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+[data-title-right]:hover:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 100%;
+  margin-right: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #000000;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+[data-title-right]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.3s;
+  visibility: visible;
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
 /** ul li list models */
 ul.ul-li-x {
   list-style-type: none;
@@ -181,15 +806,6 @@ footer > .footer-model-1 > div > ul > li {
   padding: 0 0.5em;
   border-right: 0.1em solid;
 }
-@media screen and (max-width: 480px) {
-  footer > .footer-model-1 > div > ul {
-    flex-direction: column;
-  }
-  footer > .footer-model-1 > div > ul > li {
-    padding: 0.5em;
-    border: 0;
-  }
-}
 footer > .footer-model-1 > div > ul > li:last-child {
   border-right: 0;
 }
@@ -230,6 +846,13 @@ footer > .footer-model-2 > div > .social > a {
 /* ! ---------------------------------------------------------------------------------  */
 /** mobil < 480px */
 @media screen and (max-width: 480px) {
+  footer > .footer-model-1 > div > ul {
+    flex-direction: column;
+  }
+  footer > .footer-model-1 > div > ul > li {
+    padding: 0.5em;
+    border: 0;
+  }
 }
 /** tablet < 768px */
 @media screen and (max-width: 768px) {
