@@ -18,49 +18,13 @@
   height: 15rem;
 }
 .page-loader-model-1 img:nth-child(1) {
-  -webkit-animation: blinker 2s linear infinite;
   animation: blinker 2s linear infinite;
+  -webkit-animation: opacitySoftAnimation-0 2s linear infinite;
 }
 .page-loader-model-1 img:nth-child(2) {
-  -webkit-animation: spin 10s linear infinite;
-  animation: spin 10s linear infinite;
+  animation: rotate-right 10s linear infinite;
+  -webkit-animation: rotate-right 10s linear infinite;
 }
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes blinker {
-  50% {
-    -webkit-opacity: 0;
-  }
-}
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
 /* ----------------------- */
 body.solid .model-line {
   margin: 1rem;
