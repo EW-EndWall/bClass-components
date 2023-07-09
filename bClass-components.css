@@ -1,6 +1,14 @@
+/*  * *
+    * *
+    * *
+*/
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
 /* * page loader models */
 /* * model 1 */
-/* ! düzenlencek animasyon kısmı */
 .page-loader-model-1 {
   position: fixed;
   z-index: 99;
@@ -19,20 +27,25 @@
 }
 .page-loader-model-1 img:nth-child(1) {
   animation: blinker 2s linear infinite;
-  -webkit-animation: opacitySoftAnimation-0 2s linear infinite;
+  -webkit-animation: opacitySharpAnimation-0 2s linear infinite;
 }
 .page-loader-model-1 img:nth-child(2) {
   animation: rotate-right 10s linear infinite;
   -webkit-animation: rotate-right 10s linear infinite;
 }
-/* ----------------------- */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* * model line */
+/* * solid */
 body.solid .model-line {
   margin: 1rem;
   padding: 1rem;
   background-color: green;
   position: relative;
 }
-
 body.solid .model-line > .model-outline {
   background-color: yellow;
   padding: 1rem;
@@ -41,9 +54,7 @@ body.solid .model-line > .model-outline > .model-inline {
   background-color: green;
   padding: 1rem;
 }
-
-/* ----------------------- */
-
+/* * edge */
 body.edge .model-line {
   margin: 1rem;
   padding: 1rem;
@@ -55,7 +66,6 @@ body.edge .model-line {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-
 body.edge .model-line > .model-outline {
   background-color: yellow;
   padding: 1rem;
@@ -74,16 +84,13 @@ body.edge .model-line > .model-outline > .model-inline {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-
-/* ----------------------- */
-
+/* * edged */
 body.edged .model-line {
   margin: 2rem 1rem;
   padding: 0 1rem;
   background-color: green;
   position: relative;
 }
-
 body.edged .model-line > .model-outline::before,
 body.edged .model-line > .model-outline::after {
   content: "";
@@ -93,7 +100,6 @@ body.edged .model-line > .model-outline::after {
   background-color: green;
   z-index: -1;
 }
-
 body.edged .model-line > .model-outline::before {
   margin: 0;
   left: 0;
@@ -105,7 +111,6 @@ body.edged .model-line > .model-outline::before {
   -ms-transform: skewX(-50deg);
   -o-transform: skewX(-50deg);
 }
-
 body.edged .model-line > .model-outline::after {
   margin: 0;
   right: 0;
@@ -126,7 +131,6 @@ body.edged .model-line > .model-outline > .model-inline::after {
   background-color: green;
   z-index: -1;
 }
-
 body.edged .model-line > .model-outline > .model-inline::before {
   margin: 0;
   right: 0rem;
@@ -138,7 +142,6 @@ body.edged .model-line > .model-outline > .model-inline::before {
   -ms-transform: skewX(-50deg);
   -o-transform: skewX(-50deg);
 }
-
 body.edged .model-line > .model-outline > .model-inline::after {
   margin: 0;
   left: 0;
@@ -150,16 +153,13 @@ body.edged .model-line > .model-outline > .model-inline::after {
   -ms-transform: skewX(50deg);
   -o-transform: skewX(50deg);
 }
-
-/* ----------------------- */
-
+/* * triangle-experimental-model-1 */
 body.triangle-experimental-model-1 .model-line {
   margin: 2rem;
   padding: 0 2rem;
   background-color: green;
   position: relative;
 }
-
 body.triangle-experimental-model-1 .model-line > .model-outline::before,
 body.triangle-experimental-model-1 .model-line > .model-outline::after {
   content: "";
@@ -169,7 +169,6 @@ body.triangle-experimental-model-1 .model-line > .model-outline::after {
   background-color: green;
   z-index: -1;
 }
-
 body.triangle-experimental-model-1 .model-line > .model-outline::before {
   margin: 0;
   right: 0rem;
@@ -181,7 +180,6 @@ body.triangle-experimental-model-1 .model-line > .model-outline::before {
   -ms-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
 }
-
 body.triangle-experimental-model-1 .model-line > .model-outline::after {
   margin: 0;
   left: 0;
@@ -208,7 +206,6 @@ body.triangle-experimental-model-1
   background-color: green;
   z-index: -1;
 }
-
 body.triangle-experimental-model-1
   .model-line
   > .model-outline
@@ -223,7 +220,6 @@ body.triangle-experimental-model-1
   -ms-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
 }
-
 body.triangle-experimental-model-1
   .model-line
   > .model-outline
@@ -238,9 +234,7 @@ body.triangle-experimental-model-1
   -ms-transform: skewX(45deg);
   -o-transform: skewX(45deg);
 }
-
-/* ----------------------- */
-
+/* * triangle-experimental-model-2 */
 body.triangle-experimental-model-2 .model-line {
   margin: 2rem;
   padding: 0 2rem;
@@ -252,7 +246,6 @@ body.triangle-experimental-model-2 .model-line {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-
 body.triangle-experimental-model-2 .model-line > .model-outline::before,
 body.triangle-experimental-model-2 .model-line > .model-outline::after {
   content: "";
@@ -262,7 +255,6 @@ body.triangle-experimental-model-2 .model-line > .model-outline::after {
   background-color: green;
   z-index: -1;
 }
-
 body.triangle-experimental-model-2 .model-line > .model-outline::before {
   margin: 0;
   right: 0rem;
@@ -274,7 +266,6 @@ body.triangle-experimental-model-2 .model-line > .model-outline::before {
   -ms-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
 }
-
 body.triangle-experimental-model-2 .model-line > .model-outline::after {
   margin: 0;
   left: 0;
@@ -301,7 +292,6 @@ body.triangle-experimental-model-2
   background-color: green;
   z-index: -1;
 }
-
 body.triangle-experimental-model-2
   .model-line
   > .model-outline
@@ -316,7 +306,6 @@ body.triangle-experimental-model-2
   -ms-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
 }
-
 body.triangle-experimental-model-2
   .model-line
   > .model-outline
@@ -331,16 +320,13 @@ body.triangle-experimental-model-2
   -ms-transform: skewX(45deg);
   -o-transform: skewX(45deg);
 }
-
-/* ----------------------- */
-
+/* * triangle-experimental-model-3 */
 body.triangle-experimental-model-3 .model-line {
   margin: 2rem;
   padding: 0 1rem;
   background-color: green;
   position: relative;
 }
-
 body.triangle-experimental-model-3 .model-line > .model-outline::before,
 body.triangle-experimental-model-3 .model-line > .model-outline::after {
   content: "";
@@ -350,7 +336,6 @@ body.triangle-experimental-model-3 .model-line > .model-outline::after {
   background-color: green;
   z-index: -1;
 }
-
 body.triangle-experimental-model-3 .model-line > .model-outline::before {
   margin: 0;
   right: 0rem;
@@ -362,7 +347,6 @@ body.triangle-experimental-model-3 .model-line > .model-outline::before {
   -ms-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
 }
-
 body.triangle-experimental-model-3 .model-line > .model-outline::after {
   margin: 0;
   left: 0;
@@ -389,7 +373,6 @@ body.triangle-experimental-model-3
   background-color: green;
   z-index: -1;
 }
-
 body.triangle-experimental-model-3
   .model-line
   > .model-outline
@@ -404,7 +387,6 @@ body.triangle-experimental-model-3
   -ms-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
 }
-
 body.triangle-experimental-model-3
   .model-line
   > .model-outline
@@ -419,7 +401,7 @@ body.triangle-experimental-model-3
   -ms-transform: skewX(45deg);
   -o-transform: skewX(45deg);
 }
-/* ----------------------- */
+/* * ---- */
 body.solid .bclass,
 body.triangle-experimental-model-1 .bclass,
 body.triangle-experimental-model-3 .bclass {
@@ -429,7 +411,7 @@ body.triangle-experimental-model-3 .bclass {
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
-/*  */
+/* * ---- */
 body.edge .bclass,
 body.edged .bclass,
 body.triangle-experimental-model-2 .bclass {
