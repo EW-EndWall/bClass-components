@@ -1,6 +1,7 @@
 // * page loader remowed
 document.onreadystatechange = () => {
   setTimeout(() => {
-    document.getElementById("page-loader").remove();
+    const pageLoader = document.getElementById("page-loader");
+    if (pageLoader) pageLoader.remove();
   }, 500);
 };
