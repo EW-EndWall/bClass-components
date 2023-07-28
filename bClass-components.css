@@ -870,6 +870,95 @@ body.triangle-experimental-model-2 .btn {
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
+/* * input checkbox model 1 */
+.input-checkbox-m-1 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #000;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+/* * input checkbox model 2 */
+.input-checkbox-m-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 3rem;
+  height: 2rem;
+  border: 0.5rem solid #ccc;
+  background-color: #000;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.input-checkbox-m-2:before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 100%;
+  background-color: #fff;
+  margin-right: auto;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.input-checkbox-m-2:checked:before {
+  margin-right: 0;
+  margin-left: auto;
+}
+/* * input checkbox model 3 */
+.input-checkbox-m-3 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 3rem;
+  height: 2rem;
+  border: 0.5rem solid #ccc;
+  background-color: #000;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.input-checkbox-m-3:before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 100%;
+  background-color: #fff;
+  margin-right: auto;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.input-checkbox-m-3:checked:before {
+  margin-right: 0;
+  margin-left: auto;
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
 /** mobil < 480px */
 @media screen and (max-width: 480px) {
   footer > .footer-model-1 > div > ul {
