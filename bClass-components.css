@@ -750,6 +750,34 @@ ul.ul-li-y-scroll-hidden::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
+/* * x list right border line */
+.x-list-m-1 {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.x-list-m-1 li {
+  padding: 0 0.5rem;
+  border-right: 0.1rem solid;
+}
+.x-list-m-1 li:last-child {
+  border-right: 0;
+}
+/* * y list bottom border line */
+.y-list-m-1 {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.y-list-m-1 li {
+  padding: 0 0.5rem;
+  border-bottom: 0.1rem solid;
+}
+.y-list-m-1 li:last-child {
+  border-bottom: 0;
+}
 /* * hr tag models */
 .hr-line-model-1 {
   border: 0;
