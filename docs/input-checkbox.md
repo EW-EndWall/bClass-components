@@ -1,8 +1,8 @@
-## Input checkbox models
+# Input checkbox models
 
 ## Model 1
 
-# input-checkbox-m-1
+- .input-checkbox-m-1
 
 ```html
 <div
@@ -31,7 +31,7 @@
 
 ## Model 2
 
-# input-checkbox-m-2
+- .input-checkbox-m-2
 
 ```html
 <div
@@ -60,7 +60,7 @@
 
 ## Model 3
 
-# input-checkbox-m-3
+- .input-checkbox-m-3
 
 ```html
 <div
@@ -83,6 +83,35 @@
   style="background:var(--contentBgPrimary)"
 >
   <input type="checkbox" class="input-checkbox-m-3" checked />
+  <label class="d-block text-c">CSS</label>
+</div>
+```
+
+## Model 4
+
+- .input-checkbox-m-4
+
+```html
+<div
+  class="d-inline-flex p-0-5 m-1 border-radius-1"
+  style="background:var(--contentBgPrimary)"
+>
+  <input type="checkbox" class="input-checkbox-m-4" checked />
+</div>
+
+<div
+  class="d-inline-flex p-0-5 m-1 border-radius-1"
+  style="background:var(--contentBgPrimary)"
+>
+  <input type="checkbox" class="input-checkbox-m-4" checked />
+  <label class="m-auto p-x-0-5">CSS</label>
+</div>
+
+<div
+  class="d-inline-block p-0-5 m-1 border-radius-1"
+  style="background:var(--contentBgPrimary)"
+>
+  <input type="checkbox" class="input-checkbox-m-4" checked />
   <label class="d-block text-c">CSS</label>
 </div>
 ```
