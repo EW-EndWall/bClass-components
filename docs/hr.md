@@ -4,7 +4,9 @@ Hr tag models.
 
 ## Model 1
 
-# hr-line-model-1
+- hr-line-model-1
+
+### example
 
 ```html
 <hr class="hr-line-model-1" />

@@ -1,10 +1,12 @@
-## Model line
+# Model line
 
 Dynamic container design models.
 
 ## Model 1
 
-# solid
+- .solid
+
+### example
 
 ```html
 <body class="solid">
@@ -36,7 +38,9 @@ Dynamic container design models.
 
 ## Model 2
 
-# edge
+- .edge
+
+### example
 
 ```html
 <body class="edge">
@@ -68,7 +72,9 @@ Dynamic container design models.
 
 ## Model 3
 
-# edged
+- .edged
+
+### example
 
 ```html
 <body class="edged">
@@ -100,7 +106,9 @@ Dynamic container design models.
 
 ## Model 4
 
-# triangle-experimental-model-1
+.triangle-experimental-model-1
+
+### example
 
 ```html
 <body class="triangle-experimental-model-1">
@@ -132,7 +140,9 @@ Dynamic container design models.
 
 ## Model 5
 
-# triangle-experimental-model-2
+- .triangle-experimental-model-2
+
+### example
 
 ```html
 <body class="triangle-experimental-model-2">
@@ -164,7 +174,9 @@ Dynamic container design models.
 
 ## Model 6
 
-# triangle-experimental-model-3
+- .triangle-experimental-model-3
+
+### example
 
 ```html
 <body class="triangle-experimental-model-3">

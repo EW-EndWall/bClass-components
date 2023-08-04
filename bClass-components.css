@@ -8,6 +8,20 @@
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
+/* * link and hover */
+a {
+  color: var(--contentTextPrimary);
+  transition: all 0.5s ease;
+}
+a:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
 /* * page loader models */
 /* * model 1 */
 .page-loader-model-1 {
@@ -1114,6 +1128,81 @@ body.triangle-experimental-model-2 .btn {
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
+/* * input-text */
+/* * input-text-m-1 */
+.input-text-m-1 {
+  position: relative;
+  color: var(--contentTextSecondary);
+  background: var(--contentBgSecondary);
+  margin: 0.5rem 1rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+}
+/* * input-text-m-2 */
+.input-text-m-2 {
+  max-width: 90%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0.5rem;
+  background-color: #212121;
+  color: #ccc;
+}
+.input-text-m-2 legend {
+  margin-left: 0.4rem;
+  padding: 0.1em 0.5rem;
+  color: var(--contentTextSecondary);
+  font-size: 0.7rem;
+}
+.input-text-m-2 input {
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  max-width: 92%;
+  margin: 0.3rem;
+  margin-top: -0.07rem;
+  padding: 0.3rem;
+  color: #ccc;
+}
+.input-text-m-2 input:focus {
+  outline: none;
+}
+/* * input-text-m-3 */
+.input-text-m-3 {
+  max-width: 90%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0.5rem;
+  background-color: #212121;
+  color: #ccc;
+}
+.input-text-m-3 legend {
+  margin-left: 0.4rem;
+  padding: 0.1em 0.5rem;
+  color: var(--contentTextSecondary);
+  background: var(--contentBgSecondary);
+  font-size: 0.7rem;
+  border: 1px solid;
+  border-radius: 0.3rem;
+}
+.input-text-m-3 input {
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  max-width: 92%;
+  margin: 0.3rem;
+  margin-top: -0.07rem;
+  padding: 0.3rem;
+  color: #ccc;
+}
+.input-text-m-3 input:focus {
+  outline: none;
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
 /* * chat-bubble-models */
 /* * chat-bubble-m-1-content */
 .chat-bubble-m-1-content {
@@ -1160,6 +1249,174 @@ body.triangle-experimental-model-2 .btn {
   bottom: auto;
   border: 22px solid;
   border-color: #212121 transparent transparent transparent;
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* * or models */
+/* * or-m-1 */
+.or-m-1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+.or-m-1 :nth-child(2) {
+  position: relative;
+  display: flex;
+  margin: 0 1rem;
+}
+.or-m-1 :nth-child(2) > span {
+  background: var(--contentBgPrimary);
+  padding: 1rem;
+  border: 0.2rem solid;
+  border-radius: 1rem;
+  margin: auto;
+}
+.or-m-1 :nth-child(2) > span::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: 0.13rem solid;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  .or-m-1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .or-m-1 :nth-child(2) {
+    margin: 1rem 0;
+  }
+  .or-m-1 :nth-child(2) > span::before {
+    width: 100%;
+    height: 0;
+  }
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* * Road map models */
+/* * road-map-m-1 */
+.road-map-m-1 {
+  position: relative;
+  margin: 2rem 3rem;
+  margin-left: 5rem;
+  background: var(--contentBgPrimary);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.road-map-m-1 h3 {
+  margin: 0.5rem 0;
+  border-bottom: 0.1rem solid;
+}
+.road-map-m-1::before {
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+  content: "";
+  border: 1rem solid;
+  border-radius: 1rem;
+}
+.road-map-m-1::after {
+  position: absolute;
+  top: 1.8rem;
+  left: -3.1rem;
+  content: "";
+  border-top: 0.2rem solid;
+  border-left: 0.2rem solid;
+  height: calc(100% + 1rem);
+  width: 2.9rem;
+}
+.road-map-m-1 ~ .road-map-m-1::after {
+  border-left: 0 solid;
+  width: 3.1rem;
+}
+.road-map-m-1 .road-map-icon-m-1 {
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--contentTextPrimary);
+  z-index: 1;
+}
+.road-map-m-1 .road-map-icon-m-1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0.2rem solid var(--contentTextPrimary);
+  border-radius: 0.5rem;
+}
+/* * road-map-unlimited-m-1 */
+.road-map-unlimited-m-1 {
+  position: relative;
+  margin: 2rem 3rem;
+  margin-left: 5rem;
+  background: var(--contentBgPrimary);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.road-map-unlimited-m-1 h3 {
+  margin: 0.5rem 0;
+  border-bottom: 0.1rem solid;
+}
+.road-map-unlimited-m-1::before {
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+  content: "";
+  border: 1rem solid;
+  border-radius: 1rem;
+}
+.road-map-unlimited-m-1::after {
+  position: absolute;
+  top: 1.8rem;
+  left: -3.1rem;
+  content: "";
+  border-top: 0.2rem solid;
+  border-left: 0.2rem solid;
+  height: calc(100% + 1rem);
+  width: 2.9rem;
+}
+.road-map-unlimited-m-1 ~ .road-map::after {
+  border-left: 0 solid;
+  width: 3.1rem;
+}
+.road-map-unlimited-m-1 .road-map-unlimited-icon-m-1 {
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--contentTextPrimary);
+  z-index: 1;
+}
+.road-map-unlimited-m-1 .road-map-unlimited-icon-m-1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0.2rem solid var(--contentTextPrimary);
+  border-radius: 0.5rem;
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */

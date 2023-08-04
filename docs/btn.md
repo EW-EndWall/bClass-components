@@ -2,9 +2,11 @@
 
 Button desing model.
 
+- .btn
+
 ## Model 1
 
-# btn
+### example
 
 ```html
 <button type="button" class="btn">Button</button>

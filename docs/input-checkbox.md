@@ -4,6 +4,8 @@
 
 - .input-checkbox-m-1
 
+### example
+
 ```html
 <div
   class="d-inline-flex p-0-5 m-1 border-radius-1"
@@ -32,6 +34,8 @@
 ## Model 2
 
 - .input-checkbox-m-2
+
+### example
 
 ```html
 <div
@@ -62,6 +66,8 @@
 
 - .input-checkbox-m-3
 
+### example
+
 ```html
 <div
   class="d-inline-flex p-0-5 m-1 border-radius-1"
@@ -90,6 +96,8 @@
 ## Model 4
 
 - .input-checkbox-m-4
+
+### example
 
 ```html
 <div

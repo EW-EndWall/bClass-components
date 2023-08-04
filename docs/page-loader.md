@@ -4,6 +4,10 @@ Page load animation, design components.
 
 ## Model 1
 
+- .page-loader-model-1
+
+### example
+
 ```html
 <div id="page-loader" class="page-loader-model-1">
   <img src="./loader/1.png" alt="page-loader" />

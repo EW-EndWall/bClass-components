@@ -4,7 +4,9 @@ Hr tag models.
 
 ## Model 1
 
-# footer-model-1
+- footer-model-1
+
+### example
 
 ```html
 <footer>
@@ -47,7 +49,9 @@ Hr tag models.
 
 ## Model 2
 
-# footer-model-2
+- footer-model-2
+
+### example
 
 ```html
 <footer>
