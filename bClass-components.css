@@ -630,7 +630,7 @@ ul.ul-li-x {
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin: 1rem;
+  margin: 0;
 }
 ul.ul-li-x li::before {
   content: "—";
@@ -645,7 +645,7 @@ ul.ul-li-y {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 1rem;
+  margin: 0;
 }
 ul.ul-li-y li::before {
   content: "—";
@@ -696,7 +696,7 @@ ul.ul-li-x-none {
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin: 1rem;
+  margin: 0;
 }
 ul.ul-li-x-none li {
   padding: 0 0.5rem;
@@ -707,7 +707,7 @@ ul.ul-li-y-none {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 1rem;
+  margin: 0;
 }
 ul.ul-li-y-none li {
   padding: 0.5rem 0;
@@ -754,7 +754,7 @@ ul.ul-li-y-scroll-hidden::-webkit-scrollbar {
 .x-list-m-1 {
   list-style: none;
   display: flex;
-  margin: 1rem;
+  margin: 0;
   padding: 0;
 }
 .x-list-m-1 li {
@@ -768,7 +768,7 @@ ul.ul-li-y-scroll-hidden::-webkit-scrollbar {
 .y-list-m-1 {
   list-style: none;
   display: flex;
-  margin: 1rem;
+  margin: 0;
   padding: 0;
 }
 .y-list-m-1 li {
@@ -1184,6 +1184,102 @@ body.triangle-experimental-model-2 .btn {
 .input-text-m-3 input:focus {
   outline: none;
 }
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* * details models */
+/* * details model 1 */
+.details-m-1 {
+  height: auto;
+  max-height: 1.5rem;
+  transition: all 0.5s ease;
+}
+.details-m-1[open] {
+  max-height: 99rem;
+  transition: all 1s ease;
+  border: 0.1rem solid;
+}
+.details-m-1 summary {
+  border-bottom: 0.1rem solid;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.details-m-1[open] summary {
+  border-bottom: 0.1rem solid;
+  margin-bottom: 0.8rem;
+}
+.details-m-1[open] summary ~ * {
+  margin-bottom: 0.8rem;
+}
+/* * details model 2 */
+.details-m-2 {
+  height: auto;
+  max-height: 1.5rem;
+  transition: all 0.5s ease;
+}
+.details-m-2[open] {
+  max-height: 99rem;
+  transition: all 1s ease;
+  border: 0.1rem solid;
+}
+.details-m-2 summary {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.details-m-2[open] summary {
+  border-bottom: 0.1rem solid;
+  margin-bottom: 0.8rem;
+}
+.details-m-2[open] summary ~ * {
+  margin-bottom: 0.8rem;
+}
+/* * details model 3 */
+.details-m-3 {
+  height: auto;
+  max-height: 1.5rem;
+  transition: all 0.5s ease;
+}
+.details-m-3[open] {
+  max-height: 99rem;
+  transition: all 1s ease;
+}
+.details-m-3 summary {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.details-m-3[open] summary {
+  border-bottom: 0.1rem solid;
+  margin-bottom: 0.8rem;
+}
+/* * details model 4 */
+.details-m-4 {
+  height: auto;
+  max-height: 2rem;
+  transition: all 0.5s ease;
+}
+.details-m-4[open] {
+  max-height: 99rem;
+  transition: all 1s ease;
+}
+.details-m-4 summary {
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 0.1rem solid;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
