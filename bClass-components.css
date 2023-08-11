@@ -443,6 +443,12 @@ body.triangle-experimental-model-3
   -o-transform: skewX(45deg);
 }
 /* * ---- */
+body.solid .content,
+body.triangle-experimental-model-1 .content,
+body.triangle-experimental-model-3 .content,
+body.solid .btn,
+body.triangle-experimental-model-1 .btn,
+body.triangle-experimental-model-3 .btn,
 body.solid .bclass,
 body.triangle-experimental-model-1 .bclass,
 body.triangle-experimental-model-3 .bclass {
@@ -453,6 +459,12 @@ body.triangle-experimental-model-3 .bclass {
   -o-border-radius: 0;
 }
 /* * ---- */
+body.edge .content,
+body.edged .content,
+body.triangle-experimental-model-2 .content,
+body.edge .btn,
+body.edged .btn,
+body.triangle-experimental-model-2 .btn,
 body.edge .bclass,
 body.edged .bclass,
 body.triangle-experimental-model-2 .bclass {
@@ -709,9 +721,6 @@ ul.ul-li-x-scroll {
 ul.ul-li-x-scroll::-webkit-scrollbar {
   height: 0.4rem;
 }
-ul.ul-li-x-scroll li {
-  padding: 1rem 0.5rem;
-}
 /* * ul.ul-li-y-scroll */
 ul.ul-li-y-scroll {
   width: 100%;
@@ -726,9 +735,6 @@ ul.ul-li-y-scroll {
 }
 ul.ul-li-y-scroll::-webkit-scrollbar {
   width: 0.4rem;
-}
-ul.ul-li-y-scroll > li {
-  padding: 0.5rem 1rem;
 }
 /* * ul.ul-li-x-none */
 ul.ul-li-x-none {
@@ -764,9 +770,6 @@ ul.ul-li-x-scroll-hidden {
   padding: 0;
   margin: 0;
 }
-ul.ul-li-x-scroll-hidden li {
-  padding: 1rem 0.5rem;
-}
 ul.ul-li-x-scroll-hidden::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -782,9 +785,6 @@ ul.ul-li-y-scroll-hidden {
   overflow-y: scroll;
   padding: 0;
   margin: 0;
-}
-ul.ul-li-y-scroll-hidden > li {
-  padding: 0.5rem 1rem;
 }
 ul.ul-li-y-scroll-hidden::-webkit-scrollbar {
   width: 0;
@@ -918,6 +918,8 @@ footer > .footer-model-2 > div > .social > a {
 /* ! ---------------------------------------------------------------------------------  */
 /* * btn */
 .btn {
+  background-color: var(--contentBgPrimary);
+  color: var(--contentTextPrimary);
   cursor: pointer;
   border: none;
   padding: 0.5rem;
@@ -925,10 +927,9 @@ footer > .footer-model-2 > div > .social > a {
   text-decoration: none;
   display: inline-block;
 }
-body.edge .btn,
-body.edged .btn,
-body.triangle-experimental-model-2 .btn {
-  border-radius: 0.5rem;
+.btn:hover {
+  background-color: var(--contentBgSecondary);
+  color: var(--contentTextSecondary);
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */

@@ -11,11 +11,7 @@ Button desing model.
 ```html
 <button type="button" class="btn">Button</button>
 <!-- or -->
-<button
-  type="button"
-  class="btn border-radius-0-5 opacity-soft-animation-half-infinite-1"
-  style="background:var(--contentBgPrimary)"
->
+<button type="button" class="btn opacity-soft-animation-half-infinite-1">
   Button
 </button>
 ```
