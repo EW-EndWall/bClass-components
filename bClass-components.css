@@ -1385,21 +1385,13 @@ footer > .footer-model-2 > div > .social > a {
   width: 100%;
   height: 100%;
   flex-direction: row;
+  position: relative;
 }
 .or-m-1 :nth-child(2) {
-  position: relative;
   display: flex;
   margin: 0 1rem;
 }
-.or-m-1 :nth-child(2) > span {
-  background: var(--contentBgPrimary);
-  padding: 1rem;
-  border: 0.2rem solid;
-  border-radius: 1rem;
-  margin: auto;
-}
-.or-m-1 :nth-child(2) > span::before {
-  z-index: -1;
+.or-m-1 :nth-child(2)::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1409,6 +1401,13 @@ footer > .footer-model-2 > div > .social > a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.or-m-1 :nth-child(2) > span {
+  background: var(--contentBgPrimary);
+  padding: 1rem;
+  border: 0.2rem solid;
+  margin: auto;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .or-m-1 {
@@ -1420,7 +1419,7 @@ footer > .footer-model-2 > div > .social > a {
   .or-m-1 :nth-child(2) {
     margin: 1rem 0;
   }
-  .or-m-1 :nth-child(2) > span::before {
+  .or-m-1 :nth-child(2)::before {
     width: 100%;
     height: 0;
   }
