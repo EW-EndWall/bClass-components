@@ -53,4 +53,15 @@
     checkCookiesConfirmation();
   });
   // * -----------------------------------------------------
+  // * input-sellect
+  $(".input-sellect-m-1").click(function (event) {
+    // * Scroll to the top
+    $(this).find("ul").scrollTop(0);
+    // * close others
+    $(".input-sellect-m-1").not(this).removeAttr("open");
+  });
+  // * ul click close
+  $(".input-sellect-m-1 ul").click(function (event) {
+    $(this).closest(".input-sellect-m-1").removeAttr("open");
+  });
 })();

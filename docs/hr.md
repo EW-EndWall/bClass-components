@@ -1,28 +1,7 @@
-## Hr
+## Hr models
 
-Hr tag models.
-
-## Model 1
-
-- hr-line-model-1
+- hr-line-m-1
 
 ### example
 
-```html
-<hr class="hr-line-model-1" />
-```
-
-## Requirements
-
-# CSS
-
-```html
-<link
-  rel="stylesheet"
-  href="https://github.endwall.pw/library/bClass/bClass-components/bClass-components.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://github.endwall.pw/library/bClass/bClass-theme-colors/bClass-theme-colors.css"
-/>
-```
+[codepen live example](https://codepen.io/Endwall/pen/poQMvPK)

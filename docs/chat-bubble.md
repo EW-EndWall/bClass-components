@@ -1,8 +1,7 @@
-# Chat bubble
+# Chat bubble models
 
-- .chat-bubble-m-1-content
-- .chat-bubble-m-1-left
-- .chat-bubble-m-1-right
+- .chat-bubble-l-m-1
+- .chat-bubble-r-m-1
 
 ## example
 
