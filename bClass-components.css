@@ -508,11 +508,11 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 [data-title-bottom]:hover:after {
   position: absolute;
   left: 50%;
-  bottom: -2.3rem;
+  top: 100%;
   padding: 0.5rem 1rem;
   background-color: var(--contentBgSecondary);
   color: var(--contentTextSecondary);
-  font-size: 15px;
+  font-size: 1rem;
   white-space: nowrap;
   z-index: 1;
   visibility: hidden;
@@ -532,11 +532,10 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   content: "";
   z-index: 1;
   position: absolute;
-  bottom: 0.2rem;
+  top: calc(100% - 0.5rem);
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
+  margin-left: -0.3rem;
+  border: 0.3rem solid;
   border-color: transparent transparent var(--contentBgSecondary) transparent;
 }
 [data-title]:hover:after,
@@ -553,11 +552,11 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   content: attr(data-title-top);
   position: absolute;
   left: 50%;
-  top: -2.3rem;
+  bottom: 100%;
   padding: 0.5rem 1rem;
   background-color: var(--contentBgSecondary);
   color: var(--contentTextSecondary);
-  font-size: 15px;
+  font-size: 1rem;
   white-space: nowrap;
   z-index: 1;
   visibility: hidden;
@@ -576,11 +575,10 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   content: "";
   z-index: 1;
   position: absolute;
-  top: 0.2rem;
+  bottom: calc(100% - 0.5rem);
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
+  margin-left: -0.3rem;
+  border: 0.3rem solid;
   border-color: var(--contentBgSecondary) transparent transparent transparent;
 }
 [data-title-top]:hover:after {
@@ -595,12 +593,12 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 [data-title-left]:hover:after {
   content: attr(data-title-left);
   position: absolute;
-  left: 99%;
+  left: 100%;
   top: 50%;
   padding: 0.5rem 1rem;
   background-color: var(--contentBgSecondary);
   color: var(--contentTextSecondary);
-  font-size: 15px;
+  font-size: 1rem;
   white-space: nowrap;
   z-index: 1;
   visibility: hidden;
@@ -620,10 +618,8 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   z-index: 1;
   position: absolute;
   top: 50%;
-  left: 100%;
-  margin-left: -1.4rem;
-  border-width: 5px;
-  border-style: solid;
+  left: calc(100% - 0.5rem);
+  border: 0.3rem solid;
   border-color: transparent var(--contentBgSecondary) transparent transparent;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -643,12 +639,12 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 [data-title-right]:hover:after {
   content: attr(data-title-right);
   position: absolute;
-  right: 99%;
+  right: 100%;
   top: 50%;
   padding: 0.5rem 1rem;
   background-color: var(--contentBgSecondary);
   color: var(--contentTextSecondary);
-  font-size: 15px;
+  font-size: 1rem;
   white-space: nowrap;
   z-index: 1;
   visibility: hidden;
@@ -669,10 +665,8 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
-  right: 100%;
-  margin-right: -1.4rem;
-  border-width: 5px;
-  border-style: solid;
+  right: calc(100% - 0.5rem);
+  border: 0.3rem solid;
   border-color: transparent transparent transparent var(--contentBgSecondary);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -1332,96 +1326,24 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* * details models */
-/* * details model 1 */
+/* * model 1 */
 .details-m-1 {
-  height: auto;
-  max-height: 1.5rem;
+  background-color: var(--contentBgPrimary);
   transition: all 0.5s ease;
 }
 .details-m-1[open] {
-  max-height: 99rem;
+  background-color: var(--contentBgSecondary);
   transition: all 1s ease;
-  border: 0.1rem solid;
 }
 .details-m-1 summary {
-  border-bottom: 0.1rem solid;
-  font-weight: bold;
   cursor: pointer;
-  margin-bottom: 0.5rem;
   font-weight: bold;
   padding: 0.5rem;
+  transition: all 0.5s ease;
 }
 .details-m-1[open] summary {
-  border-bottom: 0.1rem solid;
-  margin-bottom: 0.8rem;
-}
-.details-m-1[open] summary ~ * {
-  margin-bottom: 0.8rem;
-}
-/* * details model 2 */
-.details-m-2 {
-  height: auto;
-  max-height: 1.5rem;
-  transition: all 0.5s ease;
-}
-.details-m-2[open] {
-  max-height: 99rem;
-  transition: all 1s ease;
-  border: 0.1rem solid;
-}
-.details-m-2 summary {
-  font-weight: bold;
-  cursor: pointer;
   margin-bottom: 0.5rem;
-  font-weight: bold;
-  padding: 0.5rem;
 }
-.details-m-2[open] summary {
-  border-bottom: 0.1rem solid;
-  margin-bottom: 0.8rem;
-}
-.details-m-2[open] summary ~ * {
-  margin-bottom: 0.8rem;
-}
-/* * details model 3 */
-.details-m-3 {
-  height: auto;
-  max-height: 1.5rem;
-  transition: all 0.5s ease;
-}
-.details-m-3[open] {
-  max-height: 99rem;
-  transition: all 1s ease;
-}
-.details-m-3 summary {
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-  padding: 0.5rem;
-}
-.details-m-3[open] summary {
-  border-bottom: 0.1rem solid;
-  margin-bottom: 0.8rem;
-}
-/* * details model 4 */
-.details-m-4 {
-  height: auto;
-  max-height: 2rem;
-  transition: all 0.5s ease;
-}
-.details-m-4[open] {
-  max-height: 99rem;
-  transition: all 1s ease;
-}
-.details-m-4 summary {
-  font-weight: bold;
-  cursor: pointer;
-  border-bottom: 0.1rem solid;
-  font-weight: bold;
-  padding: 0.5rem;
-}
-
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
@@ -1431,7 +1353,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * chat-bubble-l-m-1 */
 .chat-bubble-l-m-1 {
   background: var(--contentBgPrimary);
-  margin: 1rem 2rem;
+  margin: 1rem 0;
   margin-right: 10%;
   padding: 0.5rem 1rem;
   border-radius: 0 1rem 1rem 1rem;
@@ -1452,7 +1374,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * chat-bubble-m-1-r */
 .chat-bubble-r-m-1 {
   background: var(--contentBgPrimary);
-  margin: 1rem 0rem;
+  margin: 1rem 0;
   margin-left: 10%;
   padding: 0.5rem 1rem;
   border-radius: 1rem 0 1rem 1rem;
