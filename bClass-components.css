@@ -1323,13 +1323,22 @@ footer > .footer-model-2 > div > .social > a {
   width: 100%;
 }
 /* * icon */
-.input-sellect-m:has(select.d-none) span::after {
+.input-sellect-m-1:has(select.d-none) span::after {
   transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 .input-sellect-m-1 span::after {
   content: "⮟";
   float: right;
+  margin-left: auto;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 .input-sellect-m-1 option {
   -webkit-appearance: none;
@@ -1344,7 +1353,7 @@ option:checked {
   color: var(--contentTextSecondary);
   background-color: var(--contentBgSecondary);
   /* bg color bug fix */
-  box-shadow: 0 0 10px 100px var(--contentBgSecondary) inset;
+  box-shadow: 0 0 10rem 100rem var(--contentBgSecondary) inset;
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
@@ -1377,7 +1386,7 @@ option:checked {
 /*  */
 .fieldset-m-2 legend {
   background: var(--contentBgSecondary);
-  border: 1px solid;
+  border: 0.1rem solid;
 }
 .fieldset-m-1 input[type="text"],
 .fieldset-m-2 input[type="text"] {
