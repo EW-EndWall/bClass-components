@@ -54,14 +54,47 @@
   });
   // * -----------------------------------------------------
   // * input-sellect
-  $(".input-sellect-m-1").click(function (event) {
-    // * Scroll to the top
-    $(this).find("ul").scrollTop(0);
-    // * close others
-    $(".input-sellect-m-1").not(this).removeAttr("open");
+  // * .input-sellect-m-1 selected bug fix
+  if ($(".input-sellect-m-1").length > 0) {
+    $(".input-sellect-m-1 select").each(function () {
+      const selectElement = $(this);
+      let selectElements = selectElement
+        .find("option:selected")
+        .map(function () {
+          return $(this).text();
+        })
+        .get()
+        .join(", ");
+      selectElement.siblings("span").text(selectElements);
+    });
+  }
+  // * .input-sellect-m-1 open
+  $(".input-sellect-m-1").click(function () {
+    if (!$(event.target).is("select")) {
+      $(this).find("select").slideToggle().toggleClass("d-none");
+      // * close others
+      $(".input-sellect-m-1")
+        .not(this)
+        .find("select")
+        .slideUp()
+        .addClass("d-none");
+      // * close all
+      $(document).on("click.input-sellect-m-1", function (e) {
+        const target = $(e.target);
+        if (!target.closest(".input-sellect-m-1").length) {
+          $(".input-sellect-m-1").find("select").addClass("d-none");
+          $(document).off("click.input-sellect-m-1");
+        }
+      });
+      const selectedOptions = $(this)
+        .find("option:selected")
+        .map(function () {
+          return $(this).text();
+        })
+        .get()
+        .join(", ");
+      $(this).find("span").text(selectedOptions);
+    }
   });
-  // * ul click close
-  $(".input-sellect-m-1 ul").click(function (event) {
-    $(this).closest(".input-sellect-m-1").removeAttr("open");
-  });
+  // * -----------------------------------------------------
 })();
