@@ -1,11 +1,5 @@
 ## Default Settings
 
-```css
-footer hr {
-  border-color: var(--contentBgSecondary);
-}
-```
-
 # Js
 
 ### check coockie

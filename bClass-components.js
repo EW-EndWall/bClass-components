@@ -82,7 +82,7 @@
       $(document).on("click.input-sellect-m-1", function (e) {
         const target = $(e.target);
         if (!target.closest(".input-sellect-m-1").length) {
-          $(".input-sellect-m-1").find("select").addClass("d-none");
+          $(".input-sellect-m-1").find("select").slideUp().addClass("d-none");
           $(document).off("click.input-sellect-m-1");
         }
       });
@@ -94,6 +94,35 @@
         .get()
         .join(", ");
       $(this).find("span").text(selectedOptions);
+    }
+  });
+  // * .input-sellect-m-1 option search
+  $(".input-sellect-m-1 input").keyup(function () {
+    const searchText = $(this).val().toLowerCase();
+    const select = $(this).siblings("select");
+    const options = select.find("option");
+    const span = $(".input-sellect-m-1 span");
+
+    options.each(function () {
+      const option = $(this);
+      const optionText = option.text().toLowerCase();
+
+      if (optionText.includes(searchText)) {
+        option.show();
+      } else {
+        option.hide();
+      }
+    });
+    if (searchText === "") {
+      select.addClass("d-none");
+    } else {
+      select.removeClass("d-none");
+    }
+  });
+  $(".input-sellect-m-1").click(function () {
+    if (!$(event.target).is("select") && $(this).find("input").length > 0) {
+      let selectedOptions = $(this).find("option:selected").text().trim();
+      if (selectedOptions) $(this).find("input").val(selectedOptions);
     }
   });
   // * -----------------------------------------------------

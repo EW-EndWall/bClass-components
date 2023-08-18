@@ -838,88 +838,7 @@ ul.ul-li-y-line-list li:last-child {
     transparent
   );
 }
-/* * languagesselect */
-.languages-select {
-  background-color: transparent;
-  color: var(--contentTextPrimary);
-  margin: 1rem auto;
-  width: auto;
-  min-width: 10rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  outline: none;
-  letter-spacing: 0.1rem;
-  border: none;
-  line-height: 2rem;
-  padding: 0.2rem;
-}
 /* --------------------- */
-footer hr {
-  border-color: var(--contentBgSecondary);
-}
-/* * footer-model-1 */
-footer > .footer-model-1 {
-  background-color: var(--footerBg);
-  color: var(--contentTextPrimary);
-  padding: 1rem;
-  text-align: center;
-  text-transform: capitalize;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer > .footer-model-1 > div > ul {
-  text-transform: uppercase;
-  font-weight: bold;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0.2rem auto;
-  padding: 0;
-  font-size: 0.5rem;
-}
-footer > .footer-model-1 > div > ul > li {
-  background-color: var(--footerBg);
-  color: var(--contentTextPrimary);
-  padding: 0 0.5em;
-  border-right: 0.1em solid;
-}
-footer > .footer-model-1 > div > ul > li:last-child {
-  border-right: 0;
-}
-footer > .footer-model-1 > h5,
-footer > .footer-model-1 > h6 {
-  margin: 0.3rem;
-}
-/* * footer-model-2 */
-footer > .footer-model-2 {
-  background-color: var(--footerBg);
-  color: var(--contentTextPrimary);
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 1rem;
-}
-footer > .footer-model-2 > div > h3 {
-  margin: 1em 0 0 0;
-  text-transform: uppercase;
-}
-footer > .footer-model-2 > div > hr {
-  margin: 1rem 0;
-}
-footer > .footer-model-2 > div > .social,
-footer > .footer-model-2 > div > .logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-footer > .footer-model-2 > div > .social > a {
-  margin: 0.5rem;
-}
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
@@ -1235,7 +1154,7 @@ footer > .footer-model-2 > div > .social > a {
 }
 .input-radio-m-1:checked + span {
   background-color: var(--contentBgPrimary);
-  color: var(--contentTextPrimary);
+  color: var(--contentTextSecondary);
 }
 .input-radio-m-1:checked + span:before {
   background-color: var(--contentBgPrimary);
@@ -1276,7 +1195,7 @@ footer > .footer-model-2 > div > .social > a {
   color: var(--contentTextSecondary);
 }
 .input-radio-m-2:checked + span:before {
-  color: var(--contentTextPrimary);
+  color: var(--contentTextSecondary);
   background-color: var(--contentBgPrimary);
   box-shadow: inset 0 0 0 0.4rem var(--contentBgSecondary);
 }
@@ -1314,11 +1233,13 @@ footer > .footer-model-2 > div > .social > a {
 .input-sellect-m-1 {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .input-sellect-m-1 span {
   background-color: var(--contentBgPrimary);
 }
 .input-sellect-m-1 select {
+  background-color: var(--contentBgPrimary);
   z-index: 1;
   width: 100%;
 }
