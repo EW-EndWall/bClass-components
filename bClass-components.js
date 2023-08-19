@@ -69,7 +69,7 @@
     });
   }
   // * .input-sellect-m-1 open
-  $(".input-sellect-m-1").click(function () {
+  $(".input-sellect-m-1").on("click", function () {
     if (!$(event.target).is("select")) {
       $(this).find("select").slideToggle().toggleClass("d-none");
       // * close others
@@ -97,7 +97,7 @@
     }
   });
   // * .input-sellect-m-1 option search
-  $(".input-sellect-m-1 input").keyup(function () {
+  $(".input-sellect-m-1 input").on("keyup", function () {
     const searchText = $(this).val().toLowerCase();
     const select = $(this).siblings("select");
     const options = select.find("option");
@@ -119,7 +119,7 @@
       select.removeClass("d-none");
     }
   });
-  $(".input-sellect-m-1").click(function () {
+  $(".input-sellect-m-1").on("click", function () {
     if (!$(event.target).is("select") && $(this).find("input").length > 0) {
       let selectedOptions = $(this).find("option:selected").text().trim();
       if (selectedOptions) $(this).find("input").val(selectedOptions);

@@ -923,6 +923,7 @@ ul.ul-li-y-line-list li:last-child {
 }
 .input-checkbox-m-1:has(input:checked) {
   color: var(--contentTextSecondary);
+  border-color: var(--contentTextSecondary);
 }
 .input-checkbox-m-1 input:checked::before {
   content: "";
@@ -964,6 +965,7 @@ ul.ul-li-y-line-list li:last-child {
 }
 .input-checkbox-m-2:has(input:checked) {
   color: var(--contentTextSecondary);
+  border-color: var(--contentTextSecondary);
 }
 .input-checkbox-m-2 input:checked::before {
   content: "";
@@ -1008,6 +1010,7 @@ ul.ul-li-y-line-list li:last-child {
 }
 .input-checkbox-m-3:has(input:checked) {
   color: var(--contentTextSecondary);
+  border-color: var(--contentTextSecondary);
 }
 .input-checkbox-m-3 input:checked::before {
   content: "\2A2F";
@@ -1045,6 +1048,7 @@ ul.ul-li-y-line-list li:last-child {
 }
 .input-checkbox-m-4:has(input:checked) {
   color: var(--contentTextSecondary);
+  border-color: var(--contentTextSecondary);
 }
 .input-checkbox-m-4 input:checked::before {
   content: "\f00c";
