@@ -26,6 +26,7 @@
 - [hr](./hr.md)
 - [input-checkbox](./input-checkbox.md)
 - [input-radio](./input-radio.md)
+- [input-range](./input-range.md)
 - [input-sellect](./input-sellect.md)
 - [input-text](./input-text.md)
 - [model-line](./model-line.md)
