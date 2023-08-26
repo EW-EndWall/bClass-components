@@ -911,6 +911,7 @@ ul.ul-li-y-line-list li:last-child {
   -webkit-appearance: none;
   -moz-appearance: none;
   position: relative;
+  cursor: pointer;
   width: 1.5rem;
   height: 1.5rem;
   outline: none;
@@ -924,7 +925,7 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-1:hover,
 .input-checkbox-m-1:has(input:checked) {
   color: var(--contentTextSecondary);
-  border-color: var(--contentTextSecondary);
+  border-color: var(--contentTextSecondary) !important;
 }
 .input-checkbox-m-1 input:checked::before {
   content: "";
@@ -966,7 +967,7 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-2:hover,
 .input-checkbox-m-2:has(input:checked) {
   color: var(--contentTextSecondary);
-  border-color: var(--contentTextSecondary);
+  border-color: var(--contentTextSecondary) !important;
 }
 .input-checkbox-m-2 input:checked::before {
   content: "";
@@ -997,6 +998,7 @@ ul.ul-li-y-line-list li:last-child {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  cursor: pointer;
   position: relative;
   width: 1.5rem;
   height: 1.5rem;
@@ -1011,7 +1013,7 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-3:hover,
 .input-checkbox-m-3:has(input:checked) {
   color: var(--contentTextSecondary);
-  border-color: var(--contentTextSecondary);
+  border-color: var(--contentTextSecondary) !important;
 }
 .input-checkbox-m-3 input:checked::before {
   content: "\2A2F";
@@ -1035,6 +1037,7 @@ ul.ul-li-y-line-list li:last-child {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  cursor: pointer;
   position: relative;
   width: 1.5rem;
   height: 1.5rem;
@@ -1049,7 +1052,7 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-4:hover,
 .input-checkbox-m-4:has(input:checked) {
   color: var(--contentTextSecondary);
-  border-color: var(--contentTextSecondary);
+  border-color: var(--contentTextSecondary) !important;
 }
 .input-checkbox-m-4 input:checked::before {
   content: "\f00c";
@@ -1069,14 +1072,14 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-5 {
   display: inline-flex;
   cursor: pointer;
-  border-color: var(--contentBgSecondary);
+  border-color: var(--contentBgSecondary) !important;
 }
 .input-checkbox-m-5 input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: relative;
   cursor: pointer;
+  position: relative;
   outline: none;
   width: 2.5rem;
   height: 1rem;
@@ -1110,14 +1113,14 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-6 {
   display: inline-flex;
   cursor: pointer;
-  border-color: var(--contentBgSecondary);
+  border-color: var(--contentBgSecondary) !important;
 }
 .input-checkbox-m-6 input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: relative;
   cursor: pointer;
+  position: relative;
   outline: none;
   width: 2rem;
   height: 1rem;
