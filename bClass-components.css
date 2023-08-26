@@ -904,7 +904,6 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-1 {
   display: inline-flex;
   cursor: pointer;
-  background-color: var(--contentBgPrimary);
   padding: 0.5rem;
 }
 .input-checkbox-m-1 input {
@@ -922,6 +921,7 @@ ul.ul-li-y-line-list li:last-child {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
+.input-checkbox-m-1:hover,
 .input-checkbox-m-1:has(input:checked) {
   color: var(--contentTextSecondary);
   border-color: var(--contentTextSecondary);
@@ -945,7 +945,6 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-2 {
   display: inline-flex;
   cursor: pointer;
-  background-color: var(--contentBgPrimary);
   padding: 0.5rem;
 }
 .input-checkbox-m-2 input {
@@ -964,6 +963,7 @@ ul.ul-li-y-line-list li:last-child {
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
 }
+.input-checkbox-m-2:hover,
 .input-checkbox-m-2:has(input:checked) {
   color: var(--contentTextSecondary);
   border-color: var(--contentTextSecondary);
@@ -991,7 +991,6 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-3 {
   display: inline-flex;
   cursor: pointer;
-  background-color: var(--contentBgPrimary);
   padding: 0.5rem;
 }
 .input-checkbox-m-3 input {
@@ -1009,6 +1008,7 @@ ul.ul-li-y-line-list li:last-child {
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
 }
+.input-checkbox-m-3:hover,
 .input-checkbox-m-3:has(input:checked) {
   color: var(--contentTextSecondary);
   border-color: var(--contentTextSecondary);
@@ -1029,7 +1029,6 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-4 {
   display: inline-flex;
   cursor: pointer;
-  background-color: var(--contentBgPrimary);
   padding: 0.5rem;
 }
 .input-checkbox-m-4 input {
@@ -1047,6 +1046,7 @@ ul.ul-li-y-line-list li:last-child {
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
 }
+.input-checkbox-m-4:hover,
 .input-checkbox-m-4:has(input:checked) {
   color: var(--contentTextSecondary);
   border-color: var(--contentTextSecondary);
@@ -1069,8 +1069,7 @@ ul.ul-li-y-line-list li:last-child {
 .input-checkbox-m-5 {
   display: inline-flex;
   cursor: pointer;
-  background-color: var(--contentBgPrimary);
-  padding: 0.5rem;
+  border-color: var(--contentBgSecondary);
 }
 .input-checkbox-m-5 input {
   -webkit-appearance: none;
@@ -1079,15 +1078,10 @@ ul.ul-li-y-line-list li:last-child {
   position: relative;
   cursor: pointer;
   outline: none;
-  width: 3rem;
-  height: 2rem;
-  border: 0.5rem solid var(--contentBgSecondary);
+  width: 2.5rem;
+  height: 1rem;
   background-color: var(--contentBg);
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
+  overflow: hidden;
 }
 .input-checkbox-m-5 input:before {
   content: "";
@@ -1110,14 +1104,13 @@ ul.ul-li-y-line-list li:last-child {
 }
 .input-checkbox-m-5 input:checked:before {
   margin-right: 0;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 /* * input checkbox model 6 */
 .input-checkbox-m-6 {
   display: inline-flex;
   cursor: pointer;
-  background-color: var(--contentBgPrimary);
-  padding: 0.5rem;
+  border-color: var(--contentBgSecondary);
 }
 .input-checkbox-m-6 input {
   -webkit-appearance: none;
@@ -1126,9 +1119,8 @@ ul.ul-li-y-line-list li:last-child {
   position: relative;
   cursor: pointer;
   outline: none;
-  width: 3rem;
-  height: 2rem;
-  border: 0.5rem solid var(--contentBgSecondary);
+  width: 2rem;
+  height: 1rem;
   background-color: var(--contentBg);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -1155,52 +1147,6 @@ ul.ul-li-y-line-list li:last-child {
   -o-transition: all 0.5s ease;
 }
 .input-checkbox-m-6 input:checked:before {
-  margin-right: 0;
-  margin-left: 1rem;
-}
-/* * input checkbox model 7 */
-.input-checkbox-m-7 {
-  display: inline-flex;
-  cursor: pointer;
-  background-color: var(--contentBgPrimary);
-  padding: 0.5rem;
-}
-.input-checkbox-m-7 input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  width: 2rem;
-  height: 1.2rem;
-  border: 0.1rem solid var(--contentBgSecondary);
-  background-color: var(--contentBg);
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-}
-.input-checkbox-m-7 input:before {
-  content: "";
-  display: block;
-  width: 1rem;
-  height: 100%;
-  background-color: var(--contentTextPrimary);
-  margin-right: auto;
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
-.input-checkbox-m-7 input:checked:before {
   margin-right: 0;
   margin-left: 1rem;
 }
