@@ -1488,19 +1488,15 @@ option:checked {
 /* * input-range models */
 /* * .input-range-m-1 */
 .input-range-m-1 {
-  font-size: 1.5rem;
-  --thumb-height: 1.125rem;
+  --thumb-height: 0.8rem;
   --track-height: 0.25rem;
-  --track-color: rgba(0, 0, 0, 0.2);
   --brightness-down: 80%;
-  --clip-edges: 0.125em;
+  --clip-edges: 0.125rem;
+  --track-color: rgba(0, 0, 0, 0.2);
   color: var(--contentTextPrimary);
-  --track-color: rgba(255, 255, 255, 0.1);
   background: transparent;
   overflow: hidden;
-}
-.input-range-m-1:active {
-  cursor: grabbing;
+  cursor: pointer;
 }
 .input-range-m-1:disabled {
   filter: grayscale(1);
@@ -1543,13 +1539,8 @@ option:checked {
     var(--clip-further) var(--clip-further)
   );
 }
-.input-range-m-1:hover::-webkit-slider-thumb {
-  color: var(--contentTextSecondary);
-  cursor: grab;
-}
 .input-range-m-1:active::-webkit-slider-thumb {
   filter: brightness(var(--brightness-down));
-  cursor: grabbing;
 }
 .input-range-m-1::-webkit-slider-runnable-track {
   background: linear-gradient(var(--track-color) 0 0) no-repeat center/100%
@@ -1562,20 +1553,11 @@ option:checked {
   transition: all ease 100ms;
   height: var(--thumb-height);
 }
-.input-range-m-1::-moz-range-progress,
-.input-range-m-1::-moz-range-thumb,
-.input-range-m-1::-moz-range-track {
-  background: #fff0;
-}
 .input-range-m-1::-moz-range-thumb {
   background: currentColor;
   border: 0;
   width: var(--thumb-width, var(--thumb-height));
   border-radius: var(--thumb-width, var(--thumb-height));
-  cursor: grab;
-}
-.input-range-m-1:active::-moz-range-thumb {
-  cursor: grabbing;
 }
 .input-range-m-1::-moz-range-track {
   width: 100%;
