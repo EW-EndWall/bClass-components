@@ -849,7 +849,7 @@ ul.ul-li-y-line-list {
   padding: 0;
 }
 ul.ul-li-y-line-list li {
-  padding: 0 0.5rem;
+  padding: 0.5rem;
   border-bottom: 0.1rem solid;
 }
 ul.ul-li-y-line-list li:last-child {
@@ -923,6 +923,14 @@ ul.ul-li-y-line-list li:last-child {
   cursor: pointer;
   padding: 0.5rem;
 }
+.input-checkbox-m-1,
+.input-checkbox-m-1 input::before {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
 .input-checkbox-m-1 input {
   appearance: none;
   -webkit-appearance: none;
@@ -964,6 +972,14 @@ ul.ul-li-y-line-list li:last-child {
   display: inline-flex;
   cursor: pointer;
   padding: 0.5rem;
+}
+.input-checkbox-m-2,
+.input-checkbox-m-2 input::before {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 .input-checkbox-m-2 input {
   appearance: none;
@@ -1011,6 +1027,14 @@ ul.ul-li-y-line-list li:last-child {
   cursor: pointer;
   padding: 0.5rem;
 }
+.input-checkbox-m-3,
+.input-checkbox-m-3 input::before {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
 .input-checkbox-m-3 input {
   appearance: none;
   -webkit-appearance: none;
@@ -1049,6 +1073,14 @@ ul.ul-li-y-line-list li:last-child {
   display: inline-flex;
   cursor: pointer;
   padding: 0.5rem;
+}
+.input-checkbox-m-4,
+.input-checkbox-m-4 input::before {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 .input-checkbox-m-4 input {
   appearance: none;
