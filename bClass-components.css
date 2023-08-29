@@ -443,9 +443,15 @@ body.triangle-experimental-model-3
   -o-transform: skewX(45deg);
 }
 /* * ---- */
-body.solid .content,
-body.triangle-experimental-model-1 .content,
-body.triangle-experimental-model-3 .content,
+body.solid .content-1,
+body.triangle-experimental-model-1 .content-1,
+body.triangle-experimental-model-3 .content-1,
+body.solid .content-2,
+body.triangle-experimental-model-1 .content-2,
+body.triangle-experimental-model-3 .content-2,
+body.solid .content-3,
+body.triangle-experimental-model-1 .content-3,
+body.triangle-experimental-model-3 .content-3,
 body.solid .btn,
 body.triangle-experimental-model-1 .btn,
 body.triangle-experimental-model-3 .btn,
@@ -459,9 +465,15 @@ body.triangle-experimental-model-3 .bclass {
   -o-border-radius: 0;
 }
 /* * ---- */
-body.edge .content,
-body.edged .content,
-body.triangle-experimental-model-2 .content,
+body.edge .content-1,
+body.edged .content-1,
+body.triangle-experimental-model-2 .content-1,
+body.edge .content-2,
+body.edged .content-2,
+body.triangle-experimental-model-2 .content-2,
+body.edge .content-3,
+body.edged .content-3,
+body.triangle-experimental-model-2 .content-3,
 body.edge .btn,
 body.edged .btn,
 body.triangle-experimental-model-2 .btn,
