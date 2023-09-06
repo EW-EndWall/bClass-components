@@ -32,5 +32,6 @@
 - [model-line](./model-line.md)
 - [or](./or.md)
 - [page-loader](./page-loader.md)
+- [arrow](./arrow.md)
 - [road-map](./road-map.md)
 - [ul-li-list](./ul-li-list.md)
