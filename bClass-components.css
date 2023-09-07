@@ -1914,7 +1914,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   float: left;
 }
-.arrow-right-static::before {
+.arrow-right-static::after {
   position: static;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
