@@ -717,8 +717,6 @@ ul.ul-li-x {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  padding: 0;
-  margin: 0;
 }
 ul.ul-li-x li::before {
   content: "—";
@@ -732,8 +730,6 @@ ul.ul-li-y {
   list-style: none;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
 }
 ul.ul-li-y li::before {
   content: "—";
@@ -751,8 +747,6 @@ ul.ul-li-x-scroll {
   flex-direction: row;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 0;
-  margin: 0;
 }
 ul.ul-li-x-scroll::-webkit-scrollbar {
   height: 0.4rem;
@@ -766,8 +760,6 @@ ul.ul-li-y-scroll {
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: scroll;
-  padding: 0;
-  margin: 0;
 }
 ul.ul-li-y-scroll::-webkit-scrollbar {
   width: 0.4rem;
@@ -777,22 +769,12 @@ ul.ul-li-x-none {
   list-style: none;
   display: flex;
   flex-direction: row;
-  padding: 0;
-  margin: 0;
-}
-ul.ul-li-x-none li {
-  padding: 0 0.5rem;
 }
 /* * ul.ul-li-y-none */
 ul.ul-li-y-none {
   list-style: none;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-ul.ul-li-y-none li {
-  padding: 0.5rem 0;
 }
 /* * ul.ul-li-x-scroll-hidden */
 ul.ul-li-x-scroll-hidden {
@@ -803,8 +785,6 @@ ul.ul-li-x-scroll-hidden {
   flex-direction: row;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 0;
-  margin: 0;
 }
 ul.ul-li-x-scroll-hidden::-webkit-scrollbar {
   width: 0;
@@ -819,8 +799,6 @@ ul.ul-li-y-scroll-hidden {
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: scroll;
-  padding: 0;
-  margin: 0;
 }
 ul.ul-li-y-scroll-hidden::-webkit-scrollbar {
   width: 0;
@@ -830,8 +808,6 @@ ul.ul-li-y-scroll-hidden::-webkit-scrollbar {
 ul.ul-li-x-line-list {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 ul.ul-li-x-line-list li {
   padding: 0 0.5rem;
@@ -845,8 +821,6 @@ ul.ul-li-y-line-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 }
 ul.ul-li-y-line-list li {
   padding: 0.5rem;
