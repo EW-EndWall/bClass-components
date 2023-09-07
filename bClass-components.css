@@ -1905,7 +1905,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* ! ---------------------------------------------------------------------------------  */
 /* * arrow */
 .arrow-left-static::before {
-  position: static;
+  position: relative;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   content: "\f105";
@@ -1913,9 +1913,10 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   background: transparent;
   font-weight: 900;
   float: left;
+  margin-right: auto;
 }
 .arrow-right-static::after {
-  position: static;
+  position: relative;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   content: "\f105";
@@ -1923,6 +1924,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   background: transparent;
   font-weight: 900;
   float: right;
+  margin-left: auto;
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
