@@ -1878,19 +1878,38 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* * arrow */
-.arrow-left-static::before {
+.arrow-left-m-1-static::before {
   position: relative;
-  margin-left: 0.5rem;
+  padding-right: 0.5rem;
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
   margin-right: auto;
 }
-.arrow-right-static::after {
+.arrow-right-m-1-static::after {
   position: relative;
-  margin-right: 0.5rem;
+  padding-left: 0.5rem;
   content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  background: transparent;
+  font-weight: 900;
+  margin-left: auto;
+}
+/*  */
+.arrow-left-m-2-static::before {
+  position: relative;
+  padding-right: 0.5rem;
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  background: transparent;
+  font-weight: 900;
+  margin-right: auto;
+}
+.arrow-right-m-2-static::after {
+  position: relative;
+  padding-left: 0.5rem;
+  content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
