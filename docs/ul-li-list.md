@@ -12,6 +12,8 @@ Ul li is items lists.
 - ul.ul-li-y-scroll-hidden
 - ul.ul-li-x-line-list
 - ul.ul-li-y-line-list
+- ul.ul-li-x-line-list-a
+- ul.ul-li-y-line-list-a
 
 ## example
 

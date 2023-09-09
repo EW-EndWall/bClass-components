@@ -799,26 +799,32 @@ ul.ul-li-y-scroll-hidden::-webkit-scrollbar {
   height: 0;
 }
 /* * ul.ul-li-x-line-list */
-ul.ul-li-x-line-list {
+ul.ul-li-x-line-list,
+ul.ul-li-x-line-list-a {
   list-style: none;
   display: flex;
 }
-ul.ul-li-x-line-list > li {
+ul.ul-li-x-line-list > li,
+ul.ul-li-x-line-list-a > li > a {
   border-right: 0.1rem solid;
 }
-ul.ul-li-x-line-list > li:last-child {
+ul.ul-li-x-line-list > li:last-child,
+ul.ul-li-x-line-list-a > li:last-child > a {
   border-right: 0;
 }
 /* * ul.ul-li-y-line-list*/
-ul.ul-li-y-line-list {
+ul.ul-li-y-line-list,
+ul.ul-li-y-line-list-a {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-ul.ul-li-y-line-list > li {
+ul.ul-li-y-line-list > li,
+ul.ul-li-y-line-list-a > li > a {
   border-bottom: 0.1rem solid;
 }
-ul.ul-li-y-line-list > li:last-child {
+ul.ul-li-y-line-list > li:last-child,
+ul.ul-li-y-line-list-a > li:last-child > a {
   border-bottom: 0;
 }
 /* * hr tag models */
