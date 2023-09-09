@@ -718,7 +718,7 @@ ul.ul-li-x {
   display: flex;
   flex-direction: row;
 }
-ul.ul-li-x li::before {
+ul.ul-li-x > li::before {
   content: "—";
   margin-right: 1rem;
 }
@@ -728,7 +728,7 @@ ul.ul-li-y {
   display: flex;
   flex-direction: column;
 }
-ul.ul-li-y li::before {
+ul.ul-li-y > li::before {
   content: "—";
   margin-right: 1rem;
 }
@@ -803,10 +803,10 @@ ul.ul-li-x-line-list {
   list-style: none;
   display: flex;
 }
-ul.ul-li-x-line-list li {
+ul.ul-li-x-line-list > li {
   border-right: 0.1rem solid;
 }
-ul.ul-li-x-line-list li:last-child {
+ul.ul-li-x-line-list > li:last-child {
   border-right: 0;
 }
 /* * ul.ul-li-y-line-list*/
@@ -815,10 +815,10 @@ ul.ul-li-y-line-list {
   display: flex;
   flex-direction: column;
 }
-ul.ul-li-y-line-list li {
+ul.ul-li-y-line-list > li {
   border-bottom: 0.1rem solid;
 }
-ul.ul-li-y-line-list li:last-child {
+ul.ul-li-y-line-list > li:last-child {
   border-bottom: 0;
 }
 /* * hr tag models */
