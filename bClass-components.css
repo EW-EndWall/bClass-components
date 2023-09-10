@@ -1971,12 +1971,15 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   display: flex;
   align-items: center;
 }
-.drop-menu-m-3-hover:hover .drop-menu-m-3-big-img,
+.drop-menu-m-3-show.drop-menu-m-3-menu .drop-menu-m-3-max,
+.drop-menu-m-3-hover:hover .drop-menu-m-3-max,
 .drop-menu-m-3-hover:hover > ul > li > a > div {
   display: block;
 }
-.drop-menu-m-3-hover:hover .drop-menu-m-3-small-img,
-.drop-menu-m-3-hover .drop-menu-m-3-big-img {
+.drop-menu-m-3-show.drop-menu-m-3-menu .drop-menu-m-3-min,
+.drop-menu-m-3-show .drop-menu-m-3-max,
+.drop-menu-m-3-hover:hover .drop-menu-m-3-min,
+.drop-menu-m-3-hover .drop-menu-m-3-max {
   display: none;
 }
 /* ! ---------------------------------------------------------------------------------  */
