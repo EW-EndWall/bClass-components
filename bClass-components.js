@@ -126,6 +126,7 @@
     }
   });
   // * -----------------------------------------------------
+  // * model 1
   // * if is any drop menu
   if ($(".drop-menu-m-1").length) {
     $(".drop-menu-m-1").find("ul").slice(1).hide();
@@ -136,11 +137,11 @@
       const clickedMenu = clickedBtn.siblings(".drop-menu-m-1");
       // * is open
       if (clickedMenu.is(":visible")) {
-        clickedMenu.slideUp(0);
+        clickedMenu.slideUp(150);
       } else {
-        $(".drop-menu-m-1").slideUp(0);
+        $(".drop-menu-m-1").slideUp(150);
         // * open menu restart
-        clickedMenu.slideDown(0, function () {
+        clickedMenu.slideDown(150, function () {
           clickedMenu.find("li").show().find("ul").hide();
         });
       }
@@ -168,5 +169,10 @@
       }
     });
   }
+  // * model 2
+  // * model 3
+  $(".drop-menu-m-3-show-btn").click(function (e) {
+    $(".drop-menu-m-3-show").toggleClass("drop-menu-m-3-menu");
+  });
   // * -----------------------------------------------------
 })();
