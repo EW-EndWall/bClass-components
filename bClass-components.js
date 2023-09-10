@@ -126,4 +126,47 @@
     }
   });
   // * -----------------------------------------------------
+  // * if is any drop menu
+  if ($(".drop-menu-m-1").length) {
+    $(".drop-menu-m-1").find("ul").slice(1).hide();
+    // * on clikc btn open drop menu
+    $(document).on("click", ".drop-menu-m-1-btn", function (e) {
+      e.stopPropagation();
+      const clickedBtn = $(this);
+      const clickedMenu = clickedBtn.siblings(".drop-menu-m-1");
+      // * is open
+      if (clickedMenu.is(":visible")) {
+        clickedMenu.slideUp(0);
+      } else {
+        $(".drop-menu-m-1").slideUp(0);
+        // * open menu restart
+        clickedMenu.slideDown(0, function () {
+          clickedMenu.find("li").show().find("ul").hide();
+        });
+      }
+      $(document).on("click.menu", function (e) {
+        const target = $(e.target);
+        if (
+          !target.closest(".drop-menu-m-1-btn").length &&
+          !target.closest(".drop-menu-m-1").length
+        ) {
+          $(".drop-menu-m-1").slideUp(0);
+          $(document).off("click.menu");
+        }
+      });
+    });
+    // * submenu navigation within the menu
+    $(document).on("click", ".drop-menu-m-1 li a", function (e) {
+      const item = $(this);
+      // * if sub menu is any
+      if (item.siblings("ul").length) {
+        item.parents("li:first").siblings("li").slideToggle();
+        item.closest("li").find("ul:first").slideToggle();
+        // * other sub menu hide
+        item.siblings("ul").find("ul").hide();
+        item.siblings("ul").find("li").show();
+      }
+    });
+  }
+  // * -----------------------------------------------------
 })();

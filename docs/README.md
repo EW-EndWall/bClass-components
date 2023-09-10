@@ -22,6 +22,7 @@
 - [cookies-confirmation](./cookies-confirmation.md)
 - [data-title](./data-title.md)
 - [details](./details.md)
+- [drop-menu](./drop-menu.md)
 - [fieldset](./fieldset.md)
 - [hr](./hr.md)
 - [input-checkbox](./input-checkbox.md)
