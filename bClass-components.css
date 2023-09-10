@@ -1918,6 +1918,182 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
+/* model 2 */
+.drop-down-m-2 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--headerBg);
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 3rem var(--plainBg);
+}
+.drop-down-m-2 a,
+.drop-down-m-2 i {
+  padding: 0.8em;
+  display: block;
+  text-decoration: none;
+}
+.drop-down-m-2 ul {
+  list-style: none;
+}
+.drop-down-m-2 ul:after {
+  clear: both;
+}
+.drop-down-m-2 ul li {
+  float: left;
+  margin: 0.5rem 0;
+  border-right: 0.1em solid;
+}
+.drop-down-m-2 ul li:last-child {
+  border-right: 0;
+}
+.drop-down-m-2 > ul > li {
+  position: relative;
+}
+.drop-down-m-2-sub ~ ul {
+  z-index: 1;
+  margin-top: 0.5rem;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--contentBg);
+  box-shadow: 0 0 3rem var(--plainBg);
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+/* menu top arrow */
+.drop-down-m-2-sub ~ ul::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid var(--contentBg);
+  margin: -1rem auto 0;
+  display: table;
+}
+.drop-down-m-2-sub ~ ul li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-right: 0;
+  background-color: var(--contentBgPrimary);
+}
+.drop-down-m-2-sub ~ ul li:hover,
+.drop-down-m-2 .drop-down-m-2-sub ~ ul .drop-down-m-2-sub:first-of-type:hover {
+  background-color: var(--contentBgSecondary);
+}
+.drop-down-m-2-sub ~ ul li a {
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+.drop-m-m-1-content ~ ul .drop-m-m-1-content + ul:hover,
+.drop-m-m-1-content ~ ul .drop-m-m-1-content:hover ~ ul {
+  width: 93%;
+}
+.drop-down-m-2-sub ~ ul .drop-down-m-2-sub ~ ul {
+  margin-top: 0.3rem;
+  transform: translate(-15%, 0);
+  -webkit-transform: translate(-15%, 0);
+  -moz-transform: translate(-15%, 0);
+  -ms-transform: translate(-15%, 0);
+  -o-transform: translate(-15%, 0);
+}
+.drop-down-m-2 .drop-down-m-2-btn {
+  display: none;
+  line-height: 3rem;
+  border-top: 0.1rem solid;
+  border-bottom: 0.1rem solid;
+  width: 100%;
+}
+/* mobil */
+@media (max-width: 768px) {
+  .drop-down-m-2 .drop-down-m-2-btn {
+    display: block;
+  }
+  .drop-down-m-2 ul {
+    display: none;
+    width: 90%;
+  }
+  .drop-down-m-2 ul li {
+    float: none;
+    border-right: 0;
+  }
+  .drop-down-m-2 ul li a,
+  .drop-down-m-2-sub ~ ul li a {
+    text-align: center;
+  }
+  .drop-down-m-2-sub ~ ul {
+    display: none;
+    position: relative;
+    margin: auto;
+    left: 0;
+  }
+  .drop-down-m-2-sub ~ ul .drop-down-m-2-sub {
+    margin: 0.2rem 0;
+  }
+  .drop-down-m-2-sub ~ ul,
+  .drop-down-m-2-sub ~ ul .drop-down-m-2-sub ~ ul {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  .drop-down-m-2-sub ~ ul::before {
+    display: none;
+  }
+}
+.drop-down-m-2-sub ~ ul.visible,
+.drop-down-m-2-sub ~ ul.visible > .drop-down-m-2-sub {
+  display: block;
+  width: 90%;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.drop-down-m-2-sub ~ ul.visible .drop-down-m-2-sub {
+  margin: 0;
+}
+.drop-down-m-2-sub ~ ul.visible ul {
+  bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .drop-down-m-2 > ul {
+    display: block !important;
+  }
+  .drop-down-m-2-sub ~ ul:hover,
+  .drop-down-m-2-sub:hover ~ ul {
+    opacity: 1;
+    visibility: visible;
+    width: 15rem;
+    height: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+}
 /* model 3 */
 .drop-menu-m-3,
 .drop-menu-m-3-show,

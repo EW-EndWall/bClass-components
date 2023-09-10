@@ -170,6 +170,54 @@
     });
   }
   // * model 2
+  if ($(".drop-menu-m-2").length) {
+    // * mobil menu show hide btn
+    $(".drop-down-m-2 > .drop-down-m-2-btn > a").click(function (e) {
+      e.stopPropagation();
+      $(this).parent(".drop-down-m-2-btn").next("ul").slideToggle(200);
+      // * When clicking outside the menu
+      $(document).on("click", function (e) {
+        if (!$(e.target).closest(".drop-down-m-2").length) {
+          $(".drop-down-m-2 > ul").slideUp(200);
+          $(this).find(".visible").removeClass("visible");
+        }
+      });
+    });
+    // * dropdown model 1 show hide
+    $(".drop-down-m-2-sub").on("click", function (e) {
+      if ($(window).width() <= 768) {
+        const clickedBtn = $(this);
+        const clickedMenu = clickedBtn.siblings("ul");
+        // * is show menu check
+        if (clickedMenu.is(":visible")) {
+          clickedMenu.toggleClass("visible");
+        } else {
+          // * other sub menu hide
+          clickedBtn
+            .parent("li")
+            .siblings()
+            .find("ul")
+            .removeClass("visible")
+            .find(".drop-down-m-2-sub")
+            .siblings("ul")
+            .removeClass("visible");
+          // * sub menu hide
+          clickedBtn.siblings("ul").find("ul").removeClass("visible");
+          clickedMenu.toggleClass("visible");
+        }
+        // * mobil to pc visible bug fix
+        $(window).on("resize", function () {
+          if ($(window).width() >= 768) {
+            $(".drop-down-m-2-sub").siblings("ul").removeClass("visible");
+          }
+        });
+      }
+    });
+    // * click bug fix
+    $(".drop-down-m-2-sub ~ ul .drop-down-m-2-sub").on("click", function (e) {
+      e.stopPropagation();
+    });
+  }
   // * model 3
   $(".drop-menu-m-3-show-btn").click(function (e) {
     $(".drop-menu-m-3-show").toggleClass("drop-menu-m-3-menu");
