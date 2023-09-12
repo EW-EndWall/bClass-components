@@ -41,12 +41,12 @@
 /* ! ---------------------------------------------------------------------------------  */
 /* * model line */
 /* * solid */
-
 body.solid .model-line {
   margin: 1rem;
   padding: 1rem;
   background-color: var(--contentBg);
   position: relative;
+  z-index: -1;
 }
 body.solid .model-line > .model-outline {
   background-color: var(--contentBgPrimary);
@@ -63,6 +63,7 @@ body.edge .model-line {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  z-index: -1;
 }
 body.edge .model-line > .model-outline {
   background-color: var(--contentBgPrimary);
@@ -86,6 +87,7 @@ body.edged .model-line {
   padding: 0 1rem;
   background-color: var(--contentBg);
   position: relative;
+  z-index: -1;
 }
 body.edged .model-line > .model-outline::before,
 body.edged .model-line > .model-outline::after {
@@ -164,6 +166,7 @@ body.triangle-experimental-model-1 .model-line {
   padding: 0 2rem;
   background-color: var(--contentBg);
   position: relative;
+  z-index: -1;
 }
 body.triangle-experimental-model-1 .model-line > .model-outline {
   padding: 1rem 0;
@@ -262,6 +265,7 @@ body.triangle-experimental-model-2 .model-line {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  z-index: -1;
 }
 body.triangle-experimental-model-2 .model-line > .model-outline {
   padding: 0.5rem 0;
@@ -355,6 +359,7 @@ body.triangle-experimental-model-3 .model-line {
   padding: 0 1rem;
   background-color: var(--contentBg);
   position: relative;
+  z-index: -1;
 }
 body.triangle-experimental-model-3 .model-line > .model-outline::before,
 body.triangle-experimental-model-3 .model-line > .model-outline::after {
@@ -1922,7 +1927,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 .drop-down-m-2 {
   display: flex;
   align-items: center;
-  align-content: center;
   justify-content: center;
   flex-direction: column;
   background-color: var(--headerBg);
