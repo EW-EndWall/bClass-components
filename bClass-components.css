@@ -46,7 +46,6 @@ body.solid .model-line {
   padding: 1rem;
   background-color: var(--contentBg);
   position: relative;
-  z-index: -1;
 }
 body.solid .model-line > .model-outline {
   background-color: var(--contentBgPrimary);
@@ -63,7 +62,6 @@ body.edge .model-line {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  z-index: -1;
 }
 body.edge .model-line > .model-outline {
   background-color: var(--contentBgPrimary);
@@ -87,7 +85,6 @@ body.edged .model-line {
   padding: 0 1rem;
   background-color: var(--contentBg);
   position: relative;
-  z-index: -1;
 }
 body.edged .model-line > .model-outline::before,
 body.edged .model-line > .model-outline::after {
@@ -96,7 +93,6 @@ body.edged .model-line > .model-outline::after {
   width: 50%;
   height: 1rem;
   background-color: var(--contentBg);
-  z-index: -1;
 }
 body.edged .model-line > .model-outline::before {
   margin: 0;
@@ -166,7 +162,6 @@ body.triangle-experimental-model-1 .model-line {
   padding: 0 2rem;
   background-color: var(--contentBg);
   position: relative;
-  z-index: -1;
 }
 body.triangle-experimental-model-1 .model-line > .model-outline {
   padding: 1rem 0;
@@ -265,7 +260,6 @@ body.triangle-experimental-model-2 .model-line {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  z-index: -1;
 }
 body.triangle-experimental-model-2 .model-line > .model-outline {
   padding: 0.5rem 0;
@@ -359,7 +353,6 @@ body.triangle-experimental-model-3 .model-line {
   padding: 0 1rem;
   background-color: var(--contentBg);
   position: relative;
-  z-index: -1;
 }
 body.triangle-experimental-model-3 .model-line > .model-outline::before,
 body.triangle-experimental-model-3 .model-line > .model-outline::after {
@@ -725,7 +718,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   display: inline-block;
   line-height: 1;
   padding: 0.1rem 0.2rem;
-  margin-top: -0.5rem;
+  margin-top: -0.3rem;
   margin-left: -0.5rem;
   border-radius: 0.3rem;
 }
