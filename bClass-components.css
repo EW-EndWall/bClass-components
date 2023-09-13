@@ -12,7 +12,7 @@
 /* * model 1 */
 .page-loader-m-1 {
   position: fixed;
-  z-index: 99;
+  z-index: 999999;
   width: 100%;
   height: 100%;
   background-color: var(--plainBg);
@@ -1857,6 +1857,8 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   border-left: 0.2rem solid;
   height: calc(100% + 1rem);
   width: 2.9rem;
+}
+.road-map-unlimited-m-1 + .road-map-unlimited-m-1:after {
   height: calc(100% - 1.8rem);
 }
 .road-map-unlimited-m-1 ~ .road-map::after {
@@ -1898,7 +1900,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   border: 0.2rem solid;
   display: block;
   height: 3rem;
-  left: 4rem;
+  margin-left: -5.3rem;
   margin-top: 1rem;
   position: absolute;
   width: 3rem;
