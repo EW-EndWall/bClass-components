@@ -129,17 +129,19 @@
   // * model 1
   // * if is any drop menu
   if ($(".drop-menu-m-1").length) {
-    $(".drop-menu-m-1").find("ul").slice(1).hide();
+    // * sub menu hidden
+    $(".drop-menu-m-1").find("ul ul").hide();
     // * on clikc btn open drop menu
     $(document).on("click", ".drop-menu-m-1-btn", function (e) {
       e.stopPropagation();
       const clickedBtn = $(this);
       const clickedMenu = clickedBtn.siblings(".drop-menu-m-1");
+
       // * is open
       if (clickedMenu.is(":visible")) {
         clickedMenu.slideUp(150);
       } else {
-        $(".drop-menu-m-1").slideUp(150);
+        $(".drop-menu-m-1-btn + .drop-menu-m-1").slideUp(150);
         // * open menu restart
         clickedMenu.slideDown(150, function () {
           clickedMenu.find("li").show().find("ul").hide();
@@ -151,7 +153,7 @@
           !target.closest(".drop-menu-m-1-btn").length &&
           !target.closest(".drop-menu-m-1").length
         ) {
-          $(".drop-menu-m-1").slideUp(0);
+          $(".drop-menu-m-1-btn + .drop-menu-m-1").slideUp(150);
           $(document).off("click.menu");
         }
       });
