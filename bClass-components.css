@@ -453,9 +453,36 @@ body.triangle-experimental-model-3 .content-3,
 body.solid .btn,
 body.triangle-experimental-model-1 .btn,
 body.triangle-experimental-model-3 .btn,
-body.solid .bclass,
-body.triangle-experimental-model-1 .bclass,
-body.triangle-experimental-model-3 .bclass {
+body.solid .radius-dynamic-0-1,
+body.triangle-experimental-model-1 .radius-dynamic-0-1,
+body.triangle-experimental-model-3 .radius-dynamic-0-1,
+body.solid .radius-dynamic-0-2,
+body.triangle-experimental-model-1 .radius-dynamic-0-2,
+body.triangle-experimental-model-3 .radius-dynamic-0-2,
+body.solid .radius-dynamic-0-3,
+body.triangle-experimental-model-1 .radius-dynamic-0-3,
+body.triangle-experimental-model-3 .radius-dynamic-0-3,
+body.solid .radius-dynamic-0-4,
+body.triangle-experimental-model-1 .radius-dynamic-0-4,
+body.triangle-experimental-model-3 .radius-dynamic-0-4,
+body.solid .radius-dynamic-0-5,
+body.triangle-experimental-model-1 .radius-dynamic-0-5,
+body.triangle-experimental-model-3 .radius-dynamic-0-5,
+body.solid .radius-dynamic-0-6,
+body.triangle-experimental-model-1 .radius-dynamic-0-6,
+body.triangle-experimental-model-3 .radius-dynamic-0-6,
+body.solid .radius-dynamic-0-7,
+body.triangle-experimental-model-1 .radius-dynamic-0-7,
+body.triangle-experimental-model-3 .radius-dynamic-0-7,
+body.solid .radius-dynamic-0-8,
+body.triangle-experimental-model-1 .radius-dynamic-0-8,
+body.triangle-experimental-model-3 .radius-dynamic-0-8,
+body.solid .radius-dynamic-0-9,
+body.triangle-experimental-model-1 .radius-dynamic-0-9,
+body.triangle-experimental-model-3 .radius-dynamic-0-9,
+body.solid .radius-dynamic-1,
+body.triangle-experimental-model-1 .radius-dynamic-1,
+body.triangle-experimental-model-3 .radius-dynamic-1 {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -474,10 +501,7 @@ body.edged .content-3,
 body.triangle-experimental-model-2 .content-3,
 body.edge .btn,
 body.edged .btn,
-body.triangle-experimental-model-2 .btn,
-body.edge .bclass,
-body.edged .bclass,
-body.triangle-experimental-model-2 .bclass {
+body.triangle-experimental-model-2 .btn {
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -497,7 +521,77 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
 }
-/* 
+/*  */
+.radius-dynamic-0-1 {
+  border-radius: 0.1rem;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  -ms-border-radius: 0.1rem;
+  -o-border-radius: 0.1rem;
+}
+.radius-dynamic-0-2 {
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+.radius-dynamic-0-3 {
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+.radius-dynamic-0-4 {
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+.radius-dynamic-0-5 {
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.radius-dynamic-0-6 {
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+.radius-dynamic-0-7 {
+  border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+}
+.radius-dynamic-0-8 {
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+.radius-dynamic-0-9 {
+  border-radius: 0.9rem;
+  -webkit-border-radius: 0.9rem;
+  -moz-border-radius: 0.9rem;
+  -ms-border-radius: 0.9rem;
+  -o-border-radius: 0.9rem;
+}
+.radius-dynamic-1 {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
@@ -721,6 +815,10 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   margin-top: -0.3rem;
   margin-left: -0.5rem;
   border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
@@ -1950,10 +2048,10 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   margin-left: auto;
 }
-/* * dinamic */
+/* * dynamic */
 /* * model 1 */
 /* * left */
-.arrow-left-m-1-dinamic::before {
+.arrow-left-m-1-dynamic::before {
   position: relative;
   padding-right: 0.5rem;
   content: "\f0d7";
@@ -1962,7 +2060,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   margin-right: auto;
 }
-.arrow-left-m-1-dinamic.active::before {
+.arrow-left-m-1-dynamic.active::before {
   position: relative;
   padding-right: 0.5rem;
   content: "\f0d8";
@@ -1972,7 +2070,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   margin-right: auto;
 }
 /* * right */
-.arrow-right-m-1-dinamic::after {
+.arrow-right-m-1-dynamic::after {
   position: relative;
   padding-left: 0.5rem;
   content: "\f0d7";
@@ -1981,7 +2079,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   margin-left: auto;
 }
-.arrow-right-m-1-dinamic.active::after {
+.arrow-right-m-1-dynamic.active::after {
   position: relative;
   padding-left: 0.5rem;
   content: "\f0d8";
@@ -1992,7 +2090,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 }
 /* * model 2 */
 /* * left */
-.arrow-left-m-2-dinamic::before {
+.arrow-left-m-2-dynamic::before {
   position: relative;
   padding-right: 0.5rem;
   content: "\f0d9";
@@ -2001,7 +2099,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   margin-right: auto;
 }
-.arrow-left-m-2-dinamic.active::before {
+.arrow-left-m-2-dynamic.active::before {
   position: relative;
   padding-right: 0.5rem;
   content: "\f0d7";
@@ -2012,7 +2110,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 }
 /* * model 2 */
 /* * right */
-.arrow-right-m-2-dinamic::after {
+.arrow-right-m-2-dynamic::after {
   position: relative;
   padding-left: 0.5rem;
   content: "\f0d9";
@@ -2021,7 +2119,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   margin-left: auto;
 }
-.arrow-right-m-2-dinamic.active::after {
+.arrow-right-m-2-dynamic.active::after {
   position: relative;
   padding-left: 0.5rem;
   content: "\f0d7";
@@ -2032,7 +2130,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 }
 /* * model 3 */
 /* * left */
-.arrow-left-m-3-dinamic::before {
+.arrow-left-m-3-dynamic::before {
   position: relative;
   padding-right: 0.5rem;
   content: "\f107";
@@ -2041,7 +2139,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   margin-right: auto;
 }
-.arrow-left-m-3-dinamic.active::before {
+.arrow-left-m-3-dynamic.active::before {
   position: relative;
   padding-right: 0.5rem;
   content: "\f106";
@@ -2052,7 +2150,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 }
 /* * model 3 */
 /* * right */
-.arrow-right-m-3-dinamic::after {
+.arrow-right-m-3-dynamic::after {
   position: relative;
   padding-left: 0.5rem;
   content: "\f107";
@@ -2061,7 +2159,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   margin-left: auto;
 }
-.arrow-right-m-3-dinamic.active::after {
+.arrow-right-m-3-dynamic.active::after {
   position: relative;
   padding-left: 0.5rem;
   content: "\f106";
@@ -2072,7 +2170,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 }
 /* * model 3 */
 /* * left */
-.arrow-left-m-4-dinamic::before {
+.arrow-left-m-4-dynamic::before {
   position: relative;
   padding-right: 0.5rem;
   content: "\f104";
@@ -2081,7 +2179,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   margin-right: auto;
 }
-.arrow-left-m-4-dinamic.active::before {
+.arrow-left-m-4-dynamic.active::before {
   position: relative;
   padding-right: 0.5rem;
   content: "\f107";
@@ -2092,7 +2190,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 }
 /* * model 4 */
 /* * right */
-.arrow-right-m-4-dinamic::after {
+.arrow-right-m-4-dynamic::after {
   position: relative;
   padding-left: 0.5rem;
   content: "\f104";
@@ -2101,7 +2199,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   font-weight: 900;
   margin-left: auto;
 }
-.arrow-right-m-4-dinamic.active::after {
+.arrow-right-m-4-dynamic.active::after {
   position: relative;
   padding-left: 0.5rem;
   content: "\f107";
