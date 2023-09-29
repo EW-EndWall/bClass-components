@@ -1863,7 +1863,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   position: relative;
   margin: 2rem 3rem;
   margin-left: 5rem;
-  background: var(--contentBgPrimary);
   padding: 0.5rem 1rem;
 }
 .road-map-m-1 h3 {
@@ -1925,7 +1924,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   position: relative;
   margin: 2rem 3rem;
   margin-left: 5rem;
-  background: var(--contentBgPrimary);
   padding: 0.5rem 1rem;
 }
 .road-map-unlimited-m-1 h3 {
@@ -1993,7 +1991,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   padding-left: 0;
 }
 .road-map-m-2 li {
-  margin-left: 1.6rem;
+  margin-left: 2.7rem;
   padding-left: 3.7rem;
   position: relative;
 }
