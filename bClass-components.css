@@ -2050,6 +2050,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   background: transparent;
   font-weight: 900;
   margin-right: auto;
+  float: left;
 }
 .arrow-right-m-1-static::after {
   position: relative;
@@ -2059,6 +2060,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   background: transparent;
   font-weight: 900;
   margin-left: auto;
+  float: right;
 }
 /*  */
 .arrow-left-m-2-static::before {
@@ -2069,6 +2071,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   background: transparent;
   font-weight: 900;
   margin-right: auto;
+  float: left;
 }
 .arrow-right-m-2-static::after {
   position: relative;
@@ -2078,146 +2081,196 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   background: transparent;
   font-weight: 900;
   margin-left: auto;
+  float: right;
+}
+/*  */
+.arrow-left-m-3-static::before {
+  position: relative;
+  padding-right: 0.5rem;
+  content: "\2B9E";
+  font-family: "Font Awesome 5 Free";
+  background: transparent;
+  font-weight: 900;
+  margin-right: auto;
+  float: left;
+}
+.arrow-right-m-3-static::after {
+  position: relative;
+  padding-left: 0.5rem;
+  content: "\2B9C";
+  font-family: "Font Awesome 5 Free";
+  background: transparent;
+  font-weight: 900;
+  margin-left: auto;
+  float: right;
 }
 /* * dynamic */
 /* * model 1 */
 /* * left */
 .arrow-left-m-1-dynamic::before {
   position: relative;
-  padding-right: 0.5rem;
-  content: "\f0d7";
+  margin-right: 0.5rem;
+  content: "\f0da";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
   margin-right: auto;
+  float: left;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
 }
 .arrow-left-m-1-dynamic.active::before {
-  position: relative;
-  padding-right: 0.5rem;
-  content: "\f0d8";
-  font-family: "Font Awesome 5 Free";
-  background: transparent;
-  font-weight: 900;
-  margin-right: auto;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
 }
 /* * right */
 .arrow-right-m-1-dynamic::after {
   position: relative;
   padding-left: 0.5rem;
-  content: "\f0d7";
+  content: "\f0d9";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
   margin-left: auto;
+  float: right;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
 }
 .arrow-right-m-1-dynamic.active::after {
-  position: relative;
-  padding-left: 0.5rem;
-  content: "\f0d8";
-  font-family: "Font Awesome 5 Free";
-  background: transparent;
-  font-weight: 900;
-  margin-left: auto;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 /* * model 2 */
 /* * left */
 .arrow-left-m-2-dynamic::before {
   position: relative;
-  padding-right: 0.5rem;
-  content: "\f0d9";
+  margin-right: 0.5rem;
+  content: "\f0da";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
   margin-right: auto;
+  float: left;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
 }
 .arrow-left-m-2-dynamic.active::before {
-  position: relative;
-  padding-right: 0.5rem;
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
-  background: transparent;
-  font-weight: 900;
-  margin-right: auto;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 /* * model 2 */
 /* * right */
 .arrow-right-m-2-dynamic::after {
   position: relative;
-  padding-left: 0.5rem;
+  margin-left: 0.5rem;
   content: "\f0d9";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
   margin-left: auto;
+  float: right;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
 }
 .arrow-right-m-2-dynamic.active::after {
-  position: relative;
-  padding-left: 0.5rem;
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
-  background: transparent;
-  font-weight: 900;
-  margin-left: auto;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
 }
 /* * model 3 */
 /* * left */
 .arrow-left-m-3-dynamic::before {
   position: relative;
   padding-right: 0.5rem;
-  content: "\f107";
+  content: "\f105";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
   margin-right: auto;
+  float: left;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
 }
 .arrow-left-m-3-dynamic.active::before {
-  position: relative;
-  padding-right: 0.5rem;
-  content: "\f106";
-  font-family: "Font Awesome 5 Free";
-  background: transparent;
-  font-weight: 900;
-  margin-right: auto;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
 }
 /* * model 3 */
 /* * right */
 .arrow-right-m-3-dynamic::after {
   position: relative;
   padding-left: 0.5rem;
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  background: transparent;
-  font-weight: 900;
-  margin-left: auto;
-}
-.arrow-right-m-3-dynamic.active::after {
-  position: relative;
-  padding-left: 0.5rem;
-  content: "\f106";
-  font-family: "Font Awesome 5 Free";
-  background: transparent;
-  font-weight: 900;
-  margin-left: auto;
-}
-/* * model 3 */
-/* * left */
-.arrow-left-m-4-dynamic::before {
-  position: relative;
-  padding-right: 0.5rem;
   content: "\f104";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
-  margin-right: auto;
+  margin-left: auto;
+  float: right;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
 }
-.arrow-left-m-4-dynamic.active::before {
+.arrow-right-m-3-dynamic.active::after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+/* * model 4 */
+/* * left */
+.arrow-left-m-4-dynamic::before {
   position: relative;
   padding-right: 0.5rem;
-  content: "\f107";
+  content: "\f105";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
   margin-right: auto;
+  float: left;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+}
+.arrow-left-m-4-dynamic.active::before {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 /* * model 4 */
 /* * right */
@@ -2229,15 +2282,114 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   background: transparent;
   font-weight: 900;
   margin-left: auto;
+  float: right;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
 }
 .arrow-right-m-4-dynamic.active::after {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+/* * model 5 */
+/* * left */
+.arrow-left-m-5-dynamic::before {
+  position: relative;
+  padding-right: 0.5rem;
+  content: "\2B9E";
+  font-family: "Font Awesome 5 Free";
+  background: transparent;
+  font-weight: 900;
+  margin-right: auto;
+  float: left;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+}
+.arrow-left-m-5-dynamic.active::before {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+/* * model 5 */
+/* * right */
+.arrow-right-m-5-dynamic::after {
   position: relative;
   padding-left: 0.5rem;
-  content: "\f107";
+  content: "\f104";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
   margin-left: auto;
+  float: right;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+}
+.arrow-right-m-5-dynamic.active::after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+/* * model 6 */
+/* * left */
+.arrow-left-m-6-dynamic::before {
+  position: relative;
+  padding-right: 0.5rem;
+  content: "\2B9E";
+  font-family: "Font Awesome 5 Free";
+  background: transparent;
+  font-weight: 900;
+  margin-right: auto;
+  float: left;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+}
+.arrow-left-m-6-dynamic.active::before {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+/* * model 6 */
+/* * right */
+.arrow-right-m-6-dynamic::after {
+  position: relative;
+  padding-left: 0.5rem;
+  content: "\2B9C";
+  background: transparent;
+  font-weight: 900;
+  margin-left: auto;
+  float: right;
+  transition: transform 0.5s ease 0s;
+  -webkit-transition: transform 0.5s ease 0s;
+  -moz-transition: transform 0.5s ease 0s;
+  -ms-transition: transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+}
+.arrow-right-m-6-dynamic.active::after {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
