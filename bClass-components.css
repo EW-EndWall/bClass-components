@@ -2297,7 +2297,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * right */
 .arrow-right-m-5-dynamic::after {
   position: relative;
-  content: "\f104";
+  content: "\2B9C";
   font-family: "Font Awesome 5 Free";
   background: transparent;
   font-weight: 900;
@@ -2391,7 +2391,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 }
 .drop-down-m-2 ul li {
   float: left;
-  margin: 0.5rem 0;
   border-right: 0.1em solid;
 }
 .drop-down-m-2 ul li:last-child {
@@ -2467,10 +2466,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 }
 .drop-down-m-2 .drop-down-m-2-btn {
   display: none;
-  line-height: 3rem;
-  border-top: 0.1rem solid;
-  border-bottom: 0.1rem solid;
-  width: 100%;
 }
 /* mobil */
 @media (max-width: 768px) {
