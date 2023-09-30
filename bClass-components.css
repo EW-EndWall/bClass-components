@@ -1529,24 +1529,6 @@ ul.ul-li-y-line-list-a > li:last-child > a {
   z-index: 1;
   width: 100%;
 }
-/* * icon */
-.input-sellect-m-1:has(select.d-none) span::after {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-}
-.input-sellect-m-1 span::after {
-  content: "⮟";
-  float: right;
-  margin-left: auto;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
 .input-sellect-m-1 option {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2109,7 +2091,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * left */
 .arrow-left-m-1-dynamic::before {
   position: relative;
-  margin-right: 0.5rem;
   content: "\f0da";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2132,7 +2113,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * right */
 .arrow-right-m-1-dynamic::after {
   position: relative;
-  padding-left: 0.5rem;
   content: "\f0d9";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2156,7 +2136,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * left */
 .arrow-left-m-2-dynamic::before {
   position: relative;
-  margin-right: 0.5rem;
   content: "\f0da";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2180,7 +2159,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * right */
 .arrow-right-m-2-dynamic::after {
   position: relative;
-  margin-left: 0.5rem;
   content: "\f0d9";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2204,7 +2182,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * left */
 .arrow-left-m-3-dynamic::before {
   position: relative;
-  padding-right: 0.5rem;
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2228,7 +2205,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * right */
 .arrow-right-m-3-dynamic::after {
   position: relative;
-  padding-left: 0.5rem;
   content: "\f104";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2252,7 +2228,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * left */
 .arrow-left-m-4-dynamic::before {
   position: relative;
-  padding-right: 0.5rem;
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2276,7 +2251,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * right */
 .arrow-right-m-4-dynamic::after {
   position: relative;
-  padding-left: 0.5rem;
   content: "\f104";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2300,7 +2274,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * left */
 .arrow-left-m-5-dynamic::before {
   position: relative;
-  padding-right: 0.5rem;
   content: "\2B9E";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2324,7 +2297,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * right */
 .arrow-right-m-5-dynamic::after {
   position: relative;
-  padding-left: 0.5rem;
   content: "\f104";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2348,7 +2320,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * left */
 .arrow-left-m-6-dynamic::before {
   position: relative;
-  padding-right: 0.5rem;
   content: "\2B9E";
   font-family: "Font Awesome 5 Free";
   background: transparent;
@@ -2372,7 +2343,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* * right */
 .arrow-right-m-6-dynamic::after {
   position: relative;
-  padding-left: 0.5rem;
   content: "\2B9C";
   background: transparent;
   font-weight: 900;

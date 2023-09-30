@@ -71,11 +71,8 @@
   // * .input-sellect-m-1 open
   $(".input-sellect-m-1").on("click", function () {
     if (!$(event.target).is("select")) {
-      $(this)
-        .toggleClass("active")
-        .find("select")
-        .slideToggle()
-        .toggleClass("d-none");
+      $(this).children("span").toggleClass("active");
+      $(this).find("select").slideToggle().toggleClass("d-none");
       // * close others
       $(".input-sellect-m-1")
         .not(this)
@@ -86,7 +83,7 @@
       $(document).on("click.input-sellect-m-1", function (e) {
         const target = $(e.target);
         if (!target.closest(".input-sellect-m-1").length) {
-          $(".input-sellect-m-1").removeClass("active");
+          $(".input-sellect-m-1").find("span").removeClass("active");
           $(".input-sellect-m-1").find("select").slideUp().addClass("d-none");
           $(document).off("click.input-sellect-m-1");
         }
