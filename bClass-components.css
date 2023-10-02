@@ -1208,9 +1208,9 @@ ul.ul-li-y-line-list-a > li:last-child > a {
   border-color: var(--contentBgSecondary) !important;
 }
 .input-checkbox-m-5 input {
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
   cursor: pointer;
   position: relative;
   outline: none;
@@ -1249,9 +1249,9 @@ ul.ul-li-y-line-list-a > li:last-child > a {
   border-color: var(--contentBgSecondary) !important;
 }
 .input-checkbox-m-6 input {
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
   cursor: pointer;
   position: relative;
   outline: none;
@@ -1505,6 +1505,9 @@ ul.ul-li-y-line-list-a > li:last-child > a {
 /* * input-text */
 /* * input-text-m-1 */
 .input-text-m-1 {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   position: relative;
   color: var(--contentTextSecondary);
   background-color: var(--contentBgPrimary);
