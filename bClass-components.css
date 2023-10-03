@@ -874,7 +874,6 @@ ul.ul-li-y-scroll::-webkit-scrollbar {
 ul.ul-li-x-none {
   list-style: none;
   display: flex;
-  flex-direction: row;
 }
 /* * ul.ul-li-y-none */
 ul.ul-li-y-none {
