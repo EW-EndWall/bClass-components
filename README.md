@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img src="#" alt="Logo" width="220" height="auto">
+    <img src="https://github.com/EW-EndWall/bClass-components/assets/43109779/4f70cf5a-4319-4d01-abdb-5f21cda35756" alt="Logo" width="220" height="auto">
   </a>
 
   <h3 align="center">bClass<br/>components</h3>
