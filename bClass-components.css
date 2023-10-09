@@ -2379,7 +2379,8 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 .drop-down-m-2 a,
 .drop-down-m-2 i {
   padding: 0.8em;
-  display: block;
+  display: table;
+  margin: auto;
   text-decoration: none;
 }
 .drop-down-m-2 ul {
