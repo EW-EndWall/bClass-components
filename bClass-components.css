@@ -1225,7 +1225,7 @@ ul.ul-li-y-line-list-a > li:last-child > a {
   min-width: 1rem;
   height: 1rem;
   background-color: var(--contentTextPrimary);
-  margin-right: 1rem;
+  margin-right: 100%;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1239,7 +1239,7 @@ ul.ul-li-y-line-list-a > li:last-child > a {
 }
 .input-checkbox-m-5 input:checked:before {
   margin-right: 0;
-  margin-left: 1.5rem;
+  margin-left: calc(100% - 1rem);
 }
 /* * input checkbox model 6 */
 .input-checkbox-m-6 {
@@ -1269,7 +1269,7 @@ ul.ul-li-y-line-list-a > li:last-child > a {
   min-width: 1rem;
   height: 1rem;
   background-color: var(--contentTextPrimary);
-  margin-right: 1rem;
+  margin-right: 100%;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -1283,7 +1283,7 @@ ul.ul-li-y-line-list-a > li:last-child > a {
 }
 .input-checkbox-m-6 input:checked:before {
   margin-right: 0;
-  margin-left: 1rem;
+  margin-left: calc(100% - 1rem);
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
