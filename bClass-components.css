@@ -1213,6 +1213,8 @@ ul.ul-li-y-line-list-a > li:last-child > a {
   cursor: pointer;
   position: relative;
   outline: none;
+  display: flex;
+  align-items: center;
   min-width: 2.5rem;
   height: 1rem;
   background-color: var(--contentBg);
@@ -1254,6 +1256,8 @@ ul.ul-li-y-line-list-a > li:last-child > a {
   cursor: pointer;
   position: relative;
   outline: none;
+  display: flex;
+  align-items: center;
   min-width: 2rem;
   min-height: 1rem;
   background-color: var(--contentBg);
