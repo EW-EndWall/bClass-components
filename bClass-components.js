@@ -4,7 +4,7 @@
  * * Update (--)
  */
 
-(() => {
+document.addEventListener("DOMContentLoaded", () => {
   // * page loader remowed
   document.onreadystatechange = () => {
     setTimeout(() => {
@@ -229,4 +229,4 @@
     $(".drop-menu-m-3-show").toggleClass("drop-menu-m-3-menu");
   });
   // * -----------------------------------------------------
-})();
+});
