@@ -1698,7 +1698,9 @@ option:checked {
 .fieldset-m-1 input[type="number"],
 .fieldset-m-2 input[type="number"],
 .fieldset-m-1 input[type="email"],
-.fieldset-m-2 input[type="email"] {
+.fieldset-m-2 input[type="email"],
+.fieldset-m-1 textarea,
+.fieldset-m-2 textarea {
   width: calc(100% - 1.1rem);
   margin: 0.3rem;
   margin-top: -0.07rem;
