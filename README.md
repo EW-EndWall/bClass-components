@@ -23,7 +23,9 @@ It is designed to be used in --- services and systems within the scope of bClass
 
 # Documents
 
-[Documents](./docs/README.md)
+> [!TIP]
+> **You can look at the [documentation](./docs/README.md) to learn how to use it.**
+
 
 ## License
 
