@@ -31,6 +31,7 @@
 - [input-sellect](./input-sellect.md)
 - [input-text](./input-text.md)
 - [model-line](./model-line.md)
+- [loader](./loader.md)
 - [or](./or.md)
 - [page-loader](./page-loader.md)
 - [arrow](./arrow.md)

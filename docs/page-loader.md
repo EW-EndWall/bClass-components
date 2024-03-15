@@ -2,7 +2,7 @@
 
 Page load animation, design components.
 
-- .page-loader-model-1
+- .page-loader-m-1
 
 ### example
 
