@@ -32,6 +32,7 @@
 - [input-text](./input-text.md)
 - [model-line](./model-line.md)
 - [loader](./loader.md)
+- [login](./login.md)
 - [or](./or.md)
 - [page-loader](./page-loader.md)
 - [arrow](./arrow.md)

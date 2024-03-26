@@ -2445,7 +2445,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
-/* model 2 */
+/* * model 2 */
 .drop-down-m-2 {
   display: flex;
   align-items: center;
@@ -2506,7 +2506,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
-/* menu top arrow */
+/* * menu top arrow */
 .drop-down-m-2-sub ~ ul::before {
   content: "";
   width: 0;
@@ -2547,7 +2547,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 .drop-down-m-2 .drop-down-m-2-btn {
   display: none;
 }
-/* mobil */
+/* * mobil */
 @media (max-width: 768px) {
   .drop-down-m-2 .drop-down-m-2-btn {
     display: block;
@@ -2616,7 +2616,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
     -o-transition: all 0.5s;
   }
 }
-/* model 3 */
+/* * model 3 */
 .drop-menu-m-3,
 .drop-menu-m-3-show,
 .drop-menu-m-3-hover {
@@ -2679,6 +2679,35 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 .drop-menu-m-3-hover:hover .drop-menu-m-3-min,
 .drop-menu-m-3-hover .drop-menu-m-3-max {
   display: none;
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* * login models */
+/* * model 1 */
+.login-m-1 {
+  width: 100%;
+  background-color: var(--contentBg);
+  overflow: hidden;
+  position: relative;
+}
+.login-m-1::after {
+  content: "";
+  width: 40rem;
+  height: 40rem;
+  background-color: var(--contentBgSecondary);
+  position: absolute;
+  top: calc(-20rem + 20%);
+  left: calc(-20rem - 20%);
+  border-top-right-radius: 3rem;
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 480px) {
+  .login-m-1::after {
+    left: calc(-30rem);
+  }
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
