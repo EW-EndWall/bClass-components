@@ -1,4 +1,4 @@
-/*
+/***
  * * Bclass components v1.1.0
  * * Copyright 2021 ("https://github.com/EW-EndWall/bClass-components/blob/main/LICENSE")
  * * Licensed ("Bik Public License 2.0")
