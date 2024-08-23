@@ -490,6 +490,24 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 .dynamic\:rounded-2 {
   border-radius: 2rem;
 }
+.dynamic\:rounded-2\.5 {
+  border-radius: 2.5rem;
+}
+.dynamic\:rounded-3 {
+  border-radius: 3rem;
+}
+.dynamic\:rounded-3\.5 {
+  border-radius: 3.5rem;
+}
+.dynamic\:rounded-4 {
+  border-radius: 4rem;
+}
+.dynamic\:rounded-4\.5 {
+  border-radius: 4.5rem;
+}
+.dynamic\:rounded-5 {
+  border-radius: 5rem;
+}
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */

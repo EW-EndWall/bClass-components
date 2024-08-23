@@ -57,114 +57,117 @@ document.addEventListener("DOMContentLoaded", () => {
   // * .input-sellect-m-1 selected bug fix
   if ($(".input-sellect-m-1").length > 0) {
     $(".input-sellect-m-1 select").each((index, element) => {
-      const selectElement = $(element);
-      let selectElements = selectElement
+      const selectedTexts = $(element)
         .find("option:selected")
-        .map((index, element) => {
-          return $(element).text();
-        })
+        .map((i, option) => $(option).text())
         .get()
         .join(", ");
-      selectElement.siblings("span").text(selectElements);
+      $(element).siblings("span").text(selectedTexts);
     });
   }
   // * .input-sellect-m-1 open
-  $(".input-sellect-m-1").on("click", (index, element) => {
-    if (!$(index.target).is("select")) {
-      $(element).children("span").toggleClass("active");
-      $(element).find("select").slideToggle().toggleClass("d-none");
+  $(".input-sellect-m-1").on("click", (event) => {
+    const targetElement = $(event.target);
+    if (!targetElement.is("select")) {
+      const container = $(event.currentTarget);
+      container.children("span").toggleClass("active");
+      container.find("select").slideToggle().toggleClass("d-none");
       // * close others
       $(".input-sellect-m-1")
-        .not(element)
+        .not(container)
         .find("select")
         .slideUp()
         .addClass("d-none");
       // * close all
-      $(document).on("click.input-sellect-m-1", (index, element) => {
-        const target = $(index.target);
-        if (!target.closest(".input-sellect-m-1").length) {
+      $(document).on("click.input-sellect-m-1", (e) => {
+        const documentTarget = $(e.target);
+        if (!documentTarget.closest(".input-sellect-m-1").length) {
           $(".input-sellect-m-1").find("span").removeClass("active");
           $(".input-sellect-m-1").find("select").slideUp().addClass("d-none");
           $(document).off("click.input-sellect-m-1");
         }
       });
-      const selectedOptions = $(element)
+      const selectedOptions = container
         .find("option:selected")
-        .map((index, element) => {
-          return $(element).text();
-        })
+        .map((i, option) => $(option).text())
         .get()
         .join(", ");
-      $(element).find("span").text(selectedOptions);
+      container.find("span").text(selectedOptions);
     }
   });
   // * .input-sellect-m-1 option search
-  $(".input-sellect-m-1 input").on("keyup", (index, element) => {
-    const searchText = $(element).val().toLowerCase();
-    const select = $(element).siblings("select");
+  $(".input-sellect-m-1 input").on("keyup", (event) => {
+    const inputElement = $(event.currentTarget);
+    const searchText = inputElement.val().toLowerCase();
+    const select = inputElement.siblings("select");
     const options = select.find("option");
 
-    options.each((index, element) => {
-      const option = $(element);
-      const optionText = option.text().toLowerCase();
+    options.each((index, option) => {
+      const optionElement = $(option);
+      const optionText = optionElement.text().toLowerCase();
 
       if (optionText.includes(searchText)) {
-        option.show();
+        optionElement.show();
       } else {
-        option.hide();
+        optionElement.hide();
       }
     });
-    if (searchText === "") {
-      select.addClass("d-none");
-    } else {
-      select.removeClass("d-none");
-    }
+
+    if (searchText === "") return select.addClass("d-none");
+
+    select.removeClass("d-none");
   });
-  $(".input-sellect-m-1").on("click", (index, element) => {
-    if (!$(index.target).is("select") && $(element).find("input").length > 0) {
-      let selectedOptions = $(element).find("option:selected").text().trim();
-      if (selectedOptions) $(element).find("input").val(selectedOptions);
+  $(".input-sellect-m-1").on("click", (event) => {
+    const clickedElement = $(event.currentTarget);
+    if (
+      !$(event.target).is("select") &&
+      clickedElement.find("input").length > 0
+    ) {
+      const selectedOptions = clickedElement
+        .find("option:selected")
+        .text()
+        .trim();
+      if (selectedOptions) clickedElement.find("input").val(selectedOptions);
     }
   });
   // * -----------------------------------------------------
   // * model 1
   // * if is any dropdown
-  if ($(".dropdown-m-1").length) {
+  if ($(".drop-menu-m-1").length) {
     // * sub menu hidden
-    $(".dropdown-m-1").find("ul ul").hide();
-    // * on clikc btn open dropdown
-    $(document).on("click", ".dropdown-m-1-btn", (index, element) => {
-      index.stopPropagation();
-      const clickedBtn = $(element);
-      const clickedMenu = clickedBtn.siblings(".dropdown-m-1");
-
+    $(".drop-menu-m-1").find("ul ul").hide();
+    // * on click btn open drop menu
+    $(document).on("click", ".drop-menu-m-1-btn", (event) => {
+      event.stopPropagation();
+      const clickedBtn = $(event.currentTarget);
+      const clickedMenu = clickedBtn.siblings(".drop-menu-m-1");
       // * is open
       clickedBtn.toggleClass("active");
       if (clickedMenu.is(":visible")) {
         clickedMenu.slideUp(150);
       } else {
-        $(".dropdown-m-1-btn + .dropdown-m-1").slideUp(150);
+        $(".drop-menu-m-1-btn + .drop-menu-m-1").slideUp(150);
         // * open menu restart
         clickedMenu.find("li a.active").removeClass("active");
         clickedMenu.slideDown(150, () => {
           clickedMenu.find("li").show().find("ul").hide();
         });
       }
-      $(document).on("click.menu", (index, element) => {
-        const target = $(index.target);
+      $(document).on("click.menu", (e) => {
+        const target = $(e.target);
         if (
-          !target.closest(".dropdown-btn").length &&
-          !target.closest(".dropdown-m-1").length
+          !target.closest(".drop-menu-m-1-btn").length &&
+          !target.closest(".drop-menu-m-1").length
         ) {
-          $(".dropdown-m-1-btn").removeClass("active");
-          $(".dropdown-m-1-btn + .dropdown-m-1").slideUp(150);
+          $(".drop-menu-m-1-btn").removeClass("active");
+          $(".drop-menu-m-1-btn + .drop-menu-m-1").slideUp(150);
           $(document).off("click.menu");
         }
       });
     });
     // * submenu navigation within the menu
-    $(document).on("click", ".dropdown-m-1 li a", (index, element) => {
-      const item = $(element);
+    $(document).on("click", ".drop-menu-m-1 li a", (event) => {
+      const item = $(event.currentTarget);
       // * if sub menu is any
       if (item.siblings("ul").length) {
         item.toggleClass("active");
@@ -178,21 +181,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // * model 2
   // * mobil menu show hide btn
-  $(".dropdown-m-2 > .dropdown-m-2-btn > button").click((index, element) => {
-    index.stopPropagation();
-    $(element).parent(".dropdown-m-2-btn").next("ul").slideToggle(200);
+  $(".dropdown-m-2 > .dropdown-m-2-btn > button").click((event) => {
+    event.stopPropagation();
+    $(event.currentTarget)
+      .parent(".dropdown-m-2-btn")
+      .next("ul")
+      .slideToggle(200);
     // * When clicking outside the menu
-    $(document).on("click", (index, element) => {
-      if (!$(index.target).closest(".dropdown-m-2").length) {
+    $(document).on("click", (event) => {
+      if (!$(event.target).closest(".dropdown-m-2").length) {
         $(".dropdown-m-2 > ul").slideUp(200);
-        $(element).find(".visible").removeClass("visible");
+        $(event.currentTarget).find(".visible").removeClass("visible");
       }
     });
   });
-  // * dropdown model 12show hide
-  $(".dropdown-m-2-sub").on("click", (index, element) => {
+  // * dropdown model 2 show hide
+  $(".dropdown-m-2-sub").on("click", (event) => {
     if ($(window).width() <= 768) {
-      const clickedBtn = $(element);
+      const clickedBtn = $(event.currentTarget);
       const clickedMenu = clickedBtn.siblings("ul");
       // * is show menu check
       if (clickedMenu.is(":visible")) {
@@ -220,8 +226,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   // * click bug fix
-  $(".dropdown-m-2-sub ~ ul .dropdown-m-2-sub").on("click", (e) => {
-    e.stopPropagation();
+  $(".dropdown-m-2-sub ~ ul .dropdown-m-2-sub").on("click", (event) => {
+    event.stopPropagation();
   });
   // * model 3
   $(".dropdown-m-3-btn").click(() => {
