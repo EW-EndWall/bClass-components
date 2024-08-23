@@ -133,20 +133,20 @@ document.addEventListener("DOMContentLoaded", () => {
   // * -----------------------------------------------------
   // * model 1
   // * if is any dropdown
-  if ($(".drop-menu-m-1").length) {
+  if ($(".dropdown-m-1").length) {
     // * sub menu hidden
-    $(".drop-menu-m-1").find("ul ul").hide();
+    $(".dropdown-m-1").find("ul ul").hide();
     // * on click btn open drop menu
-    $(document).on("click", ".drop-menu-m-1-btn", (event) => {
+    $(document).on("click", ".dropdown-m-1-btn", (event) => {
       event.stopPropagation();
       const clickedBtn = $(event.currentTarget);
-      const clickedMenu = clickedBtn.siblings(".drop-menu-m-1");
+      const clickedMenu = clickedBtn.siblings(".dropdown-m-1");
       // * is open
       clickedBtn.toggleClass("active");
       if (clickedMenu.is(":visible")) {
         clickedMenu.slideUp(150);
       } else {
-        $(".drop-menu-m-1-btn + .drop-menu-m-1").slideUp(150);
+        $(".dropdown-m-1-btn + .dropdown-m-1").slideUp(150);
         // * open menu restart
         clickedMenu.find("li a.active").removeClass("active");
         clickedMenu.slideDown(150, () => {
@@ -156,17 +156,17 @@ document.addEventListener("DOMContentLoaded", () => {
       $(document).on("click.menu", (e) => {
         const target = $(e.target);
         if (
-          !target.closest(".drop-menu-m-1-btn").length &&
-          !target.closest(".drop-menu-m-1").length
+          !target.closest(".dropdown-m-1-btn").length &&
+          !target.closest(".dropdown-m-1").length
         ) {
-          $(".drop-menu-m-1-btn").removeClass("active");
-          $(".drop-menu-m-1-btn + .drop-menu-m-1").slideUp(150);
+          $(".dropdown-m-1-btn").removeClass("active");
+          $(".dropdown-m-1-btn + .dropdown-m-1").slideUp(150);
           $(document).off("click.menu");
         }
       });
     });
     // * submenu navigation within the menu
-    $(document).on("click", ".drop-menu-m-1 li a", (event) => {
+    $(document).on("click", ".dropdown-m-1 li a", (event) => {
       const item = $(event.currentTarget);
       // * if sub menu is any
       if (item.siblings("ul").length) {
