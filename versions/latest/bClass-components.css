@@ -1888,30 +1888,24 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 .arrow-r-m-2::after,
 .arrow-r-m-4::after,
 .dynamic\:arrow-l-m-1.active::before,
-.dynamic\:arrow-l-m-2.active::after,
+.dynamic\:arrow-r-m-2.active::after,
 .dynamic\:arrow-l-m-3.active::before,
-.dynamic\:arrow-l-m-4.active::after,
+.dynamic\:arrow-r-m-4.active::after,
 details[open] > summary.dynamic\:arrow-l-m-1::before,
-.arrow-r-m-2-dynamic.active::after,
 details[open] > summary.dynamic\:arrow-r-m-2::after,
-.arrow-l-m-3-dynamic.active::before,
 details[open] > summary.dynamic\:arrow-l-m-3::before,
-.arrow-r-m-4-dynamic.active::after,
 details[open] > summary.dynamic\:arrow-r-m-4::after {
   transform: rotate(-90deg);
 }
 .arrow-l-m-2::before,
 .arrow-l-m-4::before,
 .dynamic\:arrow-r-m-1.active::after,
-.dynamic\:arrow-r-m-2.active::before,
+.dynamic\:arrow-l-m-2.active::before,
 .dynamic\:arrow-r-m-3.active::after,
-.dynamic\:arrow-r-m-4.active::before,
+.dynamic\:arrow-l-m-4.active::before,
 details[open] > summary.dynamic\:arrow-r-m-1::after,
-.arrow-l-m-2-dynamic.active::before,
 details[open] > summary.dynamic\:arrow-l-m-2::before,
-.arrow-r-m-3-dynamic.active::after,
 details[open] > summary.dynamic\:arrow-r-m-3::after,
-.arrow-l-m-4-dynamic.active::before,
 details[open] > summary.dynamic\:arrow-l-m-4::before {
   transform: rotate(90deg);
 }
