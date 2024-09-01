@@ -1611,7 +1611,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   border-left: 0 solid;
   width: 3.1rem;
 }
-.roadmap-m-1 .roadmap-icon-m-1 {
+.roadmap-m-1 .roadmap-m-1-icon {
   position: absolute;
   top: 1rem;
   left: -4rem;
@@ -1623,7 +1623,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   color: var(--contentTextSecondary);
   z-index: 1;
 }
-.roadmap-m-1 .roadmap-icon-m-1::before {
+.roadmap-m-1 .roadmap-m-1-icon::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1667,7 +1667,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   border-left: 0 solid;
   width: 3.1rem;
 }
-.unlimited\:roadmap-m-1 .unlimited\:roadmap-icon-m-1 {
+.unlimited\:roadmap-m-1 .unlimited\:roadmap-m-1-icon {
   position: absolute;
   top: 1rem;
   left: -4rem;
@@ -1679,7 +1679,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
   color: var(--contentTextSecondary);
   z-index: 1;
 }
-.unlimited\:roadmap-m-1 .unlimited\:roadmap-icon-m-1::before {
+.unlimited\:roadmap-m-1 .unlimited\:roadmap-m-1-icon::before {
   content: "";
   position: absolute;
   width: 100%;
