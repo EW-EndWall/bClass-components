@@ -6,8 +6,8 @@ Ul li is items lists.
 - .ul-li-y
 - .ul-li-x-list
 - .ul-li-y-list
-- .ul-li-y-scroll
 - .ul-li-x-scroll
+- .ul-li-y-scroll
 - .ul-li-x-scroll-hide
 - .ul-li-y-scroll-hide
 - .ul-li-x-line
