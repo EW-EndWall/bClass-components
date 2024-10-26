@@ -1249,7 +1249,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 }
 .input-sellect-m-1 select {
   background-color: var(--contentBgPrimary);
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 .input-sellect-m-1 option {
