@@ -858,7 +858,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   appearance: none;
   position: relative;
   cursor: pointer;
-  min-width: 1.5rem;
+  width: 1.5rem;
   height: 1.5rem;
   outline: none;
   border: 0.1rem solid var(--contentTextPrimary);
@@ -871,7 +871,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 }
 .input-checkbox-m-1 input:checked::before {
   content: "";
-  min-width: 0.75rem;
+  width: 0.75rem;
   height: 0.75rem;
   border-radius: 100%;
   background-color: var(--contentTextSecondary);
@@ -894,7 +894,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   appearance: none;
   cursor: pointer;
   position: relative;
-  min-width: 1.5rem;
+  width: 1.5rem;
   height: 1.5rem;
   outline: none;
   border: 0.1rem solid var(--contentTextPrimary);
@@ -907,7 +907,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 }
 .input-checkbox-m-2 input:checked::before {
   content: "";
-  min-width: 0.75rem;
+  width: 0.75rem;
   height: 0.75rem;
   background-color: var(--contentTextSecondary);
   position: absolute;
@@ -930,7 +930,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   appearance: none;
   cursor: pointer;
   position: relative;
-  min-width: 1.5rem;
+  width: 1.5rem;
   height: 1.5rem;
   outline: none;
   border: 0.1rem solid var(--contentTextPrimary);
@@ -963,7 +963,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   appearance: none;
   cursor: pointer;
   position: relative;
-  min-width: 1.5rem;
+  width: 1.5rem;
   height: 1.5rem;
   outline: none;
   border: 0.1rem solid var(--contentTextPrimary);
@@ -997,7 +997,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   outline: none;
   display: flex;
   align-items: center;
-  min-width: 2.5rem;
+  width: 2.5rem;
   height: 1rem;
   background-color: var(--contentBg);
   overflow: hidden;
@@ -1006,7 +1006,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   content: "";
   display: block;
   position: relative;
-  min-width: 1rem;
+  width: 1rem;
   height: 1rem;
   background-color: var(--contentTextPrimary);
   margin-right: 100%;
@@ -1030,15 +1030,15 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   outline: none;
   display: flex;
   align-items: center;
-  min-width: 2rem;
-  min-height: 1rem;
+  width: 2rem;
+  height: 1rem;
   background-color: var(--contentBg);
   border-radius: 1rem;
 }
 .input-checkbox-m-6 input:before {
   content: "";
   display: block;
-  min-width: 1rem;
+  width: 1rem;
   height: 1rem;
   background-color: var(--contentTextPrimary);
   margin-right: 100%;
@@ -1218,21 +1218,102 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* * input-text */
-/* * input-text-m-1 */
-.input-text-m-1 {
+/* * input-text-m-1 input-password-m-1 */
+.input-text-m-1,
+.input-password-m-1 {
   position: relative;
   color: var(--contentTextSecondary);
   background-color: var(--contentBgPrimary);
   padding: 0.5rem;
   border: 0;
 }
-.input-text-m-1[type="number"] {
-  appearance: textfield;
-  margin: 0;
+/* * input-password-m-1 */
+.input-password-m-1-btn::before {
+  content: "\f06e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
 }
-.input-text-m-1[type="number"]::-webkit-inner-spin-button,
-.input-text-m-1[type="number"]::-webkit-outer-spin-button {
+.input-password-m-1-btn.visible::before {
+  content: "\f070";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+/* * input number */
+.input-number-m-1::-webkit-inner-spin-button,
+.input-number-m-1::-webkit-outer-spin-button,
+.input-number-m-2::-webkit-inner-spin-button,
+.input-number-m-2::-webkit-outer-spin-button,
+.input-number-m-3 input::-webkit-inner-spin-button,
+.input-number-m-3 input::-webkit-outer-spin-button {
   appearance: none;
+}
+.input-number-m-2 input {
+  position: relative;
+  color: var(--contentTextSecondary);
+  background-color: var(--contentBgPrimary);
+  padding: 0.5rem;
+  border: 0;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-align: center;
+  appearance: textfield;
+}
+.input-number-m-2 {
+  position: relative;
+  color: var(--contentTextSecondary);
+  background-color: var(--contentBgPrimary);
+  display: block;
+  padding-right: 2rem;
+}
+.input-number-m-2 span:first-child {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 0.2rem;
+  margin-right: 0.4rem;
+  z-index: 1;
+}
+.input-number-m-2 span:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0.2rem;
+  margin-right: 0.4rem;
+}
+.input-number-m-3 {
+  display: flex;
+  background-color: var(--contentBgPrimary);
+}
+.input-number-m-3 input {
+  position: relative;
+  color: var(--contentTextSecondary);
+  background-color: var(--contentBgPrimary);
+  padding: 0.5rem;
+  border: 0;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-align: center;
+  appearance: textfield;
+}
+.input-number-m-3 span {
+  display: inline-flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  cursor: pointer;
+  position: relative;
+}
+.input-number-m-3,
+.input-number-m-3 input {
+  border: none;
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
@@ -1403,18 +1484,8 @@ option:checked {
   background: var(--contentBgSecondary);
   border: 0.1rem solid;
 }
-.fieldset-m-1 input[type="text"],
-.fieldset-m-2 input[type="text"],
-.fieldset-m-1 input[type="password"],
-.fieldset-m-2 input[type="password"],
-.fieldset-m-1 input[type="number"],
-.fieldset-m-2 input[type="number"],
-.fieldset-m-1 input[type="email"],
-.fieldset-m-2 input[type="email"],
-.fieldset-m-1 input[type="tel"],
-.fieldset-m-2 input[type="tel"],
-.fieldset-m-1 input[type="date"],
-.fieldset-m-2 input[type="date"],
+.fieldset-m-1 input,
+.fieldset-m-2 input,
 .fieldset-m-1 textarea,
 .fieldset-m-2 textarea {
   width: calc(100% - 1.1rem);
