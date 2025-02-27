@@ -29,6 +29,7 @@
 - [fieldset](./fieldset.md)
 - [hr](./hr.md)
 - [input-checkbox](./input-checkbox.md)
+- [input-file](./input-file.md)
 - [input-number](./input-number.md)
 - [input-password](./input-password.md)
 - [input-radio](./input-radio.md)

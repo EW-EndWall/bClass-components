@@ -4,15 +4,15 @@
  * * Licensed ("Bik Public License 2.0")
  * * License Update ("03/28/2024")
  */
+// * page loader remowed
+document.onreadystatechange = () => {
+  setTimeout(() => {
+    const pageLoader = document.getElementById("page-loader");
+    if (pageLoader) pageLoader.remove();
+  }, 500);
+};
 document.addEventListener("readystatechange", () => {
   if (document.readyState === "complete") {
-    // * page loader remowed
-    document.onreadystatechange = () => {
-      setTimeout(() => {
-        const pageLoader = document.getElementById("page-loader");
-        if (pageLoader) pageLoader.remove();
-      }, 500);
-    };
     // * -----------------------------------------------------
     // * create cookie
     const setCookie = (cookieName, cookieValue, numdaystilexpireasinteger) => {
@@ -248,6 +248,273 @@ document.addEventListener("readystatechange", () => {
       )[0];
       if (clickedIndex === 0) numberInput.stepDown();
       else if (clickedIndex === 2) numberInput.stepUp();
+    });
+    // * input file
+    $(".input-file-m-1 input").change(() => {
+      const fileInput = $(event.currentTarget); // * get inpu
+      const files = fileInput[0].files; // * get file
+      const fileExtension = files[0]?.name
+        .substring(files[0]?.name.lastIndexOf("."))
+        .toLowerCase(); // * get extension
+      const fileCount = fileInput[0]?.max || 99; // * is limit
+      const ınputFileContainer = fileInput.closest(".input-file-m-1"); // * get container
+      // * check result container
+      let previewContainer = ınputFileContainer
+        .prevAll(".input-file-m-1-preview")
+        .first();
+      if (!previewContainer.length)
+        previewContainer = ınputFileContainer
+          .nextAll(".input-file-m-1-preview")
+          .first();
+      // * Create an invisible input in PreviewContainer
+      let hiddenInput = previewContainer.find('input[type="hidden"]');
+      if (hiddenInput.length === 0) {
+        hiddenInput = $('<input type="hidden" name="fileData">');
+        previewContainer.append(hiddenInput);
+      }
+      // * file list
+      const fileDataList = (files) => {
+        // * Add file information to hidden input
+        const fileList = JSON.parse(hiddenInput.val() || "[]"); // * get json data
+        const isFileExists = fileList.some(
+          (f) => f.name == files[0].name && f.size == files[0].size
+        );
+        if (isFileExists || fileList.length >= fileCount) {
+          return true; // * process end
+        }
+        const readera = new FileReader();
+        readera.readAsDataURL(files[0]);
+        readera.onload = () => {
+          fileList.push({
+            name: files[0].name,
+            size: files[0].size,
+            type: files[0].type,
+            data: readera.result,
+          }); // * add file info
+
+          hiddenInput.val(JSON.stringify(fileList)); // * Write updated data to input
+        };
+      };
+      // * file list remove
+      const fileDataRemove = (previewDiv) => {
+        const fileList = JSON.parse(hiddenInput.val() || "[]"); // * get json data
+        // * remove info
+        const updatedFileData = fileList.filter(
+          (f) => f.name !== files[0].name
+        );
+        hiddenInput.val(JSON.stringify(updatedFileData)); // * Write updated data to input
+        previewDiv.remove(); // * Remove the div containing the img and icon
+      };
+      // * reader img
+      const imgFileReader = ({ files, previewContainer }) => {
+        if (files.length > 0) {
+          //* cleck list and add list
+          const listCheck = fileDataList(files);
+          if (listCheck) return;
+          const reader = new FileReader();
+          // * Once the file is read, set the img source to the file data
+          reader.onload = (e) => {
+            // * Create the <div> element and its children
+            const previewDiv = $("<div></div>");
+            const imgElement = $("<img>").attr("src", e.target.result); // * Set the img src
+            const deleteIcon = $("<i></i>").addClass(
+              "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+            );
+            // * Append the img and delete icon to the preview div
+            previewDiv.append(imgElement);
+            previewDiv.append(deleteIcon);
+            // * Append the preview div to the preview container
+            previewContainer.append(previewDiv);
+            // * Optionally, add a click event to the delete icon to remove the image preview
+            deleteIcon.on("click", function () {
+              fileDataRemove(previewDiv);
+            });
+          };
+          // * Read the first file as a data URL (this will encode the image as a base64 string)
+          reader.readAsDataURL(files[0]);
+        }
+      };
+      // * reader video
+      const videoFileReader = ({ files, previewContainer }) => {
+        if (files.length > 0) {
+          //* cleck list and add list
+          const listCheck = fileDataList(files);
+          if (listCheck) return;
+          const previewDiv = $("<div></div>");
+          const span = $(
+            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>'
+          );
+          const spanText = $(
+            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`
+          );
+          const deleteIcon = $("<i></i>").addClass(
+            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+          );
+          const thumbnail = $("<img>").addClass("w-100 h-100"); // * Set the img src
+          // * Creating dynamic video and canvas
+          const video = document.createElement("video");
+          const canvas = document.createElement("canvas");
+          video.src = URL.createObjectURL(files[0]);
+          video.muted = true;
+          video.playsInline = true;
+          video.addEventListener("loadeddata", () => {
+            video.currentTime = 1; // * Go to second 1
+          });
+          video.addEventListener("seeked", () => {
+            const context = canvas.getContext("2d");
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            // * Generate image URL
+            const dataURL = canvas.toDataURL("image/png");
+            thumbnail.attr("src", dataURL);
+            // * Append the img and delete icon to the preview div
+            span.append(thumbnail);
+            previewDiv.append(span);
+            previewDiv.append(spanText);
+            // * We add the preview div to the previewContainer
+            previewContainer.append(previewDiv);
+            previewDiv.append(deleteIcon);
+            // * Clean up resources
+            video.pause();
+            URL.revokeObjectURL(video.src);
+            video.remove();
+            canvas.remove();
+          });
+          // * delete data
+          deleteIcon.on("click", function () {
+            fileDataRemove(previewDiv);
+          });
+        }
+      };
+      // * reader sound
+      const soundFileReader = ({ files, previewContainer }) => {
+        if (files.length > 0) {
+          //* cleck list and add list
+          const listCheck = fileDataList(files);
+          if (listCheck) return;
+          // * sound file control
+          // * We create the preview div for the sound file
+          const previewDiv = $("<div></div>");
+          const span = $(
+            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>'
+          );
+          const spanText = $(
+            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`
+          );
+          const zipIcon = $("<i></i>").addClass(
+            "fa-solid fa-volume-low font-size-2.5 m-auto"
+          );
+          const deleteIcon = $("<i></i>").addClass(
+            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+          );
+          // * Append the img and delete icon to the preview div
+          span.append(zipIcon);
+          span.append(spanText);
+          previewDiv.append(span);
+          // * We add the preview div to the previewContainer
+          previewContainer.append(previewDiv);
+          previewDiv.append(deleteIcon);
+          // * delete data
+          deleteIcon.on("click", function () {
+            fileDataRemove(previewDiv);
+          });
+        }
+      };
+      // * reader zip
+      const zipFileReader = ({ files, previewContainer }) => {
+        if (files.length > 0) {
+          //* cleck list and add list
+          const listCheck = fileDataList(files);
+          if (listCheck) return;
+          // * Zip file control
+          // * We create the preview div for the zip file
+          const previewDiv = $("<div></div>");
+          const span = $(
+            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>'
+          );
+          const spanText = $(
+            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`
+          );
+          const zipIcon = $("<i></i>").addClass(
+            "fa-solid fa-file-zipper font-size-2.5 m-auto"
+          );
+          const deleteIcon = $("<i></i>").addClass(
+            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+          );
+          // * Append the img and delete icon to the preview div
+          span.append(zipIcon);
+          span.append(spanText);
+          previewDiv.append(span);
+          // * We add the preview div to the previewContainer
+          previewContainer.append(previewDiv);
+          previewDiv.append(deleteIcon);
+          // * delete data
+          deleteIcon.on("click", function () {
+            fileDataRemove(previewDiv);
+          });
+        }
+      };
+      // * reader document
+      const docFileReader = ({ files, previewContainer }) => {
+        if (files.length > 0) {
+          //* cleck list and add list
+          const listCheck = fileDataList(files);
+          if (listCheck) return;
+          // * document file control
+          // * We create the preview div for the document file
+          const previewDiv = $("<div></div>");
+          const span = $(
+            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>'
+          );
+          const spanText = $(
+            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`
+          );
+          const zipIcon = $("<i></i>").addClass(
+            "fa-solid fa-file-invoice font-size-2.5 m-auto"
+          );
+          const deleteIcon = $("<i></i>").addClass(
+            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+          );
+          // * Append the img and delete icon to the preview div
+          span.append(zipIcon);
+          span.append(spanText);
+          previewDiv.append(span);
+          // * We add the preview div to the previewContainer
+          previewContainer.append(previewDiv);
+          previewDiv.append(deleteIcon);
+          // * delete data
+          deleteIcon.on("click", function () {
+            fileDataRemove(previewDiv);
+          });
+        }
+      };
+      //* cheack file type
+      if ([".png", ".jpg", ".gif"].includes(fileExtension)) {
+        imgFileReader({ files, previewContainer });
+      } else if ([".mp4"].includes(fileExtension)) {
+        videoFileReader({ files, previewContainer });
+      } else if ([".mp3"].includes(fileExtension)) {
+        soundFileReader({ files, previewContainer });
+      } else if ([".zip", ".rar"].includes(fileExtension)) {
+        zipFileReader({ files, previewContainer });
+      } else if (
+        [
+          ".doc",
+          ".docx",
+          ".xls",
+          ".xlsx",
+          ".ppt",
+          ".pptx",
+          ".pdf",
+          ".odt",
+          ".ods",
+          ".odp",
+          ".txt",
+        ].includes(fileExtension)
+      ) {
+        docFileReader({ files, previewContainer });
+      }
     });
   }
 });
