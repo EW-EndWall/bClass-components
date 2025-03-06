@@ -2225,6 +2225,55 @@ details[open] > summary.dynamic\:arrow-l-m-6::before {
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */
+.input-file-m-1 {
+  position: relative;
+  padding: 0.5rem;
+  color: var(--contentTextPrimary);
+  background-color: var(--contentBgPrimary);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.input-file-m-1:hover {
+  color: var(--contentTextSecondary);
+  background-color: var(--contentBgSecondary);
+}
+.input-file-m-1 input {
+  display: none;
+}
+.input-file-m-1 label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.input-file-m-1-preview {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.input-file-m-1-preview > div {
+  height: 5rem;
+  width: 5rem;
+  position: relative;
+}
+.input-file-m-1-preview > div > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.input-file-m-1-preview > div > i {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
+/* ! ---------------------------------------------------------------------------------  */
 /* * login models */
 /* * model 1 */
 .login-m-1 {
