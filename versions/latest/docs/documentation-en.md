@@ -1,6 +1,6 @@
-# bClass Components Documentation
+# bClass components
 
-bClass is a CSS library that provides ready-to-use UI components and styles for web development. This documentation explains all existing components and their usage methods.
+`bClass components` is a CSS library that provides ready-to-use UI components and styles for web development. This documentation explains all existing components and their usage methods.
 
 ## Requirements
 
@@ -421,3 +421,7 @@ bClass uses CSS variables for theming:
 - `--contentTextPrimary` - Primary text color
 - `--contentTextSecondary` - Secondary text color
 - `--headerBg` - Header background color
+
+## License
+
+> Distributed under the Bik Public License 2.0 License. See [LICENSE](./../../../LICENSE) for more information.

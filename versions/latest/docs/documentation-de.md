@@ -1,6 +1,6 @@
-# bClass Komponenten-Dokumentation
+# bClass components
 
-bClass ist eine CSS-Bibliothek, die gebrauchsfertige UI-Komponenten und Stile für die Webentwicklung bereitstellt. Diese Dokumentation erläutert alle vorhandenen Komponenten und deren Anwendungsmethoden.
+`bClass components` ist eine CSS-Bibliothek, die gebrauchsfertige UI-Komponenten und Stile für die Webentwicklung bereitstellt. Diese Dokumentation erläutert alle vorhandenen Komponenten und deren Anwendungsmethoden.
 
 ## Anforderungen
 
@@ -421,3 +421,7 @@ bClass verwendet CSS-Variablen für das Theming:
 - `--contentTextPrimary` - Primäre Textfarbe
 - `--contentTextSecondary` - Sekundäre Textfarbe
 - `--headerBg` - Header-Hintergrundfarbe
+
+## Lizenz
+
+> Veröffentlicht unter der Bik Public License 2.0. Weitere Informationen finden Sie in der [LICENSE](./../../../LICENSE).

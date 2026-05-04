@@ -1,6 +1,6 @@
-# bClass Bileşenleri Dokümantasyonu
+# bClass components
 
-bClass, web geliştirme için hazır kullanımlık UI bileşenleri ve stiller sağlayan bir CSS kütüphanesidir. Bu dokümantasyon, mevcut tüm bileşenleri ve kullanım yöntemlerini açıklar.
+`bClass components`, web geliştirme için hazır kullanımlık UI bileşenleri ve stiller sağlayan bir CSS kütüphanesidir. Bu dokümantasyon, mevcut tüm bileşenleri ve kullanım yöntemlerini açıklar.
 
 ## Gereksinimler
 
@@ -421,3 +421,7 @@ bClass, temalama için CSS değişkenlerini kullanır:
 - `--contentTextPrimary` - Birinci metin rengi
 - `--contentTextSecondary` - İkinci metin rengi
 - `--headerBg` - Başlık arka plan rengi
+
+## Lisans
+
+> Bik Public License 2.0 Lisansı kapsamında dağıtılmaktadır. Daha fazla bilgi için [LICENSE](./../../../LICENSE) dosyasına göz atın.
