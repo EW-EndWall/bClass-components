@@ -1,5 +1,5 @@
 /***
- * * Bclass components v1.1.0
+ * * Bclass components v1.3.0
  * * Copyright 2021 ("https://github.com/EW-EndWall/bClass-components/blob/main/LICENSE")
  * * Licensed ("Bik Public License 2.0")
  * * License Update ("03/28/2024")
@@ -13,6 +13,32 @@ document.onreadystatechange = () => {
 };
 document.addEventListener("readystatechange", () => {
   if (document.readyState === "complete") {
+    // * -----------------------------------------------------
+    // * loaders
+    $(
+      ".loader-m-2-1, .loader-m-2-2, .loader-m-2-3, .loader-m-2-4, .loader-m-2-5, .loader-m-2-6, .loader-m-2-7, .loader-m-2-8, .loader-m-2-9, .loader-m-2-10",
+    ).append("<span></span>".repeat(4));
+    $(".loader-m-3-1, .loader-m-3-2, .loader-m-3-3, .loader-m-3-4").append(
+      "<span></span>".repeat(2),
+    );
+    $(
+      ".loader-m-4-1, .loader-m-4-2, .loader-m-4-3, .loader-m-5-1, .loader-m-5-2, .loader-m-5-3",
+    ).append(`
+    <span><svg viewBox="0 0 100 100">
+      <rect class="bg-rect" x="5" y="5" width="90" height="90" rx="10" />
+      <rect class="progress-rect" x="5" y="5" width="90" height="90" rx="10" />
+    </svg></span>
+  `);
+    $(
+      ".loader-m-4-4, .loader-m-4-5, .loader-m-4-6, .loader-m-4-7, .loader-m-5-4, .loader-m-5-5, .loader-m-5-6, .loader-m-5-7",
+    ).append(`
+    <span>
+    <svg viewBox="0 0 100 100">
+      <path class="bg-rect" d="M 50 5 H 85 A 10 10 0 0 1 95 15 V 85 A 10 10 0 0 1 85 95 H 15 A 10 10 0 0 1 5 85 V 15 A 10 10 0 0 1 15 5 H 50" />
+      <path class="progress-rect" pathLength="100" d="M 50 5 H 85 A 10 10 0 0 1 95 15 V 85 A 10 10 0 0 1 85 95 H 15 A 10 10 0 0 1 5 85 V 15 A 10 10 0 0 1 15 5 H 50" />
+    </svg>
+  </span>
+  `);
     // * -----------------------------------------------------
     // * create cookie
     const setCookie = (cookieName, cookieValue, numdaystilexpireasinteger) => {
@@ -244,7 +270,7 @@ document.addEventListener("readystatechange", () => {
     $(".input-number-m-2 span, .input-number-m-3 span").on("click", (event) => {
       const clickedIndex = $(event.currentTarget).index();
       const numberInput = $(event.currentTarget).siblings(
-        "input[type=number]"
+        "input[type=number]",
       )[0];
       if (clickedIndex === 0) numberInput.stepDown();
       else if (clickedIndex === 2) numberInput.stepUp();
@@ -277,7 +303,7 @@ document.addEventListener("readystatechange", () => {
         // * Add file information to hidden input
         const fileList = JSON.parse(hiddenInput.val() || "[]"); // * get json data
         const isFileExists = fileList.some(
-          (f) => f.name == files[0].name && f.size == files[0].size
+          (f) => f.name == files[0].name && f.size == files[0].size,
         );
         if (isFileExists || fileList.length >= fileCount) {
           return true; // * process end
@@ -300,7 +326,7 @@ document.addEventListener("readystatechange", () => {
         const fileList = JSON.parse(hiddenInput.val() || "[]"); // * get json data
         // * remove info
         const updatedFileData = fileList.filter(
-          (f) => f.name !== files[0].name
+          (f) => f.name !== files[0].name,
         );
         hiddenInput.val(JSON.stringify(updatedFileData)); // * Write updated data to input
         previewDiv.remove(); // * Remove the div containing the img and icon
@@ -318,7 +344,7 @@ document.addEventListener("readystatechange", () => {
             const previewDiv = $("<div></div>");
             const imgElement = $("<img>").attr("src", e.target.result); // * Set the img src
             const deleteIcon = $("<i></i>").addClass(
-              "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+              "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
             );
             // * Append the img and delete icon to the preview div
             previewDiv.append(imgElement);
@@ -342,13 +368,13 @@ document.addEventListener("readystatechange", () => {
           if (listCheck) return;
           const previewDiv = $("<div></div>");
           const span = $(
-            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>'
+            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>',
           );
           const spanText = $(
-            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`
+            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`,
           );
           const deleteIcon = $("<i></i>").addClass(
-            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
           );
           const thumbnail = $("<img>").addClass("w-100 h-100"); // * Set the img src
           // * Creating dynamic video and canvas
@@ -397,16 +423,16 @@ document.addEventListener("readystatechange", () => {
           // * We create the preview div for the sound file
           const previewDiv = $("<div></div>");
           const span = $(
-            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>'
+            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>',
           );
           const spanText = $(
-            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`
+            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`,
           );
           const zipIcon = $("<i></i>").addClass(
-            "fa-solid fa-volume-low font-size-2.5 m-auto"
+            "fa-solid fa-volume-low font-size-2.5 m-auto",
           );
           const deleteIcon = $("<i></i>").addClass(
-            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
           );
           // * Append the img and delete icon to the preview div
           span.append(zipIcon);
@@ -431,16 +457,16 @@ document.addEventListener("readystatechange", () => {
           // * We create the preview div for the zip file
           const previewDiv = $("<div></div>");
           const span = $(
-            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>'
+            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>',
           );
           const spanText = $(
-            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`
+            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`,
           );
           const zipIcon = $("<i></i>").addClass(
-            "fa-solid fa-file-zipper font-size-2.5 m-auto"
+            "fa-solid fa-file-zipper font-size-2.5 m-auto",
           );
           const deleteIcon = $("<i></i>").addClass(
-            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
           );
           // * Append the img and delete icon to the preview div
           span.append(zipIcon);
@@ -465,16 +491,16 @@ document.addEventListener("readystatechange", () => {
           // * We create the preview div for the document file
           const previewDiv = $("<div></div>");
           const span = $(
-            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>'
+            '<span class="d-flex flex-col align-items-center w-100 h-100"></span>',
           );
           const spanText = $(
-            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`
+            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`,
           );
           const zipIcon = $("<i></i>").addClass(
-            "fa-solid fa-file-invoice font-size-2.5 m-auto"
+            "fa-solid fa-file-invoice font-size-2.5 m-auto",
           );
           const deleteIcon = $("<i></i>").addClass(
-            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete"
+            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
           );
           // * Append the img and delete icon to the preview div
           span.append(zipIcon);

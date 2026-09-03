@@ -15,7 +15,6 @@ Es wird empfohlen, `bClass theme css` und `bClass theme js` zusammen mit dieser 
 ### Lade-Modelle
 
 - `.page-loader-m-1` - Animierter Seiten-Lader
-- `.loader-m-1` - Rotierender und animierter Lader
 
 #### Beispiel
 
@@ -26,10 +25,88 @@ Es wird empfohlen, `bClass theme css` und `bClass theme js` zusammen mit dieser 
 </div>
 ```
 
+#### Modell 1
+
+- `.loader-m-1` - Rotierender und animierter Lader
+
 #### Beispiel
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
 
 ```html
 <div class="loader-m-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Modell 2 (4-Punkte-Lader)
+
+- `.loader-m-2-1` - Sequentiell skalierender 4-Punkte-Lader
+- `.loader-m-2-2` - Aus den Ecken wachsender 4-Punkte-Lader
+- `.loader-m-2-3` - 4-Punkte-Lader mit Z-Index-Übergang und Skalierung
+- `.loader-m-2-4` - Rotierender und sequentiell skalierender 4-Punkte-Lader (Modell 4)
+- `.loader-m-2-5` - Rotierender und sequentiell skalierender 4-Punkte-Lader (Modell 5)
+- `.loader-m-2-6` - Um 120 Grad rotierender 4-Punkte-Lader
+- `.loader-m-2-7` - Um 180 Grad rotierender 4-Punkte-Lader
+- `.loader-m-2-8` - Mehrdirektional und gestuft rotierender 4-Punkte-Lader
+- `.loader-m-2-9` - Kontinuierlich um 360 Grad rotierender 4-Punkte-Lader
+- `.loader-m-2-10` - Schneller rückwärts rotierender 4-Punkte-Lader mit mehreren Umdrehungen
+
+#### Beispiel
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-2-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Modell 3 (2-Punkte-Diagonallader)
+
+- `.loader-m-3-1` - Um 180 Grad rotierender 2-Punkte-Diagonallader
+- `.loader-m-3-2` - Mehrdirektional und gestuft rotierender 2-Punkte-Diagonallader
+- `.loader-m-3-3` - Um 360 Grad rotierender 2-Punkte-Diagonallader
+- `.loader-m-3-4` - Schneller rückwärts rotierender 2-Punkte-Diagonallader mit mehreren Umdrehungen
+
+#### Beispiel
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-3-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Modell 4 (Gerahmte SVG-Lader)
+
+- `.loader-m-4-1` - Gerahmter SVG-Quadratlader (Langer Fortschrittsstrich)
+- `.loader-m-4-2` - Gerahmter SVG-Quadratlader (Mittlerer Fortschrittsstrich)
+- `.loader-m-4-3` - Gerahmter SVG-Quadratlader (Kurzer Fortschrittsstrich)
+- `.loader-m-4-4` - Gerahmter SVG-Pfadlader mit abgerundeten Ecken (Standardrichtung)
+- `.loader-m-4-5` - Gerahmter SVG-Pfadlader mit abgerundeten Ecken (Um 90 Grad gedreht)
+- `.loader-m-4-6` - Gerahmter SVG-Pfadlader mit abgerundeten Ecken (Um 180 Grad gedreht)
+- `.loader-m-4-7` - Gerahmter SVG-Pfadlader mit abgerundeten Ecken (Um -90 Grad gedreht)
+
+#### Beispiel
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-4-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Modell 5 (Rahmenlose SVG-Lader)
+
+- `.loader-m-5-1` - Rahmenloser SVG-Quadratlader (Langer Fortschrittsstrich)
+- `.loader-m-5-2` - Rahmenloser SVG-Quadratlader (Mittlerer Fortschrittsstrich)
+- `.loader-m-5-3` - Rahmenloser SVG-Quadratlader (Kurzer Fortschrittsstrich)
+- `.loader-m-5-4` - Rahmenloser SVG-Pfadlader mit abgerundeten Ecken (Standardrichtung)
+- `.loader-m-5-5` - Rahmenloser SVG-Pfadlader mit abgerundeten Ecken (Um 90 Grad gedreht)
+- `.loader-m-5-6` - Rahmenloser SVG-Pfadlader mit abgerundeten Ecken (Um 180 Grad gedreht)
+- `.loader-m-5-7` - Rahmenloser SVG-Pfadlader mit abgerundeten Ecken (Um -90 Grad gedreht)
+
+#### Beispiel
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-5-1 w-rem-5 h-rem-5"></div>
 ```
 
 ### Cookie-Zustimmung

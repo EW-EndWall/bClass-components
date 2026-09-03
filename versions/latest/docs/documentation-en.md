@@ -15,7 +15,6 @@ It is recommended to use `bClass theme css` and `bClass theme js` along with thi
 ### Loader Models
 
 - `.page-loader-m-1` - Animated page loader
-- `.loader-m-1` - Rotating and animated loader
 
 #### Example
 
@@ -26,10 +25,88 @@ It is recommended to use `bClass theme css` and `bClass theme js` along with thi
 </div>
 ```
 
+#### Model 1
+
+- `.loader-m-1` - Rotating and animated loader
+
 #### Example
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
 
 ```html
 <div class="loader-m-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Model 2 (4-Dot Loaders)
+
+- `.loader-m-2-1` - 4-dot loader scaling sequentially
+- `.loader-m-2-2` - 4-dot loader growing from corners
+- `.loader-m-2-3` - 4-dot loader with Z-index transition and scaling
+- `.loader-m-2-4` - 4-dot loader rotating and scaling sequentially (Model 4)
+- `.loader-m-2-5` - 4-dot loader rotating and scaling sequentially (Model 5)
+- `.loader-m-2-6` - 4-dot loader rotating 120 degrees
+- `.loader-m-2-7` - 4-dot loader rotating 180 degrees
+- `.loader-m-2-8` - 4-dot loader rotating multi-directionally and stepped
+- `.loader-m-2-9` - 4-dot loader rotating 360 degrees continuously
+- `.loader-m-2-10` - 4-dot loader rotating reverse and multi-turn fast
+
+#### Example
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-2-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Model 3 (2-Dot Diagonal Loaders)
+
+- `.loader-m-3-1` - 2-dot diagonal loader rotating 180 degrees
+- `.loader-m-3-2` - 2-dot diagonal loader rotating multi-directionally and stepped
+- `.loader-m-3-3` - 2-dot diagonal loader rotating 360 degrees
+- `.loader-m-3-4` - 2-dot diagonal loader rotating reverse and multi-turn fast
+
+#### Example
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-3-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Model 4 (Framed SVG Loaders)
+
+- `.loader-m-4-1` - Framed SVG square loader (Long progress stroke)
+- `.loader-m-4-2` - Framed SVG square loader (Medium progress stroke)
+- `.loader-m-4-3` - Framed SVG square loader (Short progress stroke)
+- `.loader-m-4-4` - Framed SVG rounded path loader (Standard direction)
+- `.loader-m-4-5` - Framed SVG rounded path loader (Rotated 90 degrees)
+- `.loader-m-4-6` - Framed SVG rounded path loader (Rotated 180 degrees)
+- `.loader-m-4-7` - Framed SVG rounded path loader (Rotated -90 degrees)
+
+#### Example
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-4-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Model 5 (Frameless SVG Loaders)
+
+- `.loader-m-5-1` - Frameless SVG square loader (Long progress stroke)
+- `.loader-m-5-2` - Frameless SVG square loader (Medium progress stroke)
+- `.loader-m-5-3` - Frameless SVG square loader (Short progress stroke)
+- `.loader-m-5-4` - Frameless SVG rounded path loader (Standard direction)
+- `.loader-m-5-5` - Frameless SVG rounded path loader (Rotated 90 degrees)
+- `.loader-m-5-6` - Frameless SVG rounded path loader (Rotated 180 degrees)
+- `.loader-m-5-7` - Frameless SVG rounded path loader (Rotated -90 degrees)
+
+#### Example
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-5-1 w-rem-5 h-rem-5"></div>
 ```
 
 ### Cookies Confirmation

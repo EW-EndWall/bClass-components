@@ -15,7 +15,6 @@ Bu kütüphane ile beraber `bClass theme css` ve `bClass theme js` kullanılmas�
 ### Yükleyici Modelleri
 
 - `.page-loader-m-1` - Animasyonlu sayfa yükleyici
-- `.loader-m-1` - Döndürme ve animasyonlu yükleyici
 
 #### örnek
 
@@ -26,10 +25,88 @@ Bu kütüphane ile beraber `bClass theme css` ve `bClass theme js` kullanılmas�
 </div>
 ```
 
+#### Model 1
+
+- `.loader-m-1` - Döndürme ve animasyonlu yükleyici
+
 #### örnek
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
 
 ```html
 <div class="loader-m-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Model 2 (4 Noktalı Yükleyiciler)
+
+- `.loader-m-2-1` - Sırayla ölçeklenen 4 noktalı yükleyici
+- `.loader-m-2-2` - Köşelerden büyüyen 4 noktalı yükleyici
+- `.loader-m-2-3` - Z-index geçişli ve ölçeklenen 4 noktalı yükleyici
+- `.loader-m-2-4` - Dönen ve sırayla ölçeklenen 4 noktalı yükleyici (Model 4)
+- `.loader-m-2-5` - Dönen ve sırayla ölçeklenen 4 noktalı yükleyici (Model 5)
+- `.loader-m-2-6` - 120 derece dönen 4 noktalı yükleyici
+- `.loader-m-2-7` - 180 derece dönen 4 noktalı yükleyici
+- `.loader-m-2-8` - Çok yönlü kademeli dönen 4 noktalı yükleyici
+- `.loader-m-2-9` - 360 derece kesintisiz dönen 4 noktalı yükleyici
+- `.loader-m-2-10` - Hızlı ters yönlü çok turlu dönen 4 noktalı yükleyici
+
+#### örnek
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-2-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Model 3 (2 Noktalı Çapraz Yükleyiciler)
+
+- `.loader-m-3-1` - 180 derece dönen 2 noktalı çapraz yükleyici
+- `.loader-m-3-2` - Çok yönlü kademeli dönen 2 noktalı çapraz yükleyici
+- `.loader-m-3-3` - 360 derece dönen 2 noktalı çapraz yükleyici
+- `.loader-m-3-4` - Hızlı ters yönlü çok turlu dönen 2 noktalı çapraz yükleyici
+
+#### örnek
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-3-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Model 4 (Çerçeveli SVG Yükleyiciler)
+
+- `.loader-m-4-1` - Çerçeveli SVG kare yükleyici (Uzun dolgu çizgili)
+- `.loader-m-4-2` - Çerçeveli SVG kare yükleyici (Orta dolgu çizgili)
+- `.loader-m-4-3` - Çerçeveli SVG kare yükleyici (Kısa dolgu çizgili)
+- `.loader-m-4-4` - Çerçeveli SVG yuvarlatılmış yol yükleyici (Standart yön)
+- `.loader-m-4-5` - Çerçeveli SVG yuvarlatılmış yol yükleyici (90 derece döndürülmüş)
+- `.loader-m-4-6` - Çerçeveli SVG yuvarlatılmış yol yükleyici (180 derece döndürülmüş)
+- `.loader-m-4-7` - Çerçeveli SVG yuvarlatılmış yol yükleyici (-90 derece döndürülmüş)
+
+#### örnek
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-4-1 w-rem-5 h-rem-5"></div>
+```
+
+#### Model 5 (Çerçevesiz SVG Yükleyiciler)
+
+- `.loader-m-5-1` - Çerçevesiz SVG kare yükleyici (Uzun dolgu çizgili)
+- `.loader-m-5-2` - Çerçevesiz SVG kare yükleyici (Orta dolgu çizgili)
+- `.loader-m-5-3` - Çerçevesiz SVG kare yükleyici (Kısa dolgu çizgili)
+- `.loader-m-5-4` - Çerçevesiz SVG yuvarlatılmış yol yükleyici (Standart yön)
+- `.loader-m-5-5` - Çerçevesiz SVG yuvarlatılmış yol yükleyici (90 derece döndürülmüş)
+- `.loader-m-5-6` - Çerçevesiz SVG yuvarlatılmış yol yükleyici (180 derece döndürülmüş)
+- `.loader-m-5-7` - Çerçevesiz SVG yuvarlatılmış yol yükleyici (-90 derece döndürülmüş)
+
+#### örnek
+
+[codepen](https://codepen.io/Endwall/pen/EayyyRB)
+
+```html
+<div class="loader-m-5-1 w-rem-5 h-rem-5"></div>
 ```
 
 ### Çerez Onayı
