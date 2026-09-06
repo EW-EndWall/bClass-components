@@ -1744,7 +1744,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   width: 1rem;
   height: 1rem;
   background-color: var(--contentTextPrimary);
-  margin-right: 100%;
+  margin-right: 0;
   border-radius: 0;
   transition: all 0.5s ease;
 }
@@ -1776,7 +1776,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   width: 1rem;
   height: 1rem;
   background-color: var(--contentTextPrimary);
-  margin-right: 100%;
+  margin-right: 0;
   border-radius: 1rem;
   transition: all 0.5s ease;
 }

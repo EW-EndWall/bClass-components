@@ -60,8 +60,8 @@ Es wird empfohlen, `bClass theme css` und `bClass theme js` zusammen mit dieser 
 
 #### Modell 3 (2-Punkte-Diagonallader)
 
-- `.loader-m-3-1` - Um 180 Grad rotierender 2-Punkte-Diagonallader
-- `.loader-m-3-2` - Mehrdirektional und gestuft rotierender 2-Punkte-Diagonallader
+- `.loader-m-3-1` - 2-Punkt-Diagonallader
+- `.loader-m-3-2` - Um 180 Grad rotierender 2-Punkte-Diagonallader
 - `.loader-m-3-3` - Um 360 Grad rotierender 2-Punkte-Diagonallader
 - `.loader-m-3-4` - Schneller rückwärts rotierender 2-Punkte-Diagonallader mit mehreren Umdrehungen
 

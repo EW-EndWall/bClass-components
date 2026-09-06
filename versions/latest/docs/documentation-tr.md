@@ -60,8 +60,8 @@ Bu kütüphane ile beraber `bClass theme css` ve `bClass theme js` kullanılmas�
 
 #### Model 3 (2 Noktalı Çapraz Yükleyiciler)
 
-- `.loader-m-3-1` - 180 derece dönen 2 noktalı çapraz yükleyici
-- `.loader-m-3-2` - Çok yönlü kademeli dönen 2 noktalı çapraz yükleyici
+- `.loader-m-3-1` - 2 noktalı çapraz yükleyici
+- `.loader-m-3-2` - 180 derece dönen 2 noktalı çapraz yükleyici
 - `.loader-m-3-3` - 360 derece dönen 2 noktalı çapraz yükleyici
 - `.loader-m-3-4` - Hızlı ters yönlü çok turlu dönen 2 noktalı çapraz yükleyici
 

@@ -60,8 +60,8 @@ It is recommended to use `bClass theme css` and `bClass theme js` along with thi
 
 #### Model 3 (2-Dot Diagonal Loaders)
 
-- `.loader-m-3-1` - 2-dot diagonal loader rotating 180 degrees
-- `.loader-m-3-2` - 2-dot diagonal loader rotating multi-directionally and stepped
+- `.loader-m-3-1` - 2-dot diagonal loader
+- `.loader-m-3-2` - 2-dot diagonal loader rotating 180 degrees
 - `.loader-m-3-3` - 2-dot diagonal loader rotating 360 degrees
 - `.loader-m-3-4` - 2-dot diagonal loader rotating reverse and multi-turn fast
 
