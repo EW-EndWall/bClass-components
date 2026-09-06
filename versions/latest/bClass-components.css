@@ -769,7 +769,11 @@
 .loader-m-4-4 .progress-rect,
 .loader-m-4-5 .progress-rect,
 .loader-m-4-6 .progress-rect,
-.loader-m-4-7 .progress-rect {
+.loader-m-4-7 .progress-rect,
+.loader-m-5-4 .progress-rect,
+.loader-m-5-5 .progress-rect,
+.loader-m-5-6 .progress-rect,
+.loader-m-5-7 .progress-rect {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
   animation: loader-m-4-4 3s linear infinite;
