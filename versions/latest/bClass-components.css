@@ -389,11 +389,11 @@
 }
 /* * model 2-7 & 3-1 */
 .loader-m-2-7,
-.loader-m-3-1 {
+.loader-m-3-2 {
   animation: loader-m-2-7r 2.4s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
 .loader-m-2-7 > span,
-.loader-m-3-1 > span {
+.loader-m-3-2 > span {
   animation: loader-m-2-7 2.4s infinite;
 }
 .loader-m-2-7 > span:nth-child(1) {
@@ -416,12 +416,12 @@
   left: 0;
   animation-delay: 1.8s;
 }
-.loader-m-3-1 > span:nth-child(1) {
+.loader-m-3-2 > span:nth-child(1) {
   top: 0;
   left: 0;
   animation-delay: 0s;
 }
-.loader-m-3-1 > span:nth-child(2) {
+.loader-m-3-2 > span:nth-child(2) {
   bottom: 0;
   right: 0;
   animation-delay: 1.2s;
@@ -452,7 +452,7 @@
   animation: loader-m-2-8r 2.4s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
 .loader-m-2-8 > span,
-.loader-m-3-2 > span {
+.loader-m-3-1 > span {
   animation: loader-m-2-8 2.4s infinite;
 }
 .loader-m-2-8 > span:nth-child(1) {
@@ -475,12 +475,12 @@
   left: 0;
   animation-delay: 1.8s;
 }
-.loader-m-3-2 > span:nth-child(1) {
+.loader-m-3-1 > span:nth-child(1) {
   top: 0;
   left: 0;
   animation-delay: 0s;
 }
-.loader-m-3-2 > span:nth-child(2) {
+.loader-m-3-1 > span:nth-child(2) {
   bottom: 0;
   right: 0;
   animation-delay: 1.2s;
