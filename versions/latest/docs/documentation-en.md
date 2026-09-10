@@ -261,11 +261,10 @@ Tooltip elements in different positions:
 - `.input-number-m-1`
 - `.input-number-m-2`
 - `.input-number-m-3`
-- `.input-number-m-4`
 
 #### Example
 
-[codepen](https://codepen.io/Endwall/pen/)
+[codepen](https://codepen.io/Endwall/pen/gbmrrQj)
 
 #### Select Dropdown Component
 

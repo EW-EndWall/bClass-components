@@ -2065,7 +2065,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 }
 .input-number-m-3 span:first-child::after {
   content: "‒";
-  top: -0.2rem;
+  margin-top: -0.2rem;
 }
 .input-number-m-3 span:last-child::after {
   content: "+";

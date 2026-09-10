@@ -261,11 +261,10 @@
 - `.input-number-m-1`
 - `.input-number-m-2`
 - `.input-number-m-3`
-- `.input-number-m-4`
 
 #### مثال
 
-[codepen](https://codepen.io/Endwall/pen/)
+[codepen](https://codepen.io/Endwall/pen/gbmrrQj)
 
 #### مكون القائمة المنسدلة للاختيار
 
