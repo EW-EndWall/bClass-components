@@ -1995,6 +1995,14 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   appearance: none;
   border: 0;
 }
+.input-number-m-2 span,
+.input-number-m-3 span {
+  font-weight: 900;
+  color: var(--contentTextPrimary);
+  transition: all;
+  cursor: pointer;
+  z-index: 1;
+}
 .input-number-m-1 {
   color: var(--contentTextSecondary);
   background-color: var(--contentBgPrimary);
@@ -2008,35 +2016,29 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   background-color: var(--contentBgPrimary);
   display: block;
   padding-right: 2rem;
-  text-align: center;
 }
 .input-number-m-2 span {
-  color: var(--contentTextPrimary);
   position: absolute;
-  z-index: 1;
-  cursor: pointer;
   right: 0;
-  margin-right: 0.8rem;
-  font-size: 0.4rem;
-  font-weight: 900;
-  transition: all;
+  margin-right: 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1;
 }
-.input-number-m-2 span:hover {
+.input-number-m-2 span:hover,
+.input-number-m-3 span:hover {
   color: var(--contentTextSecondary);
 }
 .input-number-m-2 span:first-child {
-  top: 0;
-  margin-top: 0.2rem;
-}
-.input-number-m-2 span:last-child {
-  bottom: 0;
-  margin-bottom: 0.2rem;
+  bottom: 0.2rem;
 }
 .input-number-m-2 span:first-child::after {
-  content: "▲";
+  content: "▼";
+}
+.input-number-m-2 span:last-child {
+  top: 0.2rem;
 }
 .input-number-m-2 span:last-child::after {
-  content: "▼";
+  content: "▲";
 }
 .input-number-m-2 input,
 .input-number-m-3 input {
@@ -2058,15 +2060,8 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   padding: 0 0.5rem;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   position: relative;
   font-size: 2rem;
-  font-weight: 900;
-  color: var(--contentTextPrimary);
-  transition: all;
-}
-.input-number-m-3 span:hover {
-  color: var(--contentTextSecondary);
 }
 .input-number-m-3 span:first-child::after {
   content: "‒";
