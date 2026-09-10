@@ -254,7 +254,7 @@
 
 #### Пример
 
-[codepen](https://codepen.io/Endwall/pen/)
+[codepen](https://codepen.io/Endwall/pen/myWPPvL)
 
 #### Компоненты числового ввода
 

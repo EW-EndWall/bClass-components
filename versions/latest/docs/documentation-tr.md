@@ -254,7 +254,7 @@ Farklı konumlarda ipucu öğeleri
 
 #### örnek
 
-[codepen](https://codepen.io/Endwall/pen/)
+[codepen](https://codepen.io/Endwall/pen/myWPPvL)
 
 #### Sayı giriş bileşenleri
 

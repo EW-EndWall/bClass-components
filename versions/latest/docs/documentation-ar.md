@@ -254,7 +254,7 @@
 
 #### مثال
 
-[codepen](https://codepen.io/Endwall/pen/)
+[codepen](https://codepen.io/Endwall/pen/myWPPvL)
 
 #### مكونات إدخال الأرقام
 

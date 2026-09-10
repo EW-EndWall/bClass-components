@@ -1544,7 +1544,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   background-color: var(--contentBgPrimary);
   color: var(--contentTextPrimary);
   cursor: pointer;
-  border: none;
+  border: 0;
   padding: 0.5rem;
   text-align: center;
   text-decoration: none;
@@ -1972,6 +1972,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   align-items: center;
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 .input-password-m-1-btn.visible::before {
   content: "\f070";
@@ -1981,23 +1982,15 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 /* * input number */
 .input-number-m-1::-webkit-inner-spin-button,
 .input-number-m-1::-webkit-outer-spin-button,
-.input-number-m-2::-webkit-inner-spin-button,
-.input-number-m-2::-webkit-outer-spin-button,
+.input-number-m-2 input::-webkit-inner-spin-button,
+.input-number-m-2 input::-webkit-outer-spin-button,
 .input-number-m-3 input::-webkit-inner-spin-button,
 .input-number-m-3 input::-webkit-outer-spin-button {
   appearance: none;
-}
-.input-number-m-2 input {
-  position: relative;
-  color: var(--contentTextSecondary);
-  background-color: var(--contentBgPrimary);
-  padding: 0.5rem;
   border: 0;
-  width: 100%;
-  font-size: 1.1rem;
+}
+.input-number-m-1 {
   font-weight: 900;
-  text-align: center;
-  appearance: textfield;
 }
 .input-number-m-2 {
   position: relative;
@@ -2007,35 +2000,35 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
   padding-right: 2rem;
 }
 .input-number-m-2 span:first-child {
-  position: absolute;
-  right: 0;
   top: 0;
   margin-top: 0.2rem;
-  margin-right: 0.4rem;
-  z-index: 1;
 }
 .input-number-m-2 span:last-child {
-  position: absolute;
-  right: 0;
   bottom: 0;
   margin-bottom: 0.2rem;
+}
+.input-number-m-2 span:first-child,
+.input-number-m-2 span:last-child {
+  color: var(--contentTextPrimary);
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  right: 0;
   margin-right: 0.4rem;
 }
-.input-number-m-3 {
-  display: flex;
-  background-color: var(--contentBgPrimary);
-}
+.input-number-m-2 input,
 .input-number-m-3 input {
   position: relative;
   color: var(--contentTextSecondary);
   background-color: var(--contentBgPrimary);
   padding: 0.5rem;
-  border: 0;
-  width: 100%;
-  font-size: 1.1rem;
   font-weight: 900;
   text-align: center;
   appearance: textfield;
+}
+.input-number-m-3 {
+  display: flex;
+  background-color: var(--contentBgPrimary);
 }
 .input-number-m-3 span {
   display: inline-flex;
@@ -2048,7 +2041,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 }
 .input-number-m-3,
 .input-number-m-3 input {
-  border: none;
+  border: 0;
 }
 /* ! ---------------------------------------------------------------------------------  */
 /* ! ---------------------------------------------------------------------------------  */

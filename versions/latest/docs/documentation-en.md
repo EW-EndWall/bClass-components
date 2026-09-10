@@ -254,7 +254,7 @@ Tooltip elements in different positions:
 
 #### Example
 
-[codepen](https://codepen.io/Endwall/pen/)
+[codepen](https://codepen.io/Endwall/pen/myWPPvL)
 
 #### Number Input Components
 
