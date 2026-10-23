@@ -122,7 +122,7 @@
 
 - `.model-line` — Базовая модель линии
 - `.solid .model-line` — Сплошной стиль
-- `.edge .model/line` — Стиль с рамкой (edge)
+- `.edge .model-line` — Стиль с рамкой (edge)
 - `.edged .model-line` — Окантованный стиль
 - `.triangle-experimental-model-1 .model-line` — Треугольная экспериментальная модель 1
 - `.triangle-experimental-model-2 .model-line` — Треугольная экспериментальная модель 2
@@ -160,7 +160,7 @@
 Элементы подсказок в различных позициях:
 
 - `[data-title="example"]`
-- `[data/title-bottom="example"]`
+- `[data-title-bottom="example"]`
 - `[data-title-top="example"]`
 - `[data-title-left="example"]`
 - `[data-title-right="example"]`
@@ -191,7 +191,7 @@
 - `.ul-li-x-scroll`
 - `.ul-li-x-scroll-hide`
 - `.ul-li-y-scroll`
-- `.ul/li-y-scroll-hide`
+- `.ul-li-y-scroll-hide`
 
 #### Стили списков с разделительными линиями
 

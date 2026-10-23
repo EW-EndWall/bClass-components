@@ -160,7 +160,7 @@
 عناصر تلميح في مواضع مختلفة
 
 - `[data-title="example"]`
-- `[data</strong>data-title-bottom="example"]`
+- `[data-title-bottom="example"]`
 - `[data-title-top="example"]`
 - `[data-title-left="example"]`
 - `[data-title-right="example"]`
@@ -196,7 +196,7 @@
 #### أنماط القوائم المفصولة بخطوط
 
 - `.ul-li-x-line`
-- `.ulli-x-line-a`
+- `.ul-li-x-line-a`
 - `.ul-li-y-line`
 - `.ul-li-y-line-a`
 
@@ -222,7 +222,7 @@
 - `.input-checkbox-m-2`
 - `.input-checkbox-m-3` - مربع اختيار مع رمز علامة الصح
 - `.input-checkbox-m-4` - مربع اختيار مع أيقونة Font Awesome
-- `.input-schema-m-5`
+- `.input-checkbox-m-5`
 - `.input-checkbox-m-6`
 
 #### مثال
@@ -377,8 +377,8 @@
 - `.dropdown-m-2`
 - `.dropdown-m-2-sub`
 - `.dropdown-m-3`
-- `.dropdown-m-3-hideable`, `dropdown-m-3-btn` , `visible` , `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
-- `.dropdown-m-3-hover` , `.dropdown-m-3-min` , `.dropdownm-3-max`
+- `.dropdown-m-3-hideable`, `dropdown-m-3-btn`, `visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
+- `.dropdown-m-3-hover`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 
 #### مثال
 

@@ -197,7 +197,7 @@ Tooltip elements in different positions:
 
 - `.ul-li-x-line`
 - `.ul-li-x-line-a`
-- `.lin-li-y-line`
+- `.ul-li-y-line`
 - `.ul-li-y-line-a`
 
 #### Example
@@ -378,7 +378,7 @@ Various fieldset component styles:
 - `.dropdown-m-2-sub`
 - `.dropdown-m-3`
 - `.dropdown-m-3-hideable`, `dropdown-m-3-btn`, `visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
-- `.dropdown-m-3-hover`, `.dropdown-m-3-min`, `.dropdownm-3-max`
+- `.dropdown-m-3-hover`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 
 #### Example
 
