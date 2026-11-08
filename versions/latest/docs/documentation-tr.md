@@ -8,7 +8,7 @@ Bu kütüphane ile beraber `bClass theme css` ve `bClass theme js` kullanılmas�
 
 ## Temel Bileşenler
 
-### Sayfa Yükleyici Kaldırıma
+### Sayfa Yükleyiciyi Kaldırma
 
 - `#page-loader`
 
@@ -121,12 +121,15 @@ Bu kütüphane ile beraber `bClass theme css` ve `bClass theme js` kullanılmas�
 ### Model Hat Stilleri
 
 - `.model-line` - Temel hat modeli
+- `.model-line > .model-outline` - `.model-line` içindeki dış çerçeve öğesi
+- `.model-line > .model-outline > .model-inline` - `.model-outline` içindeki iç çerçeve öğesi
 - `.solid .model-line` - Katı stil
 - `.edge .model-line` - Kenarlık stil
 - `.edged .model-line` - Kenarlıklı stil
 - `.triangle-experimental-model-1 .model-line` - Üçgen deneysel model 1
 - `.triangle-experimental-model-2 .model-line` - Üçgen deneysel model 2
 - `.triangle-experimental-model-3 .model-line` - Üçgen deneysel model 3
+- `.content-1`, `.content-2`, `.content-3` - Kenar yarıçapı aktif model stiline (solid, edge, edged, triangle) göre değişen içerik kutuları
 
 #### örnek
 
@@ -251,6 +254,7 @@ Farklı konumlarda ipucu öğeleri
 [codepen](https://codepen.io/Endwall/pen/zYmmged)
 
 - `.input-password-m-1`
+- `.input-password-m-1-btn` - Şifre görünürlük düğmesi simgesi (Font Awesome göz simgesi; `.visible` eklenince üstü çizili göz simgesine geçer)
 
 #### örnek
 
@@ -284,9 +288,9 @@ Farklı konumlarda ipucu öğeleri
 
 ### Dosya Girişi
 
-- `.input-file-m-1`, `input-file-m-1-preview` - Önizleme ile dosya girişi
+- `.input-file-m-1`, `.input-file-m-1-preview` - Önizleme ile dosya girişi
 
-### örnek
+#### örnek
 
 [codepen](https://codepen.io/Endwall/pen/RNbNvrB)
 
@@ -328,7 +332,7 @@ Farklı stillerde alan kümesi bileşenleri
 
 ### Yol Haritası Modelleri
 
-- `.roadmap-m-1`, `.unlimited:roadmap-m-1`
+- `.roadmap-m-1`, `.roadmap-m-1-icon`, `.unlimited:roadmap-m-1`, `.unlimited:roadmap-m-1-icon`
 - `.roadmap-m-2`, `.roadmap-m-2-icon`, `.unlimited:roadmap-m-2`, `.unlimited:roadmap-m-2-icon`
 
 #### örnek
@@ -375,9 +379,10 @@ Farklı stillerde alan kümesi bileşenleri
 - `.dropdown-m-1`
 - `.dropdown-m-1-btn`
 - `.dropdown-m-2`
+- `.dropdown-m-2-btn`
 - `.dropdown-m-2-sub`
 - `.dropdown-m-3`
-- `.dropdown-m-3-hideable`, `dropdown-m-3-btn`, `visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
+- `.dropdown-m-3-hideable`, `.dropdown-m-3-btn`, `.visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 - `.dropdown-m-3-hover`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 
 #### örnek
@@ -423,7 +428,7 @@ Farklı stillerde alan kümesi bileşenleri
 - `.content-list-col-5-tablet-pc`
 - `.content-list-col-5-pc`
 
-### dinamic list
+### Dinamik Liste
 
 #### 2 3 4
 
@@ -433,37 +438,37 @@ Farklı stillerde alan kümesi bileşenleri
 - `.dynamic:content-list-col-tablet-pc`
 - `.dynamic:content-list-col-pc`
 
-### örnek
+#### örnek
 
 [codepen](https://codepen.io/Endwall/pen/YzRJgmB)
 
-# İtem sayısı
+# Öğe Sayısı
 
 - `.item-count`
 - `.item-count`, `.item` - Sayılacak itemler
 - `.item-count-result`
 
-## örnek
+#### örnek
 
 [codepen](https://codepen.io/Endwall/pen/dyQeJbp)
 
-# Vanilla Components
+# Vanilla Bileşenleri
 
-## Content models
+## İçerik Modelleri
 
-#### example
+#### örnek
 
 [codepen](https://codepen.io/Endwall/pen/YzRrjzY)
 
 ## Img pp
 
-#### example
+#### örnek
 
 [codepen](https://codepen.io/Endwall/pen/MWPzZJg)
 
-## Post models
+## Gönderi Modelleri
 
-#### exapmle
+#### örnek
 
 [codepen](https://codepen.io/Endwall/pen/vYVwNGr)
 

@@ -121,12 +121,15 @@ It is recommended to use `bClass theme css` and `bClass theme js` along with thi
 ### Model Line Styles
 
 - `.model-line` - Basic line model
+- `.model-line > .model-outline` - Outer frame element inside `.model-line`
+- `.model-line > .model-outline > .model-inline` - Inner frame element inside `.model-outline`
 - `.solid .model-line` - Solid style
-- `.edge .model/ine` - Edge style
+- `.edge .model-line` - Edge style
 - `.edged .model-line` - Bordered style
 - `.triangle-experimental-model-1 .model-line` - Triangle experimental model 1
 - `.triangle-experimental-model-2 .model-line` - Triangle experimental model 2
 - `.triangle-experimental-model-3 .model-line` - Triangle experimental model 3
+- `.content-1`, `.content-2`, `.content-3` - Content boxes whose border radius follows the active model style (solid, edge, edged, triangle)
 
 #### Example
 
@@ -251,6 +254,7 @@ Tooltip elements in different positions:
 [codepen](https://codepen.io/Endwall/pen/zYmmged)
 
 - `.input-password-m-1`
+- `.input-password-m-1-btn` - Password visibility toggle icon (Font Awesome eye icon; `.visible` switches it to the crossed-out eye)
 
 #### Example
 
@@ -284,7 +288,7 @@ Tooltip elements in different positions:
 
 ### File Input
 
-- `.input-file-m-1`, `input-file-m-1-preview` - File input with preview
+- `.input-file-m-1`, `.input-file-m-1-preview` - File input with preview
 
 #### Example
 
@@ -328,7 +332,7 @@ Various fieldset component styles:
 
 ### Roadmap Models
 
-- `.roadmap-m-1`, `.unlimited:roadmap-m-1`
+- `.roadmap-m-1`, `.roadmap-m-1-icon`, `.unlimited:roadmap-m-1`, `.unlimited:roadmap-m-1-icon`
 - `.roadmap-m-2`, `.roadmap-m-2-icon`, `.unlimited:roadmap-m-2`, `.unlimited:roadmap-m-2-icon`
 
 #### Example
@@ -375,9 +379,10 @@ Various fieldset component styles:
 - `.dropdown-m-1`
 - `.dropdown-m-1-btn`
 - `.dropdown-m-2`
+- `.dropdown-m-2-btn`
 - `.dropdown-m-2-sub`
 - `.dropdown-m-3`
-- `.dropdown-m-3-hideable`, `dropdown-m-3-btn`, `visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
+- `.dropdown-m-3-hideable`, `.dropdown-m-3-btn`, `.visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 - `.dropdown-m-3-hover`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 
 #### Example
@@ -390,7 +395,7 @@ Various fieldset component styles:
 
 #### Example
 
-[codepen](https://cododen.io/Endwall/pen/yLroeey)
+[codepen](https://codepen.io/Endwall/pen/yLroeey)
 
 ### Content List Models
 
@@ -401,7 +406,7 @@ Various fieldset component styles:
 #### 2 Columns
 
 - `.content-list-col-2`
-- `.content-list-col-2-mobile`
+- `.content-list-col-2-mobil`
 - `.content-list-col-2-tablet`
 - `.content-list-col-2-tablet-pc`
 
@@ -428,7 +433,7 @@ Various fieldset component styles:
 #### 2, 3, 4 Column Variants
 
 - `.dynamic:content-list-col`
-- `.dynamic:content-list-col-mobile`
+- `.dynamic:content-list-col-mobil`
 - `.dynamic:content-list-col-tablet`
 - `.dynamic:content-list-col-tablet-pc`
 - `.dynamic:content-list-col-pc`

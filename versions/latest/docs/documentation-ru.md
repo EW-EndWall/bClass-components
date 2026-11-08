@@ -1,6 +1,6 @@
 # bClass components
 
-`bClass components` — это CSS-библиотека, предоставляющая готовые к использованию UI-компоненı и стили для веб-разработки. Данная документация описывает все существующие компоненты и способы их использования.
+`bClass components` — это CSS-библиотека, предоставляющая готовые к использованию UI-компоненты и стили для веб-разработки. Данная документация описывает все существующие компоненты и способы их использования.
 
 ## Требования
 
@@ -121,12 +121,15 @@
 ### Стили линий моделей
 
 - `.model-line` — Базовая модель линии
+- `.model-line > .model-outline` — Внешний элемент рамки внутри `.model-line`
+- `.model-line > .model-outline > .model-inline` — Внутренний элемент рамки внутри `.model-outline`
 - `.solid .model-line` — Сплошной стиль
 - `.edge .model-line` — Стиль с рамкой (edge)
 - `.edged .model-line` — Окантованный стиль
 - `.triangle-experimental-model-1 .model-line` — Треугольная экспериментальная модель 1
 - `.triangle-experimental-model-2 .model-line` — Треугольная экспериментальная модель 2
 - `.triangle-experimental-model-3 .model-line` — Треугольная экспериментальная модель 3
+- `.content-1`, `.content-2`, `.content-3` — Блоки контента, у которых радиус скругления зависит от активного стиля модели (solid, edge, edged, triangle)
 
 #### Пример
 
@@ -175,7 +178,7 @@
 
 #### Пример
 
-[codepen](https://codepen.io/Endwall/ZEVKqvR)
+[codepen](https://codepen.io/Endwall/pen/ZEVKqvR)
 
 ### Стили списков
 
@@ -238,7 +241,7 @@
 
 #### Пример
 
-[[codepen](https://codepen.io/Endwall/pen/dygQMva)
+[codepen](https://codepen.io/Endwall/pen/dygQMva)
 
 ### Компоненты ввода
 
@@ -251,6 +254,7 @@
 [codepen](https://codepen.io/Endwall/pen/zYmmged)
 
 - `.input-password-m-1`
+- `.input-password-m-1-btn` — Иконка переключения видимости пароля (глаз Font Awesome; с `.visible` меняется на перечёркнутый глаз)
 
 #### Пример
 
@@ -284,7 +288,7 @@
 
 ### Ввод файлов
 
-- `.input-file-m-1`, `input-file-m-1-preview` — Ввод файла с предварительным просмотром
+- `.input-file-m-1`, `.input-file-m-1-preview` — Ввод файла с предварительным просмотром
 
 #### Пример
 
@@ -309,7 +313,7 @@
 
 [codepen](https://codepen.io/Endwall/pen/rNQJRBP)
 
-### Модели текстовых облаков
+### Модели чат-пузырей
 
 - `.chat-bubble-l-m-1` — Левое облако чата
 - `.chat-bubble-r-m-1` — Правое облако чата
@@ -328,7 +332,7 @@
 
 ### Модели дорожной карты
 
-- `.roadmap-m-1`, `.unlimited:roadmap-m-1`
+- `.roadmap-m-1`, `.roadmap-m-1-icon`, `.unlimited:roadmap-m-1`, `.unlimited:roadmap-m-1-icon`
 - `.roadmap-m-2`, `.roadmap-m-2-icon`, `.unlimited:roadmap-m-2`, `.unlimited:roadmap-m-2-icon`
 
 #### Пример
@@ -337,7 +341,7 @@
 
 ### Различные стили стрелок для навигации
 
-#### Верно
+#### Вправо
 
 - `.arrow-r-m-1`
 - `.arrow-r-m-2`
@@ -346,7 +350,7 @@
 - `.arrow-r-m-5`
 - `.arrow-r-m-6`
 
-#### левый
+#### Влево
 
 - `.arrow-l-m-1`
 - `.arrow-l-m-2`
@@ -375,9 +379,10 @@
 - `.dropdown-m-1`
 - `.dropdown-m-1-btn`
 - `.dropdown-m-2`
+- `.dropdown-m-2-btn`
 - `.dropdown-m-2-sub`
 - `.dropdown-m-3`
-- `.dropdown-m-3-hideable`, `dropdown-m-3-btn`, `visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
+- `.dropdown-m-3-hideable`, `.dropdown-m-3-btn`, `.visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 - `.dropdown-m-3-hover`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 
 #### Пример
@@ -390,7 +395,7 @@
 
 #### Пример
 
-[codepen](https://codেরpen.io/Endwall/pen/yLroeey)
+[codepen](https://codepen.io/Endwall/pen/yLroeey)
 
 ### Модели списков контента
 

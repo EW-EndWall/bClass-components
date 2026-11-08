@@ -121,12 +121,15 @@ Es wird empfohlen, `bClass theme css` und `bClass theme js` zusammen mit dieser 
 ### Modell-Linien-Stile
 
 - `.model-line` - Basis-Linienmodell
+- `.model-line > .model-outline` - Äußeres Rahmenelement innerhalb von `.model-line`
+- `.model-line > .model-outline > .model-inline` - Inneres Rahmenelement innerhalb von `.model-outline`
 - `.solid .model-line` - Massiver Stil (Solid)
 - `.edge .model-line` - Randstil (Edge)
 - `.edged .model-line` - Umrandeter Stil (Edged)
 - `.triangle-experimental-model-1 .model-line` - Dreiecksmodell experimentell 1
 - `.triangle-experimental-model-2 .model-line` - Dreiecksmodell experimentell 2
 - `.triangle-experimental-model-3 .model-line` - Dreiecksmodell experimentell 3
+- `.content-1`, `.content-2`, `.content-3` - Inhaltsboxen, deren Eckradius sich dem aktiven Modell-Stil (solid, edge, edged, triangle) anpasst
 
 #### Beispiel
 
@@ -210,7 +213,7 @@ Tooltip-Elemente an verschiedenen Positionen:
 
 #### Beispiel
 
-[codepen](https://cododen.io/Endwall/pen/poQMvPK)
+[codepen](https://codepen.io/Endwall/pen/poQMvPK)
 
 ### Button-Stile
 
@@ -251,6 +254,7 @@ Tooltip-Elemente an verschiedenen Positionen:
 [codepen](https://codepen.io/Endwall/pen/zYmmged)
 
 - `.input-password-m-1`
+- `.input-password-m-1-btn` - Symbol zum Ein-/Ausblenden des Passworts (Font-Awesome-Augensymbol; mit `.visible` wechselt es zum durchgestrichenen Auge)
 
 #### Beispiel
 
@@ -284,7 +288,7 @@ Tooltip-Elemente an verschiedenen Positionen:
 
 ### Datei-Eingabe
 
-- `.input-file-m-1`, `input-file-m-1-preview` - Datei-Eingabe mit Vorschau
+- `.input-file-m-1`, `.input-file-m-1-preview` - Datei-Eingabe mit Vorschau
 
 #### Beispiel
 
@@ -328,7 +332,7 @@ Fieldset-Komponenten in verschiedenen Stilen:
 
 ### Roadmap-Modelle
 
-- `.roadmap-m-1`, `.unlimited:roadmap-m-1`
+- `.roadmap-m-1`, `.roadmap-m-1-icon`, `.unlimited:roadmap-m-1`, `.unlimited:roadmap-m-1-icon`
 - `.roadmap-m-2`, `.roadmap-m-2-icon`, `.unlimited:roadmap-m-2`, `.unlimited:roadmap-m-2-icon`
 
 #### Beispiel
@@ -375,9 +379,10 @@ Fieldset-Komponenten in verschiedenen Stilen:
 - `.dropdown-m-1`
 - `.dropdown-m-1-btn`
 - `.dropdown-m-2`
+- `.dropdown-m-2-btn`
 - `.dropdown-m-2-sub`
 - `.dropdown-m-3`
-- `.dropdown-m-3-hideable`, `dropdown-m-3-btn`, `visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
+- `.dropdown-m-3-hideable`, `.dropdown-m-3-btn`, `.visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 - `.dropdown-m-3-hover`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 
 #### Beispiel

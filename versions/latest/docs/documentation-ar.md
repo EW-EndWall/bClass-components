@@ -1,6 +1,6 @@
 # bClass components
 
-`bClass components` هي مكتبة CSS توفر مكونات واجهة مستخدم (UI) وأنماط جاهزة للاستخدام في تطوير الويب. يوضح هذا التوثيق جميع المكونات المتاğiحة وطرق استخدامها.
+`bClass components` هي مكتبة CSS توفر مكونات واجهة مستخدم (UI) وأنماط جاهزة للاستخدام في تطوير الويب. يوضح هذا التوثيق جميع المكونات المتاحة وطرق استخدامها.
 
 ## المتطلبات
 
@@ -60,8 +60,8 @@
 
 #### النموذج 3 (نماذج التحميل القطرية ذات نقطتين)
 
-- `.loader-m-3-1` - نموذج تحميل قطري ذو نقطتين يدور متعدد الاتجاهات ومدرج
-- `.loader-m-3-2`محمل قطري بنقطتين
+- `.loader-m-3-1` - نموذج تحميل قطري ذو نقطتين
+- `.loader-m-3-2` - نموذج تحميل قطري ذو نقطتين يدور بمقدار 180 درجة
 - `.loader-m-3-3` - نموذج تحميل قطري ذو نقطتين يدور بمقدار 360 درجة
 - `.loader-m-3-4` - نموذج تحميل قطري ذو نقطتين يدور عكسياً بسرعة ومتعدد دورات
 
@@ -109,7 +109,7 @@
 <div class="loader-m-5-1 w-rem-5 h-rem-5"></div>
 ```
 
-### تأكيد ملفات تعريف الارتبا
+### تأكيد ملفات تعريف الارتباط
 
 - `#cookies-confirmation`
 - `#cookies-confirmation-close`
@@ -118,15 +118,18 @@
 
 [codepen](https://codepen.io/Endwall/pen/PoyxgXX)
 
-### أنماط خطوط النماذ
+### أنماط خطوط النماذج
 
 - `.model-line` - نموذج الخط الأساسي
+- `.model-line > .model-outline` - عنصر الإطار الخارجي داخل `.model-line`
+- `.model-line > .model-outline > .model-inline` - عنصر الإطار الداخلي داخل `.model-outline`
 - `.solid .model-line` - نمط صلب (Solid)
-- `.edge .model/ine` - نمط الحواف (Edge)
+- `.edge .model-line` - نمط الحواف (Edge)
 - `.edged .model-line` - نمط الإطار (Edged)
 - `.triangle-experimental-model-1 .model-line` - نموذج مثلث تجريبي 1
 - `.triangle-experimental-model-2 .model-line` - نموذج مثلث تجريبي 2
-- `.triangle-experimental-model-3 .model-line` - نموذج مثلث تجربي 3
+- `.triangle-experimental-model-3 .model-line` - نموذج مثلث تجريبي 3
+- `.content-1`, `.content-2`, `.content-3` - صناديق محتوى يتغير نصف قطر حدودها حسب نمط النموذج النشط (solid, edge, edged, triangle)
 
 #### مثال
 
@@ -204,7 +207,7 @@
 
 [codepen](https://codepen.io/Endwall/pen/qBJQood)
 
-### نماذج وسم
+### نماذج وسم HR
 
 - `.hr-m-1` - خط أفقي بخلفية متدرجة (Gradient)
 
@@ -251,6 +254,7 @@
 [codepen](https://codepen.io/Endwall/pen/zYmmged)
 
 - `.input-password-m-1`
+- `.input-password-m-1-btn` - أيقونة تبديل إظهار كلمة المرور (عين Font Awesome؛ مع `.visible` تتحول إلى عين مشطوبة)
 
 #### مثال
 
@@ -274,7 +278,7 @@
 
 [codেরpen](https://codepen.io/Endwall/pen/poQXmGg)
 
-#### مكون شريط التمري
+#### مكون شريط التمرير
 
 - `.input-range-m-1`
 
@@ -284,7 +288,7 @@
 
 ### إدخال الملفات
 
-- `.input-file-m-1`, `input-file-m-1-preview` - إدخال ملف مع معاينة
+- `.input-file-m-1`, `.input-file-m-1-preview` - إدخال ملف مع معاينة
 
 #### مثال
 
@@ -318,17 +322,17 @@
 
 [codepen](https://codepen.io/Endwall/pen/qBJLaLX)
 
-### نماذج
+### نماذج OR
 
 - `.or-m-1` - مكون فاصل OR
 
 #### مثال
 
-[codepen](https://codেরpen.io/Endwall/pen/poxMvog)
+[codepen](https://codepen.io/Endwall/pen/poxMvog)
 
 ### نماذج خارطة الطريق
 
-- `.roadmap-m-1`, `.unlimited:roadmap-m-1`
+- `.roadmap-m-1`, `.roadmap-m-1-icon`, `.unlimited:roadmap-m-1`, `.unlimited:roadmap-m-1-icon`
 - `.roadmap-m-2`, `.roadmap-m-2-icon`, `.unlimited:roadmap-m-2`, `.unlimited:roadmap-m-2-icon`
 
 #### مثال
@@ -346,7 +350,7 @@
 - `.arrow-r-m-5`
 - `.arrow-r-m-6`
 
-#### غادر
+#### يسار
 
 - `.arrow-l-m-1`
 - `.arrow-l-m-2`
@@ -375,9 +379,10 @@
 - `.dropdown-m-1`
 - `.dropdown-m-1-btn`
 - `.dropdown-m-2`
+- `.dropdown-m-2-btn`
 - `.dropdown-m-2-sub`
 - `.dropdown-m-3`
-- `.dropdown-m-3-hideable`, `dropdown-m-3-btn`, `visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
+- `.dropdown-m-3-hideable`, `.dropdown-m-3-btn`, `.visible`, `.dropdown-m-3-title`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 - `.dropdown-m-3-hover`, `.dropdown-m-3-min`, `.dropdown-m-3-max`
 
 #### مثال
