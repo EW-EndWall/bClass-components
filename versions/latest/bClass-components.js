@@ -276,20 +276,20 @@ document.addEventListener("readystatechange", () => {
       else if (clickedIndex === 2) numberInput.stepUp();
     });
     // * input file
-    $(".input-file-m-1 input").change(() => {
+    $(".input-file-m-1 input").change((event) => {
       const fileInput = $(event.currentTarget); // * get inpu
       const files = fileInput[0].files; // * get file
       const fileExtension = files[0]?.name
         .substring(files[0]?.name.lastIndexOf("."))
         .toLowerCase(); // * get extension
       const fileCount = fileInput[0]?.max || 99; // * is limit
-      const ınputFileContainer = fileInput.closest(".input-file-m-1"); // * get container
+      const inputFileContainer = fileInput.closest(".input-file-m-1"); // * get container
       // * check result container
-      let previewContainer = ınputFileContainer
+      let previewContainer = inputFileContainer
         .prevAll(".input-file-m-1-preview")
         .first();
       if (!previewContainer.length)
-        previewContainer = ınputFileContainer
+        previewContainer = inputFileContainer
           .nextAll(".input-file-m-1-preview")
           .first();
       // * Create an invisible input in PreviewContainer

@@ -1562,8 +1562,7 @@ body.triangle-experimental-model-2 ::-webkit-scrollbar-thumb {
 /* ! ---------------------------------------------------------------------------------  */
 /* * item-count */
 .item-count {
-  counter-reset: total;
-  counter-reset: checked;
+  counter-reset: total checked;
 }
 .item-count .item {
   counter-increment: total;
@@ -2368,8 +2367,6 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 .or-m-1 :nth-child(2)::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   border: 0.13rem solid;
   left: 50%;
@@ -2489,7 +2486,7 @@ body.triangle-experimental-model-2 .fieldset-m-2 legend {
 .unlimited\:roadmap-m-1 + .unlimited\:roadmap-m-1:after {
   height: calc(100% - 1.8rem);
 }
-.unlimited\:roadmap-m-1 ~ .roadmap::after {
+.unlimited\:roadmap-m-1 ~ .roadmap-m-1::after {
   border-left: 0 solid;
   width: 3.1rem;
 }
