@@ -4,14 +4,32 @@
  * * Licensed ("Bik Public License 2.0")
  * * License Update ("03/28/2024")
  */
+// * run when the page is fully loaded (works even if the script is added late)
+if (window.__bClassComponentsLoaded) return;
+window.__bClassComponentsLoaded = true;
+const onReady = (fn) => {
+  if (document.readyState === "loading")
+    document.addEventListener("DOMContentLoaded", fn, { once: true });
+  else fn();
+};
+const onComplete = (fn) => {
+  if (document.readyState === "complete") fn();
+  else window.addEventListener("load", fn, { once: true });
+};
 // * page loader remowed
-document.onreadystatechange = () => {
+onReady(() => {
   setTimeout(() => {
     const pageLoader = document.getElementById("page-loader");
     if (pageLoader) pageLoader.remove();
   }, 500);
-};
-document.addEventListener("readystatechange", () => {
+});
+onComplete(() => {
+  if (typeof window.jQuery === "undefined") {
+    console.error(
+      "bClass components: jQuery is required (3.x). Load it before bClass-components.js.",
+    );
+    return;
+  }
   if (document.readyState === "complete") {
     // * -----------------------------------------------------
     // * loaders
@@ -41,27 +59,27 @@ document.addEventListener("readystatechange", () => {
   `);
     // * -----------------------------------------------------
     // * create cookie
-    const setCookie = (cookieName, cookieValue, numdaystilexpireasinteger) => {
+    const setCookie = (cookieName, cookieValue, days) => {
       const d = new Date();
-      d.setTime(d.getTime() + numdaystilexpireasinteger * 24 * 60 * 60 * 1000);
-      const expires = "expires=" + d.toUTCString();
-      document.cookie =
-        cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+      d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+      const secure = location.protocol === "https:" ? ";Secure" : "";
+      document.cookie = `${cookieName}=${encodeURIComponent(cookieValue)};expires=${d.toUTCString()};path=/;SameSite=Lax${secure}`;
     };
     // * get cookie
     const getCookie = (cookieName) => {
       const name = cookieName + "=";
-      const decodedCookie = decodeURIComponent(document.cookie);
-      const cookies = decodedCookie.split(";");
-
-      let foundCookie = "";
-      cookies.forEach((cookie) => {
-        let trimmedCookie = cookie.trim();
-        if (trimmedCookie.indexOf(name) === 0) {
-          foundCookie = trimmedCookie.substring(name.length);
+      for (const cookie of document.cookie.split(";")) {
+        const trimmed = cookie.trim();
+        if (trimmed.indexOf(name) === 0) {
+          const raw = trimmed.substring(name.length);
+          try {
+            return decodeURIComponent(raw);
+          } catch {
+            return raw;
+          }
         }
-      });
-      return foundCookie;
+      }
+      return "";
     };
     // * check coockie
     const checkCookiesConfirmation = () => {
@@ -150,9 +168,7 @@ document.addEventListener("readystatechange", () => {
           optionElement.hide();
         }
       });
-
       if (searchText === "") return select.addClass("d-none");
-
       select.removeClass("d-none");
     });
     // * -----------------------------------------------------
@@ -196,8 +212,8 @@ document.addEventListener("readystatechange", () => {
         // * if sub menu is any
         if (item.siblings("ul").length) {
           item.toggleClass("active");
-          item.parents("li:first").siblings("li").slideToggle();
-          item.closest("li").find("ul:first").slideToggle();
+          item.parents("li").first().siblings("li").slideToggle();
+          item.closest("li").find("ul").first().slideToggle();
           // * other sub menu hide
           item.siblings("ul").find("ul").hide();
           item.siblings("ul").find("li").show();
@@ -206,19 +222,20 @@ document.addEventListener("readystatechange", () => {
     }
     // * model 2
     // * mobil menu show hide btn
-    $(".dropdown-m-2 > .dropdown-m-2-btn > button").click((event) => {
+    $(".dropdown-m-2 > .dropdown-m-2-btn > button").on("click", (event) => {
       event.stopPropagation();
       $(event.currentTarget)
         .parent(".dropdown-m-2-btn")
         .next("ul")
         .slideToggle(200);
-      // * When clicking outside the menu
-      $(document).on("click", (event) => {
-        if (!$(event.target).closest(".dropdown-m-2").length) {
-          $(".dropdown-m-2 > ul").slideUp(200);
-          $(event.currentTarget).find(".visible").removeClass("visible");
-        }
-      });
+    });
+    // * When clicking outside the menu
+    $(document).on("click.dropdown-m-2", (event) => {
+      if (!$(".dropdown-m-2-btn").is(":visible")) return;
+      if (!$(event.target).closest(".dropdown-m-2").length) {
+        $(".dropdown-m-2 > ul").slideUp(200);
+        $(".dropdown-m-2 .visible").removeClass("visible");
+      }
     });
     // * dropdown model 2 show hide
     $(".dropdown-m-2-sub").on("click", (event) => {
@@ -243,9 +260,10 @@ document.addEventListener("readystatechange", () => {
           clickedMenu.toggleClass("visible");
         }
         // * mobil to pc visible bug fix
-        $(window).on("resize", () => {
-          if ($(window).width() >= 768) {
+        $(window).on("resize.dropdown-m-2", () => {
+          if ($(window).width() > 768) {
             $(".dropdown-m-2-sub").siblings("ul").removeClass("visible");
+            $(".dropdown-m-2 > ul").css("display", "");
           }
         });
       }
@@ -344,7 +362,7 @@ document.addEventListener("readystatechange", () => {
             const previewDiv = $("<div></div>");
             const imgElement = $("<img>").attr("src", e.target.result); // * Set the img src
             const deleteIcon = $("<i></i>").addClass(
-              "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
+              "fa-solid fa-circle-xmark hover:content-2-text hover:zoom input-file-m-1-delete",
             );
             // * Append the img and delete icon to the preview div
             previewDiv.append(imgElement);
@@ -371,10 +389,10 @@ document.addEventListener("readystatechange", () => {
             '<span class="d-flex flex-col align-items-center w-100 h-100"></span>',
           );
           const spanText = $(
-            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`,
-          );
+            '<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap"></span>',
+          ).text(files[0].name);
           const deleteIcon = $("<i></i>").addClass(
-            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
+            "fa-solid fa-circle-xmark hover:content-2-text hover:zoom input-file-m-1-delete",
           );
           const thumbnail = $("<img>").addClass("w-100 h-100"); // * Set the img src
           // * Creating dynamic video and canvas
@@ -426,13 +444,13 @@ document.addEventListener("readystatechange", () => {
             '<span class="d-flex flex-col align-items-center w-100 h-100"></span>',
           );
           const spanText = $(
-            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`,
-          );
+            '<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap"></span>',
+          ).text(files[0].name);
           const zipIcon = $("<i></i>").addClass(
             "fa-solid fa-volume-low font-size-2.5 m-auto",
           );
           const deleteIcon = $("<i></i>").addClass(
-            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
+            "fa-solid fa-circle-xmark hover:content-2-text hover:zoom input-file-m-1-delete",
           );
           // * Append the img and delete icon to the preview div
           span.append(zipIcon);
@@ -460,13 +478,13 @@ document.addEventListener("readystatechange", () => {
             '<span class="d-flex flex-col align-items-center w-100 h-100"></span>',
           );
           const spanText = $(
-            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`,
-          );
+            '<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap"></span>',
+          ).text(files[0].name);
           const zipIcon = $("<i></i>").addClass(
             "fa-solid fa-file-zipper font-size-2.5 m-auto",
           );
           const deleteIcon = $("<i></i>").addClass(
-            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
+            "fa-solid fa-circle-xmark hover:content-2-text hover:zoom input-file-m-1-delete",
           );
           // * Append the img and delete icon to the preview div
           span.append(zipIcon);
@@ -494,13 +512,13 @@ document.addEventListener("readystatechange", () => {
             '<span class="d-flex flex-col align-items-center w-100 h-100"></span>',
           );
           const spanText = $(
-            `<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap">${files[0].name}</span>`,
-          );
+            '<span class="w-100 text-center overflow-hidden text-overflow-ellipsis whitespace-nowrap"></span>',
+          ).text(files[0].name);
           const zipIcon = $("<i></i>").addClass(
             "fa-solid fa-file-invoice font-size-2.5 m-auto",
           );
           const deleteIcon = $("<i></i>").addClass(
-            "fa fa-times-circle hover:content-2-text hover:zoom input-file-m-1-delete",
+            "fa-solid fa-circle-xmark hover:content-2-text hover:zoom input-file-m-1-delete",
           );
           // * Append the img and delete icon to the preview div
           span.append(zipIcon);

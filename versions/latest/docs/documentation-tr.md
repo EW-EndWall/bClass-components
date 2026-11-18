@@ -5,6 +5,7 @@
 ## Gereksinimler
 
 Bu kütüphane ile beraber `bClass theme css` ve `bClass theme js` kullanılması önerilir.
+`bClass components` JavaScript özellikleri (yükleyiciler, çerez onayı, açılır menüler, select, şifre, sayı ve dosya girişleri) [jQuery](https://jquery.com) 3.x gerektirir ve `bClass-components.js` dosyasından **önce** yüklenmelidir. Simge tabanlı bileşenler (`.input-checkbox-m-4`, `.input-password-m-1-btn`, `.arrow-*`, `.input-file-m-1` önizlemeleri) [Font Awesome](https://fontawesome.com) 7 (Free) gerektirir.
 
 ## Temel Bileşenler
 

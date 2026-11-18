@@ -5,6 +5,7 @@
 ## Требования
 
 Для работы с данной библиотекой рекомендуется использовать `bClass theme css` и `bClass theme js`.
+JavaScript-функции `bClass components` (загрузчики, согласие на cookies, выпадающие меню, select, поля пароля, чисел и файлов) требуют [jQuery](https://jquery.com) 3.x, который необходимо подключить **до** `bClass-components.js`. Компоненты с иконками (`.input-checkbox-m-4`, `.input-password-m-1-btn`, `.arrow-*`, превью `.input-file-m-1`) требуют [Font Awesome](https://fontawesome.com) 7 (Free).
 
 ## Базовые компоненты
 

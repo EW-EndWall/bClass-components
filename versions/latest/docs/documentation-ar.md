@@ -5,6 +5,7 @@
 ## المتطلبات
 
 يُوصى باستخدام `bClass theme css` و `bClass theme js` مع هذه المكتبة.
+تتطلب ميزات JavaScript في `bClass components` (التحميل، تأكيد ملفات تعريف الارتباط، القوائم المنسدلة، select، وحقول كلمة المرور والأرقام والملفات) مكتبة [jQuery](https://jquery.com) 3.x ويجب تحميلها **قبل** `bClass-components.js`. تتطلب المكونات المعتمدة على الأيقونات (`.input-checkbox-m-4` و`.input-password-m-1-btn` و`.arrow-*` ومعاينات `.input-file-m-1`) مكتبة [Font Awesome](https://fontawesome.com) 7 (Free).
 
 ## المكونات الأساسية
 

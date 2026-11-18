@@ -5,6 +5,7 @@
 ## Anforderungen
 
 Es wird empfohlen, `bClass theme css` und `bClass theme js` zusammen mit dieser Bibliothek zu verwenden.
+Die JavaScript-Funktionen von `bClass components` (Lader, Cookie-Zustimmung, Dropdowns, Select, Passwort-, Zahlen- und Dateieingaben) benötigen [jQuery](https://jquery.com) 3.x, das **vor** `bClass-components.js` geladen werden muss. Icon-basierte Komponenten (`.input-checkbox-m-4`, `.input-password-m-1-btn`, `.arrow-*`, `.input-file-m-1`-Vorschauen) benötigen [Font Awesome](https://fontawesome.com) 7 (Free).
 
 ## Basiskomponenten
 
